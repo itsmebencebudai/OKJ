@@ -1,0 +1,7 @@
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\obj\Debug\OOP_sample_megoldás.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\obj\Debug\OOP_sample_megoldás.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\bin\Debug\OOP_sample_megoldás.exe.config
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\bin\Debug\OOP_sample_megoldás.exe
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\bin\Debug\OOP_sample_megoldás.pdb
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\obj\Debug\OOP_sample_megoldás.exe
+C:\Users\budai.bence\Desktop\OOP_sample_megoldás\OOP_sample_megoldás\obj\Debug\OOP_sample_megoldás.pdb

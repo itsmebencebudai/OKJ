@@ -1,0 +1,7 @@
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\obj\Debug\pr_tet_OOP.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\obj\Debug\pr_tet_OOP.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\bin\Debug\pr_tet_OOP.exe.config
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\bin\Debug\pr_tet_OOP.exe
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\bin\Debug\pr_tet_OOP.pdb
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\obj\Debug\pr_tet_OOP.exe
+C:\Users\budai.bence\Desktop\14sz\Aémafét\pr_tet_OOP\pr_tet_OOP\obj\Debug\pr_tet_OOP.pdb

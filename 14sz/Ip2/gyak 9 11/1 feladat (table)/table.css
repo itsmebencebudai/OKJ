@@ -1,0 +1,12 @@
+table{
+    border: 1px solid #ccc;
+}
+th{
+    text-align: center;
+}
+.cím{
+    font-weight: bold;
+}
+td{
+    border: 1px solid black;
+}

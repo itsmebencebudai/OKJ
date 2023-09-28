@@ -1,0 +1,30 @@
+c:\users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe.config
+C:\Users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.pdb
+C:\Users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.csprojResolveAssemblyReference.cache
+C:\Users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\documents\visual studio 2015\Projects\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.pdb
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe.config
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.exe
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.pdb
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.pdb
+C:\Users\Szilasi István\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.csprojResolveAssemblyReference.cache
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe.config
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.pdb
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.pdb
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.csprojResolveAssemblyReference.cache
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe.config
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.pdb
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.pdb
+C:\Users\szilasi_i\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.csprojResolveAssemblyReference.cache
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe.config
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.exe
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.pdb
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.exe
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\bin\Debug\Programozasi_Tetelek.pdb
+C:\Users\23-tanari\Desktop\Programozasi_Tetelek1\Programozasi_Tetelek\obj\Debug\Programozasi_Tetelek.csprojResolveAssemblyReference.cache
