@@ -73,14 +73,14 @@ CREATE Table
     )
 
     INSERT into `Users` VALUES
-    -- (NULL, 'Maci Laci', 'maci@laci.com',SHA2('')),
-    (NULL,'Kiss Elemér','kiss.elemer@suli.com',SHA2('kisselemer',256),'7894-4562-1236-5478',2,NULL),
-    (NULL,'Bukta János','bukta.janos@suli.com',SHA2('buktajani',256),'1234-5678-5424-7947',2,NULL);
+    (NULL, 'Maci Laci', 'maci@laci.com',SHA2('maclaci',256),2,NULL,'1313-4234-1236-5466'),
+    (NULL,'Kiss Elemér','kiss.elemer@suli.com',SHA2('kisselemer',256),2,NULL,'7894-4562-1236-5478'),
+    (NULL,'Bukta János','bukta.janos@suli.com',SHA2('buktajani',256),2,NULL,'1234-5678-5424-7947');
 
     INSERT INTO `Address` VALUES
-    (NULL, 1115, 'Budapest','Móricz Zsigmond utca 12',NULL),
-    (NULL, 1134, 'Budapest','Váci út 25 1/3',NULL),
-    (NULL, 4587, 'Esztergom','Béke ut 25',NULL);
+    (NULL, 'Móricz Zsigmond utca 12','Budapest',1115,NULL),
+    (NULL, 'Váci út 25 1/3', 'Budapest',1134,NULL),
+    (NULL, 'Béke ut 25', 'Esztergom',4587,NULL);
 
     INSERT INTO `products` VALUES
         (NULL,'Dell laptop','Ez egy jó laptop',524524,5),
