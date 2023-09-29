@@ -3,10 +3,10 @@ require ('config.php');
 
 try {
     $pdo=new PDO('mysql:host='.$secret['mysqlHost'].';dbname='.$secret['mysqlDb'],$secret ['mysqlUser'], $secret['mysqlPassword'],null);
-    $sql = "select * from users join address on users.addressId=address.id where usersID=:userId";
+    $sql = "select * from Users Join Address on Users.addressId = Address.id where usersId = :usersId";
     $stmt = $pdo->prepare($sql);
     $param = 1;
-    $stmt->bindParam(':userId',$param);
+    $stmt->bindParam(':usersId',$param);
     $stmt->execute();
 
     $res = $stmt;
