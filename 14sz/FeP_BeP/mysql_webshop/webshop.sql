@@ -8,15 +8,15 @@ CREATE Table
         email varchar(50) NOT NULL,
         pw BLOB,
         shipping int DEFAULT NULL,
-        address_id int DEFAULT NULL,
+        addressId int DEFAULT NULL,
         account_number VARCHAR(16),
         PRIMARY KEY (user_id),
-        constraint FK_users_address_address_id FOREIGN (address_id) REFERENCES address_ (address_id),
+        constraint FK_users_address_addressId FOREIGN (addressId) REFERENCES address_ (addressId),
     )
 
 CREATE Table
     Address_(
-        address_id int DEFAULT NULL AUTO_INCREMENT,
+        addressId int DEFAULT NULL AUTO_INCREMENT,
         street VARCHAR(50) Not NULL,
         city VARCHAR(20) Not NULL,
         zip_code int DEFAULT NULL,
@@ -39,7 +39,7 @@ CREATE Table
         userId int DEFAULT NULL,
         date DATETIME,
         PRIMARY KEY (id),
-        constraint FK_cart_users_userId FOREIGN KEY (user_id) REFERENCES users (id)
+        constraint FK_cart_users_userId FOREIGN KEY (userId) REFERENCES users (id)
     )
 CREATE TABLE
     cartitems (
@@ -53,9 +53,10 @@ CREATE TABLE
 CREATE Table
     invoice (
         id int(10) NOT NULL AUTO_INCREMENT,
-        user_id int DEFAULT NULL,
+        userId int DEFAULT NULL,
         date DATETIME,
         total int DEFAULT NULL,
+        constraint FK_invoice_user_userId FOREIGN KEY (userid) REFERENCES user (id)
     )
 
 CREATE Table
