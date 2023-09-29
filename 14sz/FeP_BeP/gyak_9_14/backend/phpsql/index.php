@@ -6,22 +6,14 @@ $pdo=new PDO('mysql:host='.$secret['mysqlHost'].';dbname='.$secret['mysqlDb'],$s
 // foreach ($pdo->query("select * from maci") as $row) {
 //     print_r($row) . '<br>';
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password);
-// echo '<table border="1">';
+echo '<table border="1">';
 
-// foreach ($pdo->query("select * from maci") as $key => $value) {
-//     echo "<tr><td>". $value[0]. "</td><td>". $value[1]. "</td>";
-// }
-// // foreach ($conn->query("select * from maci") as $key => $value) {
-// //     echo "<tr><td>". $value[0]. "</td><td>". $value[1]. "</td>";
-// // }
+foreach ($pdo->query("select * from maci") as $key => $value) {
+    echo "<tr><td>". $value[0]. "</td><td>". $value[1]. "</td>";
+}
 
-// echo "</table>";
+echo "</table>";
 ?>
 
 <!DOCTYPE html>
