@@ -71,3 +71,13 @@ CREATE Table
         constraint FK_invoice_items_invoice_invoiceId FOREIGN KEY (invoiceId) REFERENCES invoice (id),
         constraint FK_invoice_items_products_productId FOREIGN KEY (productId) REFERENCES products (id)
     )
+
+    INSERT into `Users` VALUES
+    -- (NULL, 'Maci Laci', 'maci@laci.com',SHA2(''));
+    (NULL, 'Kiss Elemér', 'kiss.elemer@suli.com', SHA2('kisselemer',256),'7894-4562-1236-5478',2,NULL);
+    (NULL,'Bukta János','bukta.janos@suli.com',SHA2('buktajani',256),'1234-5678-5424-7947',2,NULL);
+
+    INSERT INTO `Address` VALUES
+    (NULL, 1115, 'Budapest','Móricz Zsigmond utca 12',NULL);
+    (NULL, 1134, 'Budapest','Váci út 25 1/3',NULL);
+    (NULL, 4587, 'Esztergom','Béke ut 25',NULL);
