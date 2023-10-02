@@ -1,0 +1,28 @@
+﻿<table>
+            <tr>
+                <td>Összetevő neve</td>
+                <td>Rövid leírás</td>
+            </tr>
+            <tr>
+                <td>Processzor</td>
+                <td>A CPU (angol: Central Processing Unit – központi feldolgozóegység) más néven processzor, a
+                    számítógép „agya”, azon egysége, amely az utasítások értelmezését és végrehajtását vezérl</td>
+            </tr>
+            <tr>
+                <td>Alaplap</td>
+                <td>A számítógép elektronikus elemei az alaplapra vagy alapkártyára vannak építve. Az alaplap egy
+                    többrétegű nyomtatott áramköri lap, amelyen az egyes elemek fogadására több különböző méretű és
+                    alakú csatlakozó, illetve néhány előre beépített eszköz helyezkedik el. </td>
+            </tr>
+            <tr>
+                <td>Memória</td>
+                <td>A memória a számítógépek egyik szükséges részegysége. A memória a számítógép működéséhez szükséges
+                    programot és program futásához szükséges adatokat tárolja</td>
+            </tr>
+            <tr>
+                <td>Videókártya</td>
+                <td>A videókártya (más néven videóadapter, grafikus kártya vagy grafikus adapter) a számítógép
+                    megjelenítésért felelős fő alkotórésze. Feladata, hogy a számítógép által küldött képi információkat
+                    feldolgozza, és egy megjelenítő egység számára értelmezhető analóg jelekké alakítsa.</td>
+            </tr>
+</table>

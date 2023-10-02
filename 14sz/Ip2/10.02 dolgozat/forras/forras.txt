@@ -1,0 +1,27 @@
+﻿Asztali számítógép konfigurációk
+
+PC alapismeretek
+Az asztali számítógépek egyik fő előnye más típusú, nagyobb integráltsággal rendelkező gépek esetén (mint
+amilyenek a notebookok), az alkatrészek közötti nagyobb fokú szabványosítás, amely adott esetben olcsóbbá
+teheti az elromlott, vagy elavult részegységek cseréjét. Például, a piac asztali számítógépei közül szinte
+mindegyik az ATX szabványt használja. Így (egyéb feltételek szempontba vételével) a gépház, az alaplap, és a
+tápegység szabadon cserélhető. Az asztali számítógépek bővítése újabb egységekkel olyan szabványos
+bővítőhelyek igénybevételével történhet, mint a PCI, a PCI Express, amelyekből általában több is
+rendelkezésre áll. Ezzel szemben a hordozható gépek általában egyetlen MiniPCI és PCMCIA bővítőhellyel
+rendelkeznek. Ez több más szemponttal együtt azt jelenti, hogy az asztali gépek olcsóbban, és egyszerűbben
+bővíthetőek.
+
+Általában egy asztali számítógéphez képest, egy hasonló tudású laptop akár 3-szor többe is kerülhet, bár az
+árak összehasonlításánál figyelembe kell venni, hogy egy laptop néhány alapvető, a számítógéphez kapcsolódó
+perifériát (monitort, egeret, billentyűzetet) beépítve tartalmaz, egyéb eszközök, pl. akkumulátor, Wi-fi
+adapter, vezeték nélküli internet modem, stb.
+
+Egy másik előny a hálózati áramforrásról való működés, így nem kell a kritikus szempontok közé emelni az
+áramfogyasztási kérdéseket. 
+
+Összetevők
+<!--Táblázat helye-->
+Galéria
+<!--Képgaléria helye-->
+Forrás
+<!--hivatkozások helye-->
