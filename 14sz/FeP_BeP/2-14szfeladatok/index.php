@@ -115,7 +115,7 @@ foreach ($variable as $key => $value) {
     # code...
 }
 #függvények
-public function __construct(Type $var = null) {
-    # code...
-}
+// public function __construct(Type $var = null) {
+//     # code...
+// }
 ?>

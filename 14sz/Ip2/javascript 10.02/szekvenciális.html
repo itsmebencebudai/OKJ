@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 4 alapművelet
+        document.write("// 4 alapművelet");
+        let a = 5;
+        let b = 6;
+
+        let osszeg = a + b;
+        let kulonbseg = a - b;
+        let szorzat = a * b;
+        let hanyados = a / b;
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a / b);
+        console.log(a * b);
+        document.write("Összeg: " + osszeg);
+        document.write("<br>");
+        document.write("Különbség: " + kulonbseg);
+        document.write("<br>");
+        document.write("Szorzat: " + szorzat);
+        document.write("<br>");
+        document.write("Hányadás: " + hanyados);
+        document.write("<br>");
+        //Random number
+        document.write("//Random number");
+        document.write("<br>");
+        let random = (Math.floor(Math.random() * 100) * 1);
+        let random2 = Math.round(Math.random() * 100);
+        document.write("Random: " + random);
+        document.write("<br>");
+        document.write("Random2: " + random2);
+        document.write("<br>");
+        //Beolvas
+        document.write("//Beolvas");
+        document.write("<br>");
+        let ker = Number(prompt("Kérem a számot: "));
+        document.write("Kért szám: " + ker);
+        //Kiiratás
+        document.write("//Kiiratás");
+        document.write("<br>");
+        let valtozo 
+        document.write("Valtozo: " + valtozo);
+        document.write("<br>");
+        document.write(`Valtozo ${valtozo}`);
+        document.write("<br>");
+
+        //Feladat
+        document.write("//Feladat");
+        document.write("<br>");
+        let a_oldal = prompt("Kérem az A oldalt");
+        let b_oldal = prompt("Kérem a B oldalt");
+
+        document.write("A: " + a_oldal);
+        document.write("<br>");
+        document.write("B: " + b_oldal);
+        document.write("<br>");
+
+        document.write("Téglalap kerülete: "+ ((2*a_oldal)+(2*b_oldal)));
+        document.write("<br>");
+        document.write("Téglalap területe: "+ (a_oldal*b_oldal));
+        document.write("<br>");
+
+        //Páros, páratlan //Feladat 2 
+        document.write("//Páros, páratlan //Feladat 2 ");
+        document.write("<br>");
+        let szam_paros_paratlan = prompt("Kérem a számot");
+
+        if (szam_paros_paratlan % 2 == 0) {
+            document.write("A szám " + szam_paros_paratlan + " páros");
+        }else
+        {
+            document.write("A szám " + szam_paros_paratlan + " páratlan");
+        }
+        //Feladat 3
+        
+    </script>
+</body>
+
+</html>
