@@ -1,0 +1,7 @@
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\bin\Debug\insertinto formátum txtbol.exe.config
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\bin\Debug\insertinto formátum txtbol.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\bin\Debug\insertinto formátum txtbol.pdb
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\obj\Debug\insertinto formátum txtbol.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\obj\Debug\insertinto formátum txtbol.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\obj\Debug\insertinto formátum txtbol.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\insertinto formátum txtbol\insertinto formátum txtbol\obj\Debug\insertinto formátum txtbol.pdb

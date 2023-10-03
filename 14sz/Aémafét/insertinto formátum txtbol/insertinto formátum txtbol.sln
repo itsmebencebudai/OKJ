@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "insertinto formátum txtbol", "insertinto formátum txtbol\insertinto formátum txtbol.csproj", "{243D1E82-2CA1-4479-98A9-4EA16528C6B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{243D1E82-2CA1-4479-98A9-4EA16528C6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243D1E82-2CA1-4479-98A9-4EA16528C6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243D1E82-2CA1-4479-98A9-4EA16528C6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243D1E82-2CA1-4479-98A9-4EA16528C6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAEBE50F-9E6B-4F47-AC55-C8006FB41D96}
+	EndGlobalSection
+EndGlobal
