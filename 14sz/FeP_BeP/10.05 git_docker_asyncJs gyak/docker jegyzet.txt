@@ -1,0 +1,59 @@
+Mi is az a Docker?
+
+A Docker egy platform a fejlesztéshez, az alkalmazások szállításához és futtatásához konténerekben.
+A konténerek könnyű, elszigetelt környezetek, amelyek csomagolják az alkalmazásokat és azok függőségeit.
+
+Docker konténerek:
+A konténerek Docker képek alapján működnek, amelyek csak olvasható sablonok, tartalmazva az alkalmazás kódját és függőségeit.
+A konténerek elszigeteltek egymástól és a gazda rendszertől, biztosítva a következetes viselkedést különböző környezetekben.
+
+Docker kép:
+Egy kép egy konténer pillanatképe, tartalmazza az alkalmazás kódját, könyvtárait és konfigurációját.
+Képeket Dockerfile-okból lehet építeni, amelyek szöveges fájlok, amelyek meghatározzák, hogyan kell létrehozni egy képet.
+
+Docker Hub:
+A Docker Hub egy regisztrációs szolgáltatás a Docker képek megosztására és terjesztésére.
+Itt megtalálhatók előre elkészített képek, vagy saját képeket is közzétehetsz.
+
+Docker Compose:
+A Docker Compose egy eszköz a több konténeres Docker alkalmazások meghatározásához és futtatásához.
+Lehetővé teszi szolgáltatások, hálózatok és kötetek meghatározását egy YAML fájlban.
+
+Dockerfile:
+A Dockerfile egy szkript, amelyet egy Docker kép létrehozásához használnak.
+Meghatározza az alap képet és egy sor lépést az alkalmazás függőségeinek telepítéséhez és konfigurálásához.
+
+Docker parancsok:
+docker run: Konténer létrehozása és indítása egy képből.
+docker build: Docker kép építése egy Dockerfile-ból.
+docker pull: Kép letöltése egy regisztrációból.
+docker push: Kép feltöltése egy regisztrációba.
+docker ps: Futtató konténerek listázása.
+docker stop és docker start: Konténerek leállítása és indítása.
+docker logs: Konténer naplóinak megtekintése.
+
+Docker kötetek (Volumes):
+A kötetek tartós tárolást biztosítanak a konténereknek, lehetővé téve az adatok túlélését a konténer újraindításakor.
+Ossza meg őket a konténerek között.
+
+Docker hálózatok (Networking):
+A Docker konténerek kommunikálhatnak egymással hálózatok segítségével.
+A Docker alapértelmezett hálózatot hoz létre a konténerek közötti kommunikációhoz.
+
+Orkesztráció (Orchestration):
+A Docker Swarm és a Kubernetes orkesztrációs eszközök a konténerek kezelésére és skálázására szolgálnak egy klaszterben.
+
+Biztonság (Security):
+A Docker névtereket és vezérlési csoportokat használ a folyamatok elszigeteléséhez és erőforrások kezeléséhez.
+Rendszeresen frissítse Docker képeit, és legyen óvatos az ismeretlen képek használatakor.
+Docker előnyei:
+
+Hordozhatóság: A konténerek következetesen futnak különböző környezetekben.
+Skálázhatóság: Könnyen skálázható alkalmazásokat konténerekkel.
+Verziókezelés: Nyomon követheti a képek és konténerek változtatásait.
+Erőforrás-hatékonyság: A konténerek kevesebb erőforrást használnak, mint a hagyományos virtuális gépek.
+Docker használati esetek:
+
+Mikroszolgáltatások: Egyéni szolgáltatások önálló és skálázható telepítése.
+DevOps: Az alkalmazások telepítésének és infrastruktúra-kiosztásnak automatizálása.
+Folyamatos integráció/folyamatos telepítés (CI/CD): Az alkalmazások építése, tesztelése és telepítése egy következetes környezetben.

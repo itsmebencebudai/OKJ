@@ -1,0 +1,52 @@
+Mi is az a Git?
+
+A Git egy elosztott verziókezelő rendszer (DVCS), amelyet a szoftverfejlesztés során végzett forráskódváltoztatások nyomon követésére használnak.
+Lehetővé teszi több fejlesztőnek, hogy egyszerre dolgozzon ugyanazon a projekten, miközben hatékonyan nyomon követi a változtatásokat.
+
+Alapvető fogalmak:
+Tároló (Repo): Egy mappa vagy könyvtár, ahol a Git tárolja a projekt összes fájlját és változatának a történetét.
+Commit: Egy pillanatkép a projekt egy adott pontjáról. A commitok rögzítik a fájlokban végzett változtatásokat.
+Branch: Egy külön fejlesztési ág, amely lehetővé teszi, hogy függetlenül dolgozzon egy funkció vagy hibajavítás felett.
+Merge: Az egyik ágról származó változtatások összevonása egy másikkal, általában funkcióágak integrálására használják a fő ágba.
+Pull Request (PR): Egy mechanizmus a változtatások javaslatára egy ágról és azok beolvasására egy másikba, gyakran együttműködés során használt.
+
+Git Munkafolyamat:
+Klónozás: Másold le a távoli tárolót a helyi gépedre.
+Hozzáadás: Változtatásokat készíts az elkötelezéshez a git add paranccsal.
+Commit: Mentsd el a változtatásokat a helyi tárolóban a git commit paranccsal.
+Push: Feltöltheted a helyi elkötelezéseket a távoli tárolóba a git push paranccsal.
+Pull: Változtatások letöltése és beolvasása egy távoli tárolóból a git pull paranccsal.
+
+Ágazás (Branching):
+Hozz létre egy új ágat a git branch ág_neve paranccsal.
+Válts az ágra a git checkout ág_neve vagy git switch ág_neve paranccsal.
+Hozz létre és vált az új ágra egy lépésben a git checkout -b ág_neve vagy git switch -c ág_neve paranccsal.
+Törölj egy ágat a git branch -d ág_neve paranccsal.
+
+Összeolvasás (Merging):
+Összevonnak változtatásokat egy ágról egy másikkal a git merge ág_neve paranccsal.
+Konfliktusok feloldása, ha azok előfordulnak.
+
+Távoli tárolók (Remote Repositories):
+Adj hozzá egy távoli tárolót a git remote add távoli_név távoli_url paranccsal.
+Töltsd le a változtatásokat egy távoli tárolóból a git fetch távoli_név paranccsal.
+Szedd le a változtatásokat egy távoli tárolóból a git pull távoli_név ág_neve paranccsal.
+Töltsd fel a változtatásokat egy távoli tárolóba a git push távoli_név ág_neve paranccsal.
+
+Gitignore:
+Használj .gitignore fájlt, hogy megad a Gitnek olyan fájlokat és könyvtárakat, amelyeket figyelmen kívül kell hagynia (pl. naplófájlokat, épített fájlokat).
+
+Verziótörténet:
+A commitok történetét a git log paranccsal lehet megtekinteni.
+Az eltéréseket commitok között a git diff paranccsal lehet megtekinteni.
+Visszaállhatsz egy korábbi commitra a git reset vagy git checkout paranccsal.
+
+GitHub és GitLab:
+Népszerű webes platformok a Git tárolók tárhelyezésére, lehetővé téve a közös munkát és a kódkiemeléseket (code review).
+
+Legjobb Gyakorlatok:
+Gyakran kötelezz el értelmes üzenetekkel.
+Mielőtt feltöltenél, szedd le a távoli változtatásokat, hogy konfliktusokat elkerülj.
+Használj ágakat különböző funkciókhoz vagy hibajavításokhoz.
+Tartsd naprakész állapotban a .gitignore fájlt.
+Jól vizsgáld meg a pull kéréseket (PR) az összeolvasás előtt.

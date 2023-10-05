@@ -1,0 +1,59 @@
+Aszinkron JavaScript:
+
+A JavaScript egy egylépéses nyelv, ami azt jelenti, hogy a kód szekvenciálisan fut, egy utasítás után a másik után.
+Azonban a webes alkalmazások gyakran olyan feladatokat kell végrehajtaniuk, amelyek időigényesek, például adatok lekérdezése a szerverről vagy fájlok olvasása. Az aszinkron programozás lehetővé teszi, hogy a JavaScript kezelje az ilyen feladatokat anélkül, hogy blokkolná a fő szálat.
+
+Callback függvények:
+A callback függvények egy gyakori módszer az aszinkron műveletek kezelésére JavaScriptben.
+A callback egy olyan függvény, amit argumentumként adunk át egy másik függvénynek, és akkor hajtódik végre, amikor az adott függvény befejezi a feladatát.
+
+Promise-ok:
+A Promise-ok strukturáltabb módot biztosítanak az aszinkron műveletek kezelésére.
+Egy Promise egy olyan értéket képvisel, amely még nem elérhető, de valamikor a jövőben feloldódik, vagy sikeresen vagy hibával.
+A Promise-ok három állapotban lehetnek: függőben lévő (pending), teljesült (resolved) vagy elutasított (rejected).
+
+Async/Await:
+Az Async/Await egy modern és olvashatóbb módja az aszinkron kód kezelésének JavaScriptben.
+Az async kulcsszót használjuk arra, hogy egy függvényt aszinkronnak jelöljünk meg, ami azt jelenti, hogy mindig egy Promise-t ad vissza.
+Az await kulcsszót használjuk egy async függvényen belül, hogy szüneteltessük a végrehajtást, amíg egy Promise feloldódik. Ez lehetővé teszi, hogy aszinkron kódot írjunk, amely hasonlít a szinkron kódhoz.
+
+Async/Await példa:
+
+javascript
+Copy code
+async function adatLekérdezés() {
+  try {
+    const válasz = await fetch('https://api.példa.com/adatok');
+    const adat = await válasz.json();
+    console.log(adat);
+  } catch (hiba) {
+    console.error('Hiba:', hiba);
+  }
+}
+
+Hibakezelés:
+Az aszinkron kód kezeléséhez használjunk try...catch blokkokat.
+Kezeljük mind a Promise visszautasításokat, mind a futási hibákat.
+
+Promise.all:
+A Promise.all egy olyan módszer, ami egy Promise-okból álló tömböt vesz át, és egy új Promise-t ad vissza.
+Akkor teljesül, amikor az összes Promise teljesül, vagy elutasítódik, ha bármelyik elutasítódik.
+
+Async függvények és visszatérési értékek:
+Az async függvények mindig egy Promise-t adnak vissza.
+A return kulcsszót használhatjuk az async függvényben ahhoz, hogy egy adott értékkel feloldjuk a Promise-t.
+
+Aszinkron iteráció:
+A for...of ciklusokat használhatjuk aszinkron műveletekkel, hogy sorban végrehajtsuk a Promise-okat.
+
+Eseményhurok (Event Loop):
+Az eseményhurok megértése kulcsfontosságú az aszinkron JavaScript kezeléséhez.
+Az eseményhurok felelős a kód végrehajtásának kezeléséért nem blokkoló módon.
+
+Konkurencia és párhuzamosság:
+Az aszinkron JavaScript lehetővé teszi, hogy egyszerre több feladatot végezzünk el anélkül, hogy blokkolnánk a fő szálat, ami növeli a teljesítményt.
+
+Gyakori használati esetek:
+Adatok lekérése API-kból.
+Fájlok olvasása/írása aszinkron módon.
+Felhasználói interakciók kezelése anélkül, hogy befagynánk az UI-ban.
