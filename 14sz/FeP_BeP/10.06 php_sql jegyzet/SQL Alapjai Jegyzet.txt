@@ -1,0 +1,46 @@
+SQL Alapjai Jegyzet
+
+Mi az az SQL?
+SQL (Structured Query Language) egy szabványos nyelv, amit relációs adatbázisok kezelésére és lekérdezésére használnak.
+Az SQL segítségével adatokat lehet hozzáadni, módosítani, lekérdezni és törölni az adatbázisból.
+
+Adatbázisok és Táblák
+Az adatokat adatbázisokban tárolják, amik több táblából állnak.
+A táblák strukturált adatokat tartalmaznak, és oszlopokból állnak, amelyeket mezőknek vagy attribútumoknak is neveznek.
+
+Adattípusok
+Az SQL-ben különböző adattípusok állnak rendelkezésre, például INTEGER, VARCHAR, DATE, és BOOLEAN, amelyek meghatározzák az adatok típusát és méretét.
+
+Adatbázis Műveletek
+Az SQL segítségével létrehozhatunk, módosíthatunk és törölhetünk adatbázisokat és táblákat a CREATE, ALTER és DROP parancsokkal.
+
+Adatok Lekérdezése
+A SELECT parancs segítségével lehetőség van adatok lekérdezésére a táblákból. Példa SELECT nev FROM felhasznalok WHERE kor  18;
+
+Adatok Beillesztése
+Az INSERT INTO parancs lehetővé teszi új sorok hozzáadását egy táblához. Példa INSERT INTO felhasznalok (nev, kor) VALUES ('John', 25);
+
+Adatok Módosítása
+Az UPDATE parancs segítségével lehet adatokat frissíteni egy meglévő sorban. Példa UPDATE felhasznalok SET kor = 26 WHERE nev = 'John';
+
+Adatok Törlése
+A DELETE FROM parancs segítségével lehetőség van sorok törlésére egy táblából. Példa DELETE FROM felhasznalok WHERE nev = 'John';
+
+Szűrés és Sorrendezés
+A WHERE feltétel segítségével lehet adatokat szűrni.
+A ORDER BY parancs használható adatok sorrendezésére.
+
+Csoportosítás és Aggregáció
+Az SQL lehetővé teszi az adatok csoportosítását és aggregációját, például GROUP BY és SUM, COUNT, AVG stb. függvényekkel.
+
+Kapcsolódás és Csatlakozás
+Az SQL segítségével különböző táblákat lehet összekapcsolni vagy csatlakoztatni, hogy összetett lekérdezéseket hajtsunk végre.
+
+Tranzakciókezelés
+Az SQL lehetőséget biztosít tranzakciók kezelésére, amelyek segítségével atomi (egységes) műveleteket lehet végrehajtani az adatbázisban.
+
+Indexek és Teljesítményoptimalizálás
+Az indexek segítségével gyorsítani lehet a lekérdezéseket, mivel megkönnyítik az adatok keresését és rendezését.
+
+Biztonság és Jogosultságkezelés
+Az SQL jogosultságokat lehet beállítani a táblák és adatbázisok szintjén a biztonság érdekében.

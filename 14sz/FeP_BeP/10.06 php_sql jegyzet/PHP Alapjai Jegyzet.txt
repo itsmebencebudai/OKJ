@@ -1,0 +1,45 @@
+PHP Alapjai Jegyzet
+
+Mi az a PHP?
+PHP (Hypertext Preprocessor) egy szerveroldali szkriptnyelv, amit webfejlesztéshez használnak.
+PHP kód a weboldalak dinamikussá tételére szolgál, lehetővé teszi adatok feldolgozását és generálását a szerveren.
+
+PHP Környezet
+PHP-t általában szerveroldalon futtatják. Szükség van egy webszerverre (pl. Apache), és PHP interpreterre.
+A PHP kódokat a weboldal HTML kódjába ágyazhatjuk be, vagy különálló PHP fájlokban tárolhatjuk.
+
+Szintaxis Alapok
+PHP kódokat php és  tagek között helyezzük el.
+A sorok végére ; (pontosvessző) karakterrel zárjuk le a parancsokat.
+Kommenteket két kereszttel  vagy   jellel lehet hozzáadni a kódba.
+
+Változók
+A változók adataink tárolására szolgálnak. Példa $nev = John;
+A változók a változónevek kezdetén dollárjelet ($) tartalmaznak.
+
+Adattípusok
+PHP dinamikus típusú nyelv, de használhatunk következetes típusokat, mint például int, float, string, boolean, és tömb.
+
+Sztringek
+Szövegek megadására idézőjelek használhatók Hello, World! vagy 'Hello, World!'.
+
+Operátorok
+PHP használ aritmetikai, összehasonlító és logikai operátorokat, például +, ==, &&.
+
+Függvények
+Függvényeket a function kulcsszóval definiáljuk, például function osszead($szam1, $szam2) { return $szam1 + $szam2; }.
+
+Feltételes utasítások
+Az if, else if és else segítségével vezérelhetjük a program folyamatát az adott feltételeknek megfelelően.
+
+Ciklusok
+PHP-ben használhatók ciklusok, például a for, while és foreach, hogy ismétlődő feladatokat hajtsunk végre.
+
+Tömbök
+Tömbök adataink csoportosítására és tárolására használhatók. Példa $colors = array(red, green, blue);
+
+Adatbázis kapcsolatok
+PHP segítségével könnyen kapcsolódhatunk adatbázisokhoz, például MySQL-hez, és adatokat lekérdezhetünk vagy módosíthatunk.
+
+Hibakezelés
+PHP lehetőséget biztosít hibák kezelésére és naplózására, például az error_reporting és try-catch mechanizmusok segítségével.
