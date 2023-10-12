@@ -1,32 +1,43 @@
 async function getData(url = "") { // async function getData
     const response = await fetch(url, {
         method: "GET", // post, get, delete, etc.
-        headers: { 
+        headers: {
             "Content-Type": "application/json", // application
         },
     })
+    // alert("HTTP-Error: " + response.status);
     return response.json(); // return
 }
 
-async function postData(url = "",data = {}) {  // async function postData
-    const response = await fetch(url, {  
+async function postData(url = "", data = {}) {  // async function postData
+    const response = await fetch(url, {
         method: "POST", // post, get, delete, etc.
-        headers: { 
+        headers: {
             "Content-Type": "application/json", // application
         },
-        body: JSON.stringify({data}), // JSON
+        body: data, // JSON
     })
-    return response.json(); // return 
+    // if (!response.ok) {
+    //     const message = `An error has occured: ${response.status}`;
+    //     throw new Error(message);
+    // }
+    return response; // return 
+
 }
 
 
-getData("http://localhost:8000", {}).then((data) => { // return data in json format 
-    console.log(data); 
+getData("http://localhost:8000/getdata").then((data) => { // return data in json format 
+    console.log(data);
 });
 
-postData("http://localhost:8000", {}).then((data) => { // return data in json format 
+postData("http://localhost:8000", { a: 5 }).then((response) => { // return data in json format 
+    return response.json()
+}).then((data) => { console.log(data) });
+
+/*postData("http://localhost:8000", {}).then((data) => { // return data in json format 
     console.log(data); 
-});
+});*/
+
 /*postData("http://localhost:8000/szorzas", {}).then((data) => { // return data in json format  
     console.log(data);
 }); */
