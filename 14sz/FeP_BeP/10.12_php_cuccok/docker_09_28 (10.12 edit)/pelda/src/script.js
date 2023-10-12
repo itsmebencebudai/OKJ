@@ -7,9 +7,6 @@ async function getData(url = "") { // async function getData
     })
     return response.json(); // return
 }
-getData("http://localhost:8000", {}).then((data) => { // return data in json format 
-    console.log(data); 
-});
 
 async function postData(url = "",data = {}) {  // async function postData
     const response = await fetch(url, {  
@@ -21,13 +18,15 @@ async function postData(url = "",data = {}) {  // async function postData
     })
     return response.json(); // return 
 }
+
+
+getData("http://localhost:8000", {}).then((data) => { // return data in json format 
+    console.log(data); 
+});
+
 postData("http://localhost:8000", {}).then((data) => { // return data in json format 
     console.log(data); 
 });
 /*postData("http://localhost:8000/szorzas", {}).then((data) => { // return data in json format  
     console.log(data);
 }); */
-
-getData("https://localhost:8000").then((data) => { // return data in json format 
-    console.log(data);
-});
