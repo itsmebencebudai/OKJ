@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reg.css">
+    <script src="./reg.js"></script> 
+    <script src="../script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="login-box">
+        <h2>Regisztráció</h2>
+        <form id="reg" action="" method="POST">
+            <div class="user-box">
+                <input type="text" name="name" id="userName" required="">
+                <label>Felhasználónév</label>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" id="" required="">
+                <label>Email-cím</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" id="" required="">
+                <label>Jelszó</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="accountNumber" id="" required="">
+                <label>Bankszámlaszám</label>
+            </div>
+            <a id="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Adat felvitel
+            </a>
+            <input type="submit" value="Adat felvitel">
+        </form>
+    </div>
+<script>
+const a = document.getElementById('a');
+
+a.addEventListener("click", (e) => {
+    document.getElementById('reg').submit();
+})    
+
+const form = document.getElementById('reg');
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    new FormData(form);
+}) 
+
+form.addEventListener("formdata",(e) => {
+    const formData = e.formData;
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        password: formData.get('password'),
+        accountNumber: formData.get('accountNumber')
+    }    
+    regDataSave(data);
+})
+
+</script>
+     
+</body>
+</html>
