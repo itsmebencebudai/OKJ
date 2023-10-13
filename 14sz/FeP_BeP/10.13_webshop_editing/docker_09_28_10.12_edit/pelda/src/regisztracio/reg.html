@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-steps@1.1.0/build/jquery.steps.min.js"></script>
+    <script src="../script.js"></script>
+    <!-- <script type="module" src="../script_copy.mjs"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-box">
+        <div id="registration-progress">
+            <div class="progress-bar"></div>
+        </div>
+        <h2>Regisztráció</h2>
+        <form id="reg" action="" method="post"> <!-- action üres akkor magát hívja meg újra-->
+            <div id="step-1" class="registration-step">
+                <div class="user-box">
+                    <input type="text" name="userName" id="userName" required onchange="OnchangeProgressbar()">
+                    <label>Felhasználónév</label>
+                </div>
+            </div>
+            <div id="step-2" class="registration-step">
+                <div class="user-box">
+                    <input type="email" name="userEmail" id="userEmail" required onchange="OnchangeProgressbar()">
+                    <label>Email-cím</label>
+                </div>
+            </div>
+            <div id="step-3" class="registration-step">
+                <div class="user-box">
+                    <input type="password" name="userPassword" id="userPassword" required
+                        onchange="OnchangeProgressbar()">
+                    <label>Jelszó</label>
+                </div>
+            </div>
+            <div id="step-4" class="registration-step">
+                <div class="user-box">
+                    <input type="text" name="AccountNumber" id="AccountNumber" required
+                        onchange="OnchangeProgressbar()">
+                    <label>Bankszámlaszám</label>
+                </div>
+            </div>
+            <a id="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Adat felvitel
+            </a>
+            <!-- onclick="document.getElementById('reg').addEventListener('click', regDataSave);" ondblclick="submit()"  -->
+            <input type="submit" value="Adat felvitel" id="a">
+            <!-- <input type="submit" value="Adat felvitel" id="fancyButton" onclick="document.getElementById('reg').addEventListener('click', regDataSave);"> -->
+        </form>
+    </div>
+    <script>
+        const a = document.getElementById('a');
+        a.addEventListener("click", (e) => {
+            document.getElementById('reg').submit();
+        });
+
+        const form = document.getElementById('reg');
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(form);
+        });
+
+        form.addEventListener('formdata', (e) => {
+            const formData = e.formData;
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                password: formData.get('password'),
+                accountNumber: formData.get('accountNumber'),
+            };
+            console.log(data);
+        });
+    </script>
+    <script src="../regisztracio/reg.js"></script>
+</body>
+
+</html>
