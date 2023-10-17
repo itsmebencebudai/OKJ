@@ -1,0 +1,11 @@
+.my-custom-table {
+    background-color: #f0f8ff; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    color: aqua;
+}
