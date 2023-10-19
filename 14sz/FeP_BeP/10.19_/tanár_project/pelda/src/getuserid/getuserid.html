@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="getuserid.css">
+    <script src="../script.js"></script>
+    <title>GetUserId</title>
+</head>
+
+<body>
+    <h1>Get User Data</h1>
+    <form id="userDataForm">
+        <label for="userId">Enter User ID: </label>
+        <input type="text" id="userId" name="userId" required>
+        <button type="submit">Retrieve User Data</button>
+    </form>
+    <div id="userDataResult"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('userDataForm');
+            const resultDiv = document.getElementById('userDataResult');
+
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+                const userId = document.getElementById('userId').value;
+
+                try {
+                    const response = await fetch(`/getuserdata?userId=${userId}`);
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        resultDiv.innerHTML = `<p>User ID: ${data.userID}, Name: ${data.name}, Email: ${data.email}</p>`;
+                    } else {
+                        resultDiv.innerHTML = `<p>Error: ${data.error}</p>`;
+                    }
+                } catch (error) {
+                    console.error(error);
+                    resultDiv.innerHTML = `<p>An error occurred while fetching user data.</p>`;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
