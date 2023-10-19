@@ -15,6 +15,25 @@ namespace harom_harom
         public Form1()
         {
             InitializeComponent();
+            listBox1.Text = string.Empty;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string s = Convert.ToString(textBox1.Text);
+            listBox1.Items.Add(s);
+            textBox1.Text = string.Empty;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int x = listBox1.SelectedIndex;
+            listBox1.Items.RemoveAt(x);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
         }
     }
 }

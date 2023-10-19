@@ -7,3 +7,13 @@ C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.csproj.CoreCompileInputs.cache
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.exe
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.pdb
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\bin\Debug\harom-ketto.exe.config
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\bin\Debug\harom-ketto.exe
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\bin\Debug\harom-ketto.pdb
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.csproj.AssemblyReference.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom_ketto.Form1.resources
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom_ketto.Properties.Resources.resources
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.csproj.GenerateResource.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.csproj.CoreCompileInputs.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.exe
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-ketto\harom-ketto\obj\Debug\harom-ketto.pdb

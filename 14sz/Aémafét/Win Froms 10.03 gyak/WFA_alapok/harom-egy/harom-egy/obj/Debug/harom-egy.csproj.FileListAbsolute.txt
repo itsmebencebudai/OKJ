@@ -8,3 +8,13 @@ C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.csproj.CoreCompileInputs.cache
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.exe
 C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.pdb
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\bin\Debug\harom-egy.exe.config
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\bin\Debug\harom-egy.exe
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\bin\Debug\harom-egy.pdb
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.csproj.AssemblyReference.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom_egy.Form1.resources
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom_egy.Properties.Resources.resources
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.csproj.GenerateResource.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.csproj.CoreCompileInputs.cache
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.exe
+F:\OKJ\14sz\Aémafét\Win Froms 10.03 gyak\WFA_alapok\harom-egy\harom-egy\obj\Debug\harom-egy.pdb
