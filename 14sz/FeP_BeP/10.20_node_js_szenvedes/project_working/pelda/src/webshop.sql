@@ -1,4 +1,4 @@
--- Active: 1675412648823@@127.0.0.1@3306@webshop
+-- Active: 1695968358990@@127.0.0.1@3306@webshop_tanar2
 CREATE DATABASE webshop
     DEFAULT CHARACTER SET = 'utf8' COLLATE utf8_hungarian_ci;
 
@@ -12,7 +12,10 @@ create table IF NOT EXISTS User (
     skippingID int NULL
 ) Engine=Innodb;    
 
-CREATE TABLE IF NOT EXISTS Address (addressID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+DROP TABLE Address;
+CREATE TABLE IF NOT EXISTS Address (
+    userID int NOT NULL,
+    addressID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     zipCode CHAR(4) NOT NULL,
     city VARCHAR(40) NOT NULL,
     street varchar(50) NOT NULL,
@@ -52,6 +55,7 @@ CREATE TABLE IF NOT EXISTS InvoiceItem (
 ) Engine=Innodb;
 
 ALTER TABLE User ADD FOREIGN KEY (addressId) REFERENCES Address(addressID);
+ALTER TABLE User ADD FOREIGN KEY (userID) REFERENCES Address(userID);
 ALTER TABLE User ADD FOREIGN KEY (skippingId) REFERENCES Address(addressID);
 ALTER TABLE Cart ADD FOREIGN KEY (userId) REFERENCES User(userID);
 ALTER TABLE Invoice ADD FOREIGN KEY (userId) REFERENCES User(userID);
@@ -67,8 +71,8 @@ insert into `Address` VALUES
     (null,1134,'Budapest','Váci út 25 1/3',null),
     (null,4587,'Esztergom','Béke ut 25',null);
 
-insert INTO `Address` (`addressID`,`zipCode`,city,street) VALUES
-     (null,1117,'Budapest','Móricz Zsigmond utca 13');
+insert INTO `Address` (userID,`addressID`,`zipCode`,city,street) VALUES
+     (NULL,null,1117,'Budapest','Móricz Zsigmond utca 13');
 
 
 
@@ -79,6 +83,8 @@ INSERT INTO `Products` VALUES
     (null,'Hp laptop','Ez egy jó gyors laptop',784654,5);
 
 Select * from User;
+
+SELECT * FROM address
 
 select * from User join `Address` on User.`addressID` = Address.`addressID` ;
 

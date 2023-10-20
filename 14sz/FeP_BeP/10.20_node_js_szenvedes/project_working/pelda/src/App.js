@@ -41,12 +41,13 @@ app.post('/user', (req,res) => {
     })
     const sql = 'insert into User (name,email,password,accountNumber) values ("' +req.body.name + '","'+ req.body.email+'","'+ req.body.password+'","'+ req.body.accountNumber+'")';
     const sql2 = 'insert into User (name,email,password,accountNumber) values (?,?,?,?)';
+    const sl3 = 'insert into Address (addressID,zipCode,city,street,delevery) values (?,?,?,?)';
     
     console.log(sql);
-    con.query(sql2,[req.body.name,req.body.email,req.body.password,req.body.accountNumber], (err,result) =>{
+    con.query(sql3,[req.body.addressID,req.body.zipCode,req.body.city,req.body.street,req.body.delevery], (err,result) =>{
         console.log(err);
-        if (err) 
-            if (err.errno == 1062) res.status(404).send({status: 404 , error: "Már létező email cím"});
+        // if (err) 
+        //     if (err.errno == 1062) res.status(404).send({status: 404 , error: "Már létező email cím"});
         
         res.send(result);
     })   
@@ -58,7 +59,7 @@ app.get('/user/:id', (req,res) => {
         if (err) throw err;
         console.log('sikeres csatlakozás');
     })
-    con.query('select * from User where userID = ?',[req.params['id']], (err,result) =>{
+    con.query('select * from Address where userID = ?',[req.params['id']], (err,result) =>{
         if (err) throw err;
         res.send(result);
     })  
