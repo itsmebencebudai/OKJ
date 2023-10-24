@@ -1,11 +1,60 @@
 .my-custom-table {
-    background-color: #f0f8ff; 
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #333;
-    border: 1px solid #ddd;
+    color: aqua;
+    background-color: transparent;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    height: 100%;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/117/455/641/mercedes-amg-petronas-f1-car-formula-1-racing-car-wallpaper-preview.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 h1 {
     color: aqua;
+    text-align: center;
+}
+
+h3 {
+    color: aqua;
+    text-align: center;
+}
+
+.queryselector {
+    text-align: center;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    color: black;
+}
+
+select option:checked {
+    background-color: aquamarine;
+    color: gray;
+}
+
+th {
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+td {
+    color: aqua;
+    font-size:medium;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
 }

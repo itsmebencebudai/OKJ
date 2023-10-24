@@ -25,47 +25,45 @@ namespace autoverseny
         private readonly string sql_create_database = "CREATE DATABASE IF NOT EXISTS autoverseny DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci";
         
 
-        //csapat
-        private readonly string sql_create_table_csapat = "CREATE TABLE IF NOT EXISTS csapat (" +
-                "  id int," +
-                "  nev varchar(255)," +
-                "  alapitva int," +
-                "  PRIMARY KEY(id)); ";
+        ////csapat
+        //private readonly string sql_create_table_csapat = "CREATE TABLE IF NOT EXISTS csapat (" +
+        //        "  id int," +
+        //        "  nev varchar(255)," +
+        //        "  alapitva int," +
+        //        "  PRIMARY KEY(id)); ";
 
-        //versenyzo
-        private readonly string sql_create_table_versenyzo = "CREATE TABLE IF NOT EXISTS versenyzo (" +
-                "  id int," +
-                "  nev varchar(255)," +
-                "  eletkor int," +
-                "  csapatid int," +
-                "  PRIMARY KEY(id)," +
-                "  CONSTRAINT FK_versenyzo_csapat_id FOREIGN KEY(csapatid) REFERENCES csapat(id)); ";
+        ////versenyzo
+        //private readonly string sql_create_table_versenyzo = "CREATE TABLE IF NOT EXISTS versenyzo (" +
+        //        "  id int," +
+        //        "  nev varchar(255)," +
+        //        "  eletkor int," +
+        //        "  csapatid int," +
+        //        "  PRIMARY KEY(id)," +
+        //        "  CONSTRAINT FK_versenyzo_csapat_id FOREIGN KEY(csapatid) REFERENCES csapat(id)); ";
 
-        //palya
-        private readonly string sql_create_table_palya = "CREATE TABLE IF NOT EXISTS palya (" +
-                "  id int," +
-                "  nev varchar(255)," +
-                "  hossz float," +
-                "  orszag varchar(255)," +
-                "  PRIMARY KEY(id)); ";
+        ////palya
+        //private readonly string sql_create_table_palya = "CREATE TABLE IF NOT EXISTS palya (" +
+        //        "  id int," +
+        //        "  nev varchar(255)," +
+        //        "  hossz float," +
+        //        "  orszag varchar(255)," +
+        //        "  PRIMARY KEY(id)); ";
 
-        //korido
-        private readonly string sql_create_table_korido = "CREATE TABLE IF NOT EXISTS korido (" +
-                "  id int," +
-                "  palyaid int," +
-                "  versenyzoid int," +
-                "  korido time DEFAULT NULL," +
-                "  kor int DEFAULT NULL," +
-                "  PRIMARY KEY(id)," +
-                "  CONSTRAINT FK_korido_palya_id FOREIGN KEY(palyaid) REFERENCES palya(id)," +
-                "  CONSTRAINT FK_korido_versenyzo_id FOREIGN KEY(versenyzoid) REFERENCES versenyzo(id)); ";
+        ////korido
+        //private readonly string sql_create_table_korido = "CREATE TABLE IF NOT EXISTS korido (" +
+        //        "  id int," +
+        //        "  palyaid int," +
+        //        "  versenyzoid int," +
+        //        "  korido time DEFAULT NULL," +
+        //        "  kor int DEFAULT NULL," +
+        //        "  PRIMARY KEY(id)," +
+        //        "  CONSTRAINT FK_korido_palya_id FOREIGN KEY(palyaid) REFERENCES palya(id)," +
+        //        "  CONSTRAINT FK_korido_versenyzo_id FOREIGN KEY(versenyzoid) REFERENCES versenyzo(id)); ";
         
 
         public Form1()
         {
             InitializeComponent();
-
-
         }
 
         private void feladatoklista_combobox_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,22 +86,49 @@ namespace autoverseny
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {
                         connection.Open();
-
-                        string sqlFileContents = File.ReadAllText("adatok.sql");
-                        string[] sqlCommands = sqlFileContents.Split(new[] { "GO" }, StringSplitOptions.RemoveEmptyEntries);
-
-                        foreach (string sqlCommand in sqlCommands)
+                        try
                         {
-                            using (MySqlCommand command = new MySqlCommand(sqlCommand, connection))
+                            //tablak.sql
+                            string sqlFileContents = File.ReadAllText("tablak.sql");
+                            string[] sqlCommands = sqlFileContents.Split(new[] { "GO" }, StringSplitOptions.RemoveEmptyEntries);
+
+                            foreach (string sqlCommand in sqlCommands)
                             {
-                                command.ExecuteNonQuery();
+                                using (MySqlCommand command = new MySqlCommand(sqlCommand, connection))
+                                {
+                                    command.ExecuteNonQuery();
+                                }
                             }
+                            MessageBox.Show("SQL kommandok az tablak.sql-ből sikeresen megtörténtek.");
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error: {ex.Message}");
                         }
 
-                        MessageBox.Show("SQL kommandok az adatok.sql-ből sikeresen megtörténtek.");
+                        try
+                        {
+                            //adatok.sql
+                            string sqlFileContents = File.ReadAllText("adatok.sql");
+                            string[] sqlCommands = sqlFileContents.Split(new[] { "GO" }, StringSplitOptions.RemoveEmptyEntries);
+
+                            foreach (string sqlCommand in sqlCommands)
+                            {
+                                using (MySqlCommand command = new MySqlCommand(sqlCommand, connection))
+                                {
+                                    command.ExecuteNonQuery();
+                                }
+                            }
+                            MessageBox.Show("SQL kommandok az adatok.sql-ből sikeresen megtörténtek.");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error: {ex.Message}");
+                        }
+
                         connection.Close();
                         feltoltes = true;
-
                     }
                 }
                 catch (Exception ex)
@@ -223,17 +248,17 @@ namespace autoverseny
             conn = new MySqlConnection("server=localhost;username=root;database=autoverseny;port=3306;password=");
             conn.Open();
 
-            //table csapat
-            new MySqlCommand(sql_create_table_csapat, conn).ExecuteNonQuery();
+            ////table csapat
+            //new MySqlCommand(sql_create_table_csapat, conn).ExecuteNonQuery();
 
-            //table palya
-            new MySqlCommand(sql_create_table_palya, conn).ExecuteNonQuery();
+            ////table palya
+            //new MySqlCommand(sql_create_table_palya, conn).ExecuteNonQuery();
 
-            //table versenyzo 
-            new MySqlCommand(sql_create_table_versenyzo, conn).ExecuteNonQuery();
+            ////table versenyzo 
+            //new MySqlCommand(sql_create_table_versenyzo, conn).ExecuteNonQuery();
 
-            //table korido
-            new MySqlCommand(sql_create_table_korido, conn).ExecuteNonQuery();
+            ////table korido
+            //new MySqlCommand(sql_create_table_korido, conn).ExecuteNonQuery();
 
             conn.Close();
         }

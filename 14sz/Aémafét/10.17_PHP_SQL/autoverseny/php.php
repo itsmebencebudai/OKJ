@@ -118,102 +118,132 @@ $sql_query_4 = "SELECT palya.nev AS palya_nev, versenyzo.nev AS versenyzo_nev, k
                 INNER JOIN palya ON korido.palyaid = palya.id
                 WHERE palya.orszag = 'Olaszország'
                 ORDER BY korido.korido ASC";
-
-// Execute and display
-
-echo '<!DOCTYPE html>';
-echo '<html lang="hu">';
-echo '<head>';
-echo '<meta charset="UTF-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
-echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">';
-echo '<link rel="stylesheet" type="text/css" href="./style.css">';
-echo '<title>Autó Verseny</title>';
-echo '</head>';
-echo '<body>';
-echo '<h1 style="color: #007BFF; font-size: 24px; text-align: center;">Autóverseny</h1>';
-echo '<div class="container">';
-echo "<h3>Query 1: A résztvevők nevei életkor szerint rendezve</h3>";
-$sql_query_1_stmt = $conn->prepare($sql_query_1);
-$sql_query_1_stmt->execute();
-
-echo "<div class='table-responsive' style='font-family: Arial, sans-serif; background-color: #f5f5f5;'>";
-echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif; background-color: #ffffff;'>";
-echo "<thead><tr><th>Résztvevő neve</th></tr></thead>";
-echo "<tbody>";
-
-while ($row = $sql_query_1_stmt->fetch()) {
-    echo "<tr>";
-    echo "<td>" . $row['nev'] . "</td>";
-    echo "</tr>";
-}
-
-echo "</tbody>";
-echo "</table>";
-echo "</div>";
-
-
-echo "<h3>Query 2: A „nev” száma a „palya” táblázatban</h3>";
-$sql_query_2_stmt = $conn->prepare($sql_query_2);
-$sql_query_2_stmt->execute();
-$count = $sql_query_2_stmt->fetchColumn();
-
-echo "<div class='table-responsive' style='font-family: Arial, sans-serif; background-color: #f5f5f5;'>";
-echo "<table class='table table-bordered table-sm my-custom-table' style='font-family: Arial, sans-serif; background-color: #ffffff;'>";
-
-echo "<thead><tr><th>Száma</th></tr></thead>";
-echo "<tbody>";
-echo "<tr><td>" . $count . "</td></tr>";
-echo "</tbody>";
-echo "</table>";
-echo "</div>";
-
-
-
-echo "<h3>Query 3: Csapatok és résztvevők nevei (csapat.nev LIKE '%z%')</h3>";
-$sql_query_3_stmt = $conn->prepare($sql_query_3);
-$sql_query_3_stmt->execute();
-
-echo "<div class='table-responsive' style='font-family: Arial, sans-serif; background-color: #f5f5f5;'>";
-echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif; background-color: #ffffff;'>";
-echo "<thead><tr><th>Csapat</th><th>Résztvevő</th></tr></thead>";
-echo "<tbody>";
-
-while ($row = $sql_query_3_stmt->fetch()) {
-    echo "<tr>";
-    echo "<td>" . $row['csapat_nev'] . "</td>";
-    echo "<td>" . $row['versenyzo_nev'] . "</td>";
-    echo "</tr>";
-}
-
-echo "</tbody>";
-echo "</table>";
-echo "</div>";
-
-
-
-echo "<h3>Query 4: Palyai Olaszország résztvevőinek nevei</h3>";
-$sql_query_4_stmt = $conn->prepare($sql_query_4);
-$sql_query_4_stmt->execute();
-
-echo "<div class 'table-responsive' style='font-family: Arial, sans-serif; background-color: #f5f5f5;'>";
-echo "<table class='table table-bordered table-hover table-sm my-custom-table' style='font-family: Arial, sans-serif; background-color: #ffffff;'>";
-echo "<thead><tr><th>Track</th><th>Participant</th><th>Lap Time</th></tr></thead>";
-echo "<tbody>";
-
-while ($row = $sql_query_4_stmt->fetch()) {
-    echo "<tr>";
-    echo "<td>" . $row['palya_nev'] . "</td>";
-    echo "<td>" . $row['versenyzo_nev'] . "</td>";
-    echo "<td>" . $row['korido'] . "</td>";
-    echo "</tr>";
-}
-
-echo "</tbody>";
-echo "</table>";
-echo "</div>";
-echo "</div>";
-echo '</body>';
-echo '</html>';
-
 ?>
+
+<!-- Execute and display -->
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Autó Verseny</title>
+</head>
+
+<body class="bg">
+    <h1>Autóverseny</h1>
+    <div class="container">
+        <script src="./script.js"></script>
+        <div class="queryselector">
+            <select name="cars" id="cars" onchange="handleSelection()">
+                <option value="valassz" selected>Válasszon egy feladatot</option>
+                <option value="query1">Query 1: A résztvevők nevei életkor szerint rendezve</option>
+                <option value="query2">Query 2: A „nev” száma a „palya” táblázatban</option>
+                <option value="query3">Query 3: Csapatok és résztvevők nevei (csapat.nev LIKE "%z%" )</option>
+                <option value="query4">Query 4: Palyai Olaszország résztvevőinek nevei</option>
+            </select>
+        </div>
+        <div class='query1_table' style="display: none;">
+            <h3>Query 1: A résztvevők nevei életkor szerint rendezve</h3>
+            <?php
+            $sql_query_1_stmt = $conn->prepare($sql_query_1);
+            $sql_query_1_stmt->execute();
+            echo "<div class='table-responsive' style='font-family: Arial, sans-serif;'>";
+            echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif;'>";
+            echo "<thead>
+                        <tr>
+                            <th>Résztvevő neve</th>
+                        </tr>
+                    </thead>";
+            echo "<tbody>";
+            while ($row = $sql_query_1_stmt->fetch()) {
+                echo "<tr>";
+                echo "<td>" . $row['nev'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</tbody>";
+            echo "</table>";
+            echo "</div>";
+            ?>
+        </div>
+        <div class='query2_table' style="display: none;">
+            <h3>Query 2: A „nev” száma a „palya” táblázatban</h3>
+            <?php
+            $sql_query_2_stmt = $conn->prepare($sql_query_2);
+            $sql_query_2_stmt->execute();
+            $count = $sql_query_2_stmt->fetchColumn();
+            echo "<div class='table-responsive' style='font-family: Arial, sans-serif;'>";
+            echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif;'>";
+            echo "<thead>
+                        <tr>
+                            <th>Száma</th>
+                        </tr>
+                    </thead>";
+            echo "<tbody>
+                        <tr>
+                            <td>" . $count . "</td>
+                        </tr>
+                    </tbody>";
+            echo "</table>";
+            echo "</div>";
+            ?>
+        </div>
+        <div class='query3_table' style="display: none;">
+            <h3>Query 3: Csapatok és résztvevők nevei (csapat.nev LIKE '%z%')</h3>
+            <?php
+            $sql_query_3_stmt = $conn->prepare($sql_query_3);
+            $sql_query_3_stmt->execute();
+            echo "<div class='table-responsive' style='font-family: Arial, sans-serif;'>";
+            echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif;'>";
+            echo "<thead>
+                        <tr>
+                            <th>Csapat</th>
+                            <th>Résztvevő</th>
+                        </tr>
+                    </thead>";
+            echo "<tbody>";
+            while ($row = $sql_query_3_stmt->fetch()) {
+                echo "<tr>";
+                echo "<td>" . $row['csapat_nev'] . "</td>";
+                echo "<td>" . $row['versenyzo_nev'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</tbody>";
+            echo "</table>";
+            echo "</div>";
+            ?>
+        </div>
+        <div class='query4_table' style="display: none;">
+            <h3>Query 4: Palyai Olaszország résztvevőinek nevei</h3>
+            <?php
+            $sql_query_4_stmt = $conn->prepare($sql_query_4);
+            $sql_query_4_stmt->execute();
+            echo "<div class='table-responsive' style='font-family: Arial, sans-serif;'>";
+            echo "<table class='table table-striped table-sm my-custom-table' style='font-family: Arial, sans-serif;'>";
+            echo "<thead>
+                        <tr>
+                            <th>Track</th>
+                            <th>Participant</th>
+                            <th>Lap Time</th>
+                        </tr>
+                    </thead>";
+            echo "<tbody>";
+            while ($row = $sql_query_4_stmt->fetch()) {
+                echo "<tr>";
+                echo "<td>" . $row['palya_nev'] . "</td>";
+                echo "<td>" . $row['versenyzo_nev'] . "</td>";
+                echo "<td>" . $row['korido'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</tbody>";
+            echo "</table>";
+            echo "</div>";
+            ?>
+        </div>
+    </div>
+</body>
+
+</html>
