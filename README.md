@@ -10,4 +10,3 @@
 <summary>My top THINGS-TO-RANK</summary>
 YOUR TABLE
 </details>
-![Uploading image.png…]()
