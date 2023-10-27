@@ -1,5 +1,6 @@
 # OKJ
 
+
 | Rank | Languages |     |
 |-----:|-----------|-----|
 |     1| Javascript|teszt|
@@ -33,3 +34,10 @@ YOUR TABLE
 
 
 Use `git status` to list all new or modified files that haven't yet been committed.
+
+Some basic Git commands:
+```
+git status
+git add
+git commit
+```
