@@ -25,3 +25,8 @@ YOUR TABLE
 ## About me
 
 <!-- TODO: add more details about me later -->
+
+
+# A first-level heading
+## A second-level heading
+### A third-level heading
