@@ -88,7 +88,6 @@ A footnote can also have multiple lines[^2].
 
 > [!WARNING]
 > Critical content demanding immediate user attention due to potential risks
-![Uploading image.png…]()
 
 
 
