@@ -89,6 +89,7 @@ A footnote can also have multiple lines[^2].
 > [!WARNING]
 > Critical content demanding immediate user attention due to potential risks
 
+Let's rename \*our-new-project\* to \*our-old-project\*.
 
 
 
