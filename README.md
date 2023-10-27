@@ -78,7 +78,6 @@ A footnote can also have multiple lines[^2].
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
   This is a second line.
 
-![image](https://github.com/itsmebencebudai/OKJ/assets/145671524/049d99de-b8fb-48d2-a027-a321ff95dd91)
 
 
 
