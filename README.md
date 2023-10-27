@@ -1,10 +1,10 @@
 # OKJ
 
-| Rank | Languages |
+| Rank | Languages |     |
 |-----:|-----------|-----|
 |     1| Javascript|teszt|
-|     2| Python    |-----|
-|     3| SQL       |
+|     2| Python    |     |
+|     3| SQL       |     |
 
 <details>
 <summary>My top THINGS-TO-RANK</summary>
