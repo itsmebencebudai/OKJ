@@ -20,3 +20,8 @@ YOUR TABLE
 > If we pull together and commit ourselves, then we can push through anything.
 
 — Mona the Octocat
+
+
+## About me
+
+<!-- TODO: add more details about me later -->
