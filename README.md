@@ -1,9 +1,9 @@
 # OKJ
 
 | Rank | Languages |
-|-----:|-----------|
-|     1| Javascript|
-|     2| Python    |
+|-----:|-----------|-----|
+|     1| Javascript|teszt|
+|     2| Python    |-----|
 |     3| SQL       |
 
 <details>
