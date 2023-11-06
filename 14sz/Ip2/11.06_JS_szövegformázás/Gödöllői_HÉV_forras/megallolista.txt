@@ -1,0 +1,22 @@
+  <select>
+   <option value="0">Gödöllő</option>
+   <option value="2">Gödöllő, Palotakert</option>
+   <option value="4">Gödöllő, Szabadság tér</option>
+   <option value="6">Gödöllő, Erzsébet park</option>
+   <option value="11">Szentjakab</option>
+   <option value="15">Mogyoród</option>
+   <option value="19">Szilasliget</option>
+   <option value="22">Kerepes</option>
+   <option value="23">Zsófialiget</option>
+   <option value="25">Kistarcsa</option>
+   <option value="27">Kistarcsa, kórház</option>
+   <option value="30">Ilonatelep</option>
+   <option value="34">Cinkota</option>
+   <option value="36">Mátyásföld alsó</option>
+   <option value="37">Mátyásföld, Imre utca</option>
+   <option value="39">Mátyásföld, repülőtér</option>
+   <option value="41">Sashalom</option>
+   <option value="43">Nagyicce</option>
+   <option value="45">Rákosfalva</option>
+   <option value="48">Örs vezér tere</option>
+  </select>
