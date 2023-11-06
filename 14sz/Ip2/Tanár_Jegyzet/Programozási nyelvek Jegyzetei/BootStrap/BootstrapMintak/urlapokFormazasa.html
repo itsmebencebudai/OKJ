@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Bootstrap űrlap elemek formázási lehetőségei</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        hr {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bootstrap nélküli</h1>
+    <form action="">
+        <label for="fnev">Felhasználói név:</label>
+        <input type="text" name="fnev" id="fnev">
+        <label for="jsz">Jelszó:</label>
+        <input type="password" name="jsz" id="jsz">
+        <label for="tanf">Tanfolyam típusa</label>
+        <select name="tanf" id="tanf">
+            <option>Webfejlesztő</option>
+            <option>Junior frontend fejlesztő</option>
+        </select>
+        <label for="check">Felhasználói feltételek elfogadása</label>
+        <input type="checkbox" name="check" id="check">
+        <input type="button" value="Küldés">
+    </form>
+
+
+
+
+    <hr>
+    <h1>Alap Bootstrap</h1>
+    <form action="">
+        <!--Ha a form elemekhez hozzárendeljük a form-control osztály azonnal felveszi a bootstrapben beállított alap tulajdonságokat-->
+        <label for="fnev">Felhasználói név:</label>
+        <input type="text" name="fnev" id="fnev" class="form-control">
+        <label for="jsz">Jelszó:</label>
+        <input type="password" name="jsz" id="jsz" class="form-control">
+        <label for="tanf">Tanfolyam típusa</label>
+        <select name="tanf" id="tanf" class="form-control">
+            <option>Webfejlesztő</option>
+            <option>Junior frontend fejlesztő</option>
+        </select>
+        <!--Checkbox esetén speciális osztályokat használunk a formázáshoz az alábbi módon-->
+        <!--[form-check] div-be tesszük a megfelelő igazításhoz-->
+        <div class="form-check">
+            <!--[form-check-label] a checkbox címkéjéhez-->
+            <label for="check" class="form-check-label">Felhasználói feltételek elfogadása</label>
+
+            <!--[form-check-input] a checkbox dobozához, form-control csak elnyújtaná :) -->
+            <input type="checkbox" name="check" id="check" class="form-check-input">
+        </div>
+        <button class="form-control">Küldés</button>
+    </form>
+
+
+
+
+    <hr>
+    <h1>Szélesség beállítása és form-group használatával</h1>
+    <form action="" style="width:400px; margin:0px auto;">
+        <!--Szélességet egyszerűen inline állítjuk be, máris "szebb képet ad"-->
+        <!--A [form group] tulajdonság egységes csoportokba szedi az elemeket, köréjük minimális extra margót állít be-->
+        <div class="form-group">
+            <label for="fnev">Felhasználói név:</label>
+            <input type="text" name="fnev" id="fnev" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="jsz">Jelszó:</label>
+            <input type="password" name="jsz" id="jsz" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tanf">Tanfolyam típusa</label>
+            <select name="tanf" id="tanf" class="form-control">
+                <option>Webfejlesztő</option>
+                <option>Junior frontend fejlesztő</option>
+            </select>
+        </div>
+        <div class="form-check">
+            <!--[form-check] esetén nincs szükség külön form group használatára-->
+            <label for="check" class="form-check-label">Felhasználói feltételek elfogadása</label>
+            <input type="checkbox" name="check" id="check" class="form-check-input">
+        </div>
+        <button class="form-control">Küldés</button>
+    </form>
+
+
+
+
+    <hr>
+    <h1>Form elemek egymás mellé helyezése bootstrap rács segítségével</h1>
+    <form action="" style="width:400px; margin:0px auto;">
+        <div class="row">
+            <!--A row tulajdonsággal ugye egymás mellett kezeledő elemet fogunk elhelyezni-->
+            <div class="col">
+                <!--Ha csak simán a col értéket állítjuk be az elemek az adott "sorban" mindig egyforma szélesek!-->
+                <div class="form-group">
+                    <label for="vnev">Vezeték név:</label>
+                    <input type="text" name="vnev" id="vnev" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <!--Ha csak simán a col értéket állítjuk be az elemek az adott "sorban" mindig egyforma szélesek!-->
+                <div class="form-group">
+                    <label for="knev">Kereszt név:</label>
+                    <input type="text" name="knev" id="knev" class="form-control">
+                </div>
+            </div>
+        </div>
+        <!--A bootstrap automatikusan elvégzi az igazítást és merettől függően mindig arányos képet kapunk-->
+        <div class="form-group">
+            <label for="fnev">Felhasználói név:</label>
+            <input type="text" name="fnev" id="fnev" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="jsz">Jelszó:</label>
+            <input type="password" name="jsz" id="jsz" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tanf">Tanfolyam típusa</label>
+            <select name="tanf" id="tanf" class="form-control">
+                <option>Webfejlesztő</option>
+                <option>Junior frontend fejlesztő</option>
+            </select>
+        </div>
+        <div class="form-check">
+            <label for="check" class="form-check-label">Felhasználói feltételek elfogadása</label>
+            <input type="checkbox" name="check" id="check" class="form-check-input">
+        </div>
+        <button class="form-control">Küldés</button>
+    </form>
+
+
+
+
+    <hr>
+    <h1>Validálási beállítások, kinézetének beállítása</h1>
+    <form action="" style="width:500px; margin:0px auto;" class="needs-validation" novalidate>
+        <!--[needs-validation] bekapcsolja a validálási funkciót az adott formnál-->
+        <!--[novalidate] érték pedig kikapcsolja a böngésző alapértelmezett validálását, engedi a bootstrap validációt használni!-->
+        <div class="row">
+            <div class="col">
+                <!--[is-invalid] tulajdonsággal alapértelmezetten az invalid kinézetet adhatjuk a form elemünknek-->
+                <div class="form-group">
+                    <label for="vnev">Vezeték név:</label>
+                    <input type="text" name="vnev" id="vnev" class="form-control" required>
+                    <!--[is-invalid]-ot a classon belül kell megadni -->
+                    <div class="invalid-feedback">Hibás</div>
+                </div>
+            </div>
+            <div class="col">
+                <!--[is-valid] tulajdonsággal alapértelmezetten a valid kinézetet adhatjuk a form elemünknek-->
+                <div class="form-group">
+                    <label for="knev">Kereszt név:</label>
+                    <input type="text" name="knev" id="knev" class="form-control" required>
+                    <!--[is-valid]-ot a classon belül kell megadni -->
+                    <div class="valid-feedback">Megfelel</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fnev">Felhasználói név:</label>
+            <input type="text" name="fnev" id="fnev" class="form-control" required>
+            <small class="form-text text-muted">
+                <!--A small tag-ekre beállított szöveggel, alsó feliratot állíthatunk be a form elemnek-->
+                <!--Ezt az elemet a [form-text] tulajdonsággal formázza a bootstrap a megfelelőre-->
+                <!--A [text-muted] tulajdonság pedig az alapéretelmezetten fekete betűszínt cseréli szürkésre!-->
+                Megjegyzés szöveg, ami a form elem alatt jelenik meg.
+            </small>
+            <div class="invalid-feedback">Hibás</div>
+            <div class="valid-feedback">Megfelel</div>
+        </div>
+        <div class="form-group">
+            <label for="jsz">Jelszó:</label>
+            <input type="password" name="jsz" id="jsz" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="tanf">Tanfolyam típusa</label>
+            <select name="tanf" id="tanf" class="form-control"">
+            <option>Webfejlesztő</option>
+            <option>Junior frontend fejlesztő</option>
+        </select>
+        </div>
+        <div class=" form-check">
+                <label for="check" class="form-check-label">Felhasználói feltételek elfogadása</label>
+                <input type="checkbox" name="check" id="check" class="form-check-input" required>
+        </div>
+        <button type="submit">Küldés</button>
+        <!--Ha rajta hagyjuk a submit tulajdonságot, a gombon is végrehajtódik a bootstrap validáció-->
+        <!--A háttérben futó JS kódot a fájl végében találod meg-->
+
+    </form>
+
+
+    <hr>
+    <h1>Gombok formázása</h1>
+    <form action="" style="width:400px; margin:0px auto;">
+
+        <button type="submit" class="btn btn-primary">Primary</button>
+        <button type="submit" class="btn btn-outline-primary">Outline Primary</button>
+        <button type="submit" class="btn btn-primary" disabled>Disabled Primary</button>
+        <br>
+
+        <button type="submit" class="btn btn-secondary">Secondary</button>
+        <button type="submit" class="btn btn-outline-secondary">Outline Secondary</button>
+        <button type="submit" class="btn btn-secondary" disabled>Disabled Secondary</button>
+        <br>
+
+        <button type="submit" class="btn btn-success">Success</button>
+        <button type="submit" class="btn btn-outline-success">Outline Success</button>
+        <button type="submit" class="btn btn-success" disabled>Disabled Success</button>
+        <br>
+
+        <button type="submit" class="btn btn-danger">Danger</button>
+        <button type="submit" class="btn btn-outline-danger"">Outline Danger</button>
+        <button type=" submit" class="btn btn-danger"" disabled>Disabled Danger</button>
+        <br>
+
+        <button type=" submit" class="btn btn-warning">Warning</button>
+        <button type="submit" class="btn btn-outline-warning">Outline Warning</button>
+        <button type="submit" class="btn btn-warning" disabled>Disabled Warning</button>
+        <br>
+
+        <button type="submit" class="btn btn-info">Info</button>
+        <button type="submit" class="btn btn-outline-info">Outline Info</button>
+        <button type="submit" class="btn btn-info" disabled>Disabled Info</button>
+        <br>
+
+        <button type="submit" class="btn btn-light">Light</button>
+        <button type="submit" class="btn btn-outline-light">Outline Light</button>
+        <button type="submit" class="btn btn-light" disabled>Disabled Light</button>
+        <br>
+
+        <button type="submit" class="btn btn-dark">Dark</button>
+        <button type="submit" class="btn btn-outline-dark">Outline Dark</button>
+        <button type="submit" class="btn btn-dark" disabled>Disabled Dark</button>
+        <br>
+    </form>
+
+
+
+    <hr>
+    <h1>Az összes input elem, ami nem volt még</h1>
+    <form action="" style="width:400px; margin:0px auto;">
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="datetime-local">Datetime-Local:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="hidden">Hidden:</label>
+            <input type="hidden"" name=" hidden"" id="hidden"" class=" form-control">
+            <!--Nem fog megjelenni :)-->
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="image" name="image" id="image" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="month">Month:</label>
+            <input type="month" name="month" id="month" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="range">Range:</label>
+            <input type="range" name="range" id="range" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="search">Search:</label>
+            <input type="search" name="search" id="search" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tel">Tel:</label>
+            <input type="tel" name="tel" id="tel" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="url">Url:</label>
+            <input type="url" name="url" id="url" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="week">Week:</label>
+            <input type="week" name="week" id="week" class="form-control">
+        </div>
+        <!--Reset, submit és button pedig ugye gombok-->
+
+        <!--Speciális: RÁDIÓ GOMB, hasonló mint a checkbox-->
+
+        <div class="form-check">
+            <label for="radio1" class="form-check-label">Radio1:</label>
+            <input type="radio" name="radio" id="radio1" class="form-check-input">
+        </div>
+        <div class="form-check">
+            <label for="radio2" class="form-check-label">Radio2:</label>
+            <input type="radio" name="radio" id="radio2" class="form-check-input">
+        </div>
+        <div class="form-check">
+            <label for="radio3" class="form-check-label">Radio3:</label>
+            <input type="radio" name="radio" id="radio3" class="form-check-input">
+        </div>
+
+    </form>
+
+
+    <hr>
+    <h1>Lebegő címkék</h1>
+    <form action="" style="width:500px; margin:0px auto;" class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col">
+                <!--A "lebegő címkékhez 3 dologra van szükségünk bootstrapnél"-->
+                <!--1. a [form-floating] osztály [form-group] helyett-->
+                <!--Arra hogy a mező rendelkezzen placeholder tulajdonsággal-->
+                <!--Illetve hogy a címkéket(label) ezúttal a mező után helyezzük el és ne elé-->
+                <!--Ha ezek közül a követelmények közül bármelyik is hiányzik, nem fog működni a lebegtetés-->
+                <div class="form-floating">
+                    <!--Az osztály az első szügséges összevető amivel jelezzük hogy itt most lebegtetni szeretnénk-->
+                    <input type="text" name="vnev" id="vnev" class="form-control" placeholder="Vezeték neved" required>
+                    <!--A működéshez szüksége a placeholder elemet is elhelyezni a form elemben-->
+                    <label for="vnev">Vezeték név:</label>
+                    <!--A címkét a mező után kell elhelyezni a helyes működéshez-->
+                    <div class="invalid-feedback">Hibás</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <!--Az osztály az első szügséges összevető amivel jelezzük hogy itt most lebegtetni szeretnénk-->
+
+                    <input type="text" name="knev" id="knev" class="form-control" placeholder="Keresztneved" required>
+                    <!--A működéshez szüksége a placeholder elemet is elhelyezni a form elemben-->
+                    <label for="knev">Kereszt név:</label>
+                    <!--A címkét a mező után kell elhelyezni a helyes működéshez-->
+                    <div class="valid-feedback">Megfelel</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-floating">
+            <!--Az osztály az első szügséges összevető amivel jelezzük hogy itt most lebegtetni szeretnénk-->
+            <input type="text" name="fnev" id="fnev" class="form-control" placeholder="Felhasználói név" required>
+            <!--A működéshez szüksége a placeholder elemet is elhelyezni a form elemben-->
+            <label for="fnev">Felhasználói név:</label>
+            <!--A címkét a mező után kell elhelyezni a helyes működéshez-->
+            <small class="form-text text-muted">
+                Megjegyzés szöveg, ami a form elem alatt jelenik meg.
+            </small>
+            <div class="invalid-feedback">Hibás</div>
+            <div class="valid-feedback">Megfelel</div>
+        </div>
+        <div class="form-floating">
+            <!--Az osztály az első szügséges összevető amivel jelezzük hogy itt most lebegtetni szeretnénk-->
+            <input type="password" name="jsz" id="jsz" class="form-control" placeholder="Jelszó" required>
+            <!--A működéshez szüksége a placeholder elemet is elhelyezni a form elemben-->
+            <label for="jsz">Jelszó:</label>
+        </div>
+        <div class="form-floating">
+            <!--Az osztály az első szügséges összevető amivel jelezzük hogy itt most lebegtetni szeretnénk-->
+            <select class="form-select" name="tanf" id="tanf" class="form-control"
+                aria-label="Floating label select example">
+                <option>Webfejlesztő</option>
+                <option>Junior frontend fejlesztő</option>
+            </select>
+            <label for="tanf">Tanfolyam típusa</label>
+            <!--A címkét a mező után kell elhelyezni a helyes működéshez-->
+        </div>
+        <button type="submit">Küldés</button>
+
+    </form>
+
+
+
+    <hr>
+    <h1>Címkék beállítása elemen belül és kívül</h1>
+    <form action="" style="width:500px; margin:0px auto;" class="needs-validation" novalidate>
+        <fieldset>
+            <legend>Alap méretű "fieldset legend"</legend>
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating col-form-label-sm">
+                        <input type="text" name="vnev" id="vnev" class="form-control col-form-label-sm"
+                            placeholder="Vezeték neved" required>
+                        <!--[col-form-label-sm] Az eredeti mérettől kissebbé teszi a betűméretet-->
+                        <label for="vnev">col-form-label-sm</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" name="knev" id="knev" class="form-control col-form-label-lg"
+                            placeholder="Keresztneved" required>
+                        <!--[col-form-label-lg] Az eredeti mérettől nagyobbá teszi a betűméretet-->
+                        <label for="knev">col-form-label-lg</label>
+                    </div>
+                </div>
+            </div>
+            <!--A fieldset feliratát (legend) a [form-control-lg] és [form-control-sm] osztályokkal nagyítjuk vagy épp kicsinyítjük-->
+            <fieldset>
+                <legend class="form-control-lg">form-control-lg</legend>
+                <div class="form-floating">
+                    <input type="text" name="vnev" id="vnev" class="form-control col-form-label-sm"
+                        placeholder="Vezeték neved" required>
+                    <label for="vnev">normál méretű label</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="form-control-sm">form-control-sm</legend>
+                <div class="form-floating">
+                    <input type="text" name="vnev" id="vnev" class="form-control col-form-label-sm"
+                        placeholder="Vezeték neved" required>
+                    <label for="vnev">normál méretű label</label>
+                </div>
+            </fieldset>
+    </form>
+
+    <hr>
+    <h1>Input group</h1>
+    <!--Megtehetjük, hogy a feliratokat másképp is megjelenítjük, ilyenkor a span elemet használjuk label helyett-->
+    <div class="input-group">
+        <span class="input-group-text" id="nick">Felhasználói név:</span>
+        <!--Ennek segítségével a "címke a form elemmel egy sorban annak részeként jelenik meg"-->
+        <input type="text" class="form-control" placeholder="Itt adhatod meg a felhasználói nevedet"
+            aria-label="Felhasználói név:">
+        <!-- [aria-label] Akkor jelenik meg ha az elem címkéje nem látható a kijelzőn -->
+    </div>
+    <div class="input-group">
+        <span class="input-group-text" id="pass">Jelszó:</span>
+        <input type="text" class="form-control" placeholder="Jelszó" aria-label="Jelszó">
+    </div>
+
+
+    <!--Ez a javascript kód a validáció bemutatásához kell, ezekről majd később!-->
+    <!--További infókat a validálásról az alábbi linken lehet olvasni akit érdekel:  https://getbootstrap.com/docs/5.0/forms/validation/-->
+    <script>
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        // })
+    </script>
+</body>
+
+</html>

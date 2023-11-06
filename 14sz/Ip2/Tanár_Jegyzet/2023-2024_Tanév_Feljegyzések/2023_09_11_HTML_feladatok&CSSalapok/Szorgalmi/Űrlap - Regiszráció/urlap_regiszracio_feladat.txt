@@ -1,0 +1,20 @@
+﻿Csinálj egy űrlapot, POST metódussal az adatokat a "regisztracio.php" fájl dolgozza fel majd!
+
+Hozz létre, egy beviteli mezőt, amibe megadhatjuk a nevünket.
+-kitöltése kötelező
+-mintaszöveg:"Teljes név"
+
+Hozz létre egy beviteli mezőt ahol jelszót adhatunk meg.
+-kitöltése kötelező
+-típusa:jelszó
+-mintaszöveg: NINCS!
+
+Hozz létre, egy beviteli mezőt, amibe megadhatjuk az e-mail címünket.
+-kitöltése kötelező
+-e-mail típusú
+-mintaszöveg:"E-mail cím"
+
+Hozzon létre 3 rádiógombot: Férfi, Nő, Egyéb felirattal és f,n,e értékkel.->csak 1 jelölhető ki!
+(mellette ezek az értékek feliratként jelenjenek meg)
+
+Készíts egy küldés gombot, "Regisztrálok" felirattal

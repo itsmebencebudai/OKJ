@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boder box vs. Content box</title>
+    <link rel="stylesheet" href="boxsizing.css">
+    <style>
+        .boxElem{
+            width:300px;
+            height:300px;
+            padding:20px;
+            margin:50px;
+            border:5px solid black;
+            background-color:royalblue
+        }
+    </style>
+</head>
+<body>
+    <div class="boxElem borderBoxElem">
+        box-sizing: border-box;
+    </div>
+    <div class="boxElem contentBoxElem">
+        box-sizing:content-box;
+    </div>
+</body>
+</html>

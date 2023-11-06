@@ -1,0 +1,154 @@
+/*A betűszínt többféle képpen is megadhatjuk, hasonlóan mint ahogy az a színeknél láthattuk 
+betűszín konkrét kifejezéssel - pl.: "red"
+HEXA kóddal - pl.: #ff0000
+RGB színnel - pl.: rgb(255,0,0)
+RGBA színnel - pl.: rgb(255,0,0,0.5) */
+.betuszin1 {
+    color: red;
+}
+
+.betuszin2 {
+    color: #00FF00;
+}
+
+.betuszin3 {
+    color: rgb(0, 0, 255);
+}
+
+.betuszin4 {
+    color: rgb(0, 0, 255, 0.5);
+}
+
+/* A szövegeket a megszokott alap módon igazíthatjuk jobbra, balra, középre és sorkizártan  */
+.kozepre {
+    text-align: center;
+}
+
+.jobbra {
+    text-align: right;
+}
+
+.balra {
+    text-align: left;
+}
+
+.sorkizart {
+    text-align: justify;
+}
+
+/* Szöveg "dekorálása" segítségével azt vízszintes vonallal ruházhatjuk fel különböző pozíciókban*/
+.vonalFelulre {
+    text-decoration: overline;
+}
+
+.vonalAlul {
+    text-decoration: underline;
+}
+
+.vonalKozepen {
+    text-decoration: line-through;
+}
+
+.vonalMegszuntetes {
+    text-decoration: none;
+    /*Alapértelmezett beállítás, sima szöveg estén*/
+}
+
+/*Át is alakíthatjuk a szöveget amennyiben szükségünk van rá több féle módban is*/
+.nagyBetusSzoveg {
+    text-transform: uppercase;
+}
+
+.kisBetusSzoveg {
+    text-transform: lowercase;
+}
+
+.nagyKezdobetusSzoveg {
+    text-transform: capitalize;
+}
+
+/*A különböző betűk-szavak közti távolságot is beállíthatjuk több féle módon is, amennyiben szükségünk van rá*/
+.elsoSorBehuzas {
+    text-indent: 50px;
+}
+
+.betuTavolsag {
+    letter-spacing: 5px;
+}
+
+.sorMagassag {
+    line-height: 2.5;
+}
+
+.szoTavolsag {
+    word-spacing: 10px;
+}
+
+.sortoresKikapcsolo {
+    white-space: nowrap;
+}
+
+/*A szövegnek árnyékot is állíthatunk CSS segítségével amennyiben szeretnénk.*/
+.simaArnyek {
+    text-shadow: 1px 1px;
+}
+
+.szinesArnyek {
+    text-shadow: 1px 1px blue;
+}
+
+.elmosottArnyek {
+    text-shadow: 1px 1px 3px blue;
+    /*A harmadik paraméter az elmosás mértéke*/
+}
+
+/*ÁRNYÉK MÁSIK IRÁNYOKBA VALÓ DÖNTÉSE*/
+
+/*Természetes az alapformázások mellett a dőlt betűstílust is beállíthatjuk CSS segítségével*/
+/*DŐLT*/
+.alapBetu {
+    font-style: normal;
+    /*Olyankor használjuk, ha az alapérték el lenne állítva...*/
+}
+
+.doltBetu1 {
+    font-style: italic;
+}
+
+.doltBetu2 {
+    font-style: oblique;
+}
+
+/*FÉLKÖVÉR*/
+.alapBetu2 {
+    font-weight: normal;
+    /*Olyankor használjuk, ha az alapérték el lenne állítva...*/
+}
+
+.felkoverBetu {
+    font-weight: bold;
+}
+
+.alapBetu3 {
+    font-variant: normal;
+    /*Olyankor használjuk, ha az alapérték el lenne állítva...*/
+}
+
+.kisKapitalisSzoveg {
+    font-variant: small-caps;
+}
+
+/*Betű méretét is beállíthatjuk több féle opcióval*/
+.betuMeretPixelben {
+    font-size: 26px;
+}
+
+.betuMeretEm {
+    font-size: 2em;
+    /*Az aktuális mérettől eltérő arányszám megadása*/
+}
+
+.betumeretVw {
+    font-size: 5vw;
+    /*Szintén mérettől függ a ViewPort Width(nézet szélességétől) Százalékos arányban*/
+}

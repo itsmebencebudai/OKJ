@@ -1,0 +1,95 @@
+﻿/*
+3D Transzformációk
+
+translateX() - Az elem elmozdítása, X irányba
+translateY() - Az elem elmozdítása, Y irányba
+translateZ() - Az elem elmozdítása, Z irányba
+translate3D() - Az elem elmozdítása, X, Y és Z irányba
+
+rotateX() - Az elem elforgatása X tengelyen adott szögben
+rotateY() - Az elem elforgatása Y tengelyen adott szögben
+rotateZ() - Az elem elforgatása Z tengelyen adott szögben
+rotate3D() - Az elem elforgatása X, Y és Z tengelyen adott szögben
+
+scaleX() - Az elem átméretezése X tengely mentén
+scaleY() - Az elem átméretezése Y tengely mentén
+scaleZ() - Az elem átméretezése Z tengely mentén
+scale3D() - Az elem átméretezése X és Y és Z tengely mentén
+
+skew - Erre a formázásra 3D esetében nincs lehetőség!
+
+matrix() - Több 2D-s transzformáció megadása egyszerre
+*/
+
+/*translate() - Elmozdítás*/
+.elmozditasX:hover {
+    transform: translateX(30px);
+}
+
+.elmozditasY:hover {
+    transform: translateY(30px);
+}
+
+.elmozditasZ:hover {
+    transform: translateZ(300px);
+}
+
+.elmozditas3D:hover {
+    transform: translate3d(30px, 40px, 10px);
+}
+
+/*rotate() - Forgatás*/
+.forgatasX:hover {
+    transform: rotateX(60deg);
+    /*Negatív irány, az ellentétes irányú mozgást jelöli*/
+}
+
+.forgatasY:hover {
+    transform: rotateY(60deg);
+    /*Negatív irány, az ellentétes irányú mozgást jelöli*/
+}
+
+.forgatasZ:hover {
+    transform: rotateZ(30deg);
+    /*Negatív irány, az ellentétes irányú mozgást jelöli*/
+}
+
+.forgatas3D:hover {
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/*scale() - Átméretezés*/
+
+.atmeretezesX:hover {
+    transform: scaleX(1.5);
+    /*Egy alatti érték esetén X irányú összefűzés van*/
+}
+
+.atmeretezesY:hover {
+    transform: scaleY(0.5);
+    /*Egynél nagyobb érték esetén Y irányú nyújtás van*/
+}
+
+.atmeretezesZ:hover {
+    transform: scaleZ(2);
+    /*Egy alatti értékek esetén kicsinyítés figyelhező meg*/
+}
+
+.atmeretezes3D:hover {
+    transform: scale3d(0.5, 2, 2);
+}
+
+/*matrix3d() - All in ONE*/
+.matrix3D:hover {
+    transform: matrix3d(1, 0.2, 0.8, 0, -0.5, 0.8, 0.2, 0, -0.6, -0.5, 0.5, 0, 0, 0, 0, 1);
+}
+
+/*
+A formázások matrix() esetén a következő:
+rotate3d(), rotateX(), rotateY(), rotateZ(), translate3d(), translateZ(), scale3d(), scaleZ(), és perspective().
+*/
+
+/*perspective() - Nézőpont [3D elemeknél használjuk]*/
+.nezoPont {
+    perspective: 100px;
+}

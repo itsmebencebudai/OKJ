@@ -1,0 +1,15 @@
+﻿Készíts egy fájlt zart_ajto.html-néven.
+
+Szúrd be az oldaladra a door_closed.jpg képet, 
+ha rossz lenne a link az "Zárt ajtó" szöveget írja ki a böngésző, 
+ha felé megyünk egérrel a "Ajtó kinyitása" szöveg jelenjen meg.
+
+Ebből készíts egy linket ami a "nyitott_ajto.html" oldara mutat és rákattintva ugyanabban az ablakban nyíljon meg.
+
+A nyitott_ajto.html oldalban a door_opened.jpg kép legyen látható
+ha rossz lenne a link az "Nyitott ajtó" szöveget írja ki a böngésző, 
+ha felé megyünk egérrel a "Ajtó bezárása" szöveg jelenjen meg.
+
+Innen készíts egy linket ami a "zart_ajto.html" oldara mutat és rákattintva ugyanabban az ablakban nyíljon meg.
+
+Ha minden jól megy az ajtónak, ki kell nyílnia majd bezáródnia...

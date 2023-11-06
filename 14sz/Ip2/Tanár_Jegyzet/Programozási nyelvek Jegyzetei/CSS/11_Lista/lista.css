@@ -1,0 +1,50 @@
+﻿/*Hivatkozás az elemekre*/
+ul {
+	
+}
+
+ol {
+	
+}
+
+/*
+UL lista módosításai:
+[list-style-type: circle;] - Üres kör
+[list-style-type: disc;] Teli Kör
+[list-style-type: square;] - Négyzet
+*/
+
+/*
+[list-style-type: armenian;]
+[list-style-type: cjk-ideographic;]
+[list-style-type: decimal;]
+[list-style-type: decimal-leading-zero;]
+[list-style-type: georgian;]
+[list-style-type: hebrew;]
+[list-style-type: hiragana;]
+[list-style-type: hiragana-iroha;]
+[list-style-type: katakana;]
+[list-style-type: katakana-iroha;]
+[list-style-type: lower-alpha;]
+[list-style-type: lower-greek;]
+[list-style-type: lower-latin;]
+[list-style-type: lower-roman;]
+[list-style-type: upper-alpha;]
+[list-style-type: upper-greek;]
+[list-style-type: upper-latin;]
+[list-style-type: upper-roman;]
+[list-style-type: none;]
+[list-style-type: inherit;]
+
+
+Lista elem pozícionálása:
+[outside] - A listajel kívül található
+[inside] - A listajel belül található, a szöveggel együtt
+
+ALL IN ONE
+
+ul {
+  list-style: square inside;
+}
+
+*/

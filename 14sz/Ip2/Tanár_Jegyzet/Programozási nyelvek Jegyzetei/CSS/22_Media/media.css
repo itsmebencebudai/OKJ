@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*A media elem esetén nagyon egyszerű dolgunk van, csupán annyit kell megadnunk, milyen képméret esetén, milyen beállításokkal rendelkezzen az oldalunk.
+
+Amennyiben nem hivatkozunk média elemekre, úgy a lehető legmagasabb értékek esetén való beállításokat szabjuk meg(legszélesebb képernyő)
+
+Ha egy tulajdonságot megadtunk már egy elemnek, a "kisebb felbontás esetén" elég az új(módosított értékeket) felsorolni!
+
+/*1200 pixel feletti méret esetén*/
+#tartalom {
+    /*Responsive elem láthatóvá tétele*/
+    background-color: rgba(0,0,0,0.8);
+    color:White;
+    font-weight:bold;
+    padding:20px;
+
+    /*Responsive tartalom beállításai*/
+    max-width: 1000px;
+    margin: 0px auto;
+
+}
+/*1200 pixel alatti méret esetén*/
+@media only screen and (max-width: 1200px) {
+    #tartalom {
+        width: 80%;
+        background-color: rgba(0,0,0,0.6);
+        margin: 0px auto;
+    }
+}
+/*500 pixel alatti méret esetén*/
+@media only screen and (max-width: 500px) {
+    #tartalom {
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
+    }
+}
+
+/* További jegyzetek: https: //www.w3schools.com/cssref/css3_pr_mediaquery.asp */

@@ -1,0 +1,30 @@
+﻿Csinálj egy űrlapot, POST metódussal az adatokat a "regisztracio.php" fájl dolgozza fel majd!
+
+Hozz létre, egy beviteli mezőt, amibe megadhatjuk a nevünket.
+-kitöltése kötelező
+-mintaszöveg:"Teljes név"
+
+Hozz létre, egy beviteli mezőt, amibe megadhatjuk az e-mail címünket.
+-kitöltése kötelező
+-e-mail típusú
+-mintaszöveg:"E-mail cím"
+
+Hozz létre, egy beviteli mezőt, amibe megadhatjuk a csatorna nevét.
+-kitöltése kötelező
+-mintaszöveg:"Csatorna név"
+
+Hozz létre egy szövegdobozt, ami 5 soros és 20 oszlopos
+-kitöltése kötelező
+-mintaszöveg:"Csatorna leírás"
+
+Hozzon létre egy legördülő menüt ahol választhatsz az alábbi elemek között:
+travel - Travel			
+film értékkel- Film
+beauty értékkel- Beauty
+podcast értékkel- Podcast
+vlogger értékkel- Vlogger
+hardver értékkel- Hardver
+szoftver értékkel- Szoftver
+prog értékkel- Programozás
+
+Készíts egy küldés gombot, "Csatorna regisztráció" felirattal

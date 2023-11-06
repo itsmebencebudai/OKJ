@@ -1,0 +1,56 @@
+﻿/*Általános forma:
+div_elem_neve{
+	tulajdonság01_neve: tulajdonság01_értéke;
+	tulajdonság02_neve: tulajdonság02_értéke;
+	...
+}
+
+*/
+/*Ha a * karaktert adjuk meg névnek akkor az összes elemre vonatkozik a formázás!!!
+Alapértelmezett HTML elemek elé nem kell tenni semmit, csak kiírni a nevét*/
+body {
+    background-color: black;
+}
+
+h1 {
+    color: orange;
+}
+/*Mindössze egy fontos szabály van ID vagy CLASS neve nem kezdődhet számmal, de utána bármelyik karakter lehet benne...
+
+/*Amennyiben az oldalon id-ként hivatkoztunk az elem előtt #-ot kell tenni*/
+#azonosito{
+	color: blue;
+}
+
+/*Ha a class-t haszáltuk mint hivatkozási formát akkor a .-ot kell alkalmazni a név előtt*/
+.osztaly{
+	color: yellow;
+}
+
+/*Olykor előfordulhat, hogy van hasonló névvel elátott elemünk érdemes a div-re magára is hivatkozni*/
+div.osszevont_class{
+	color: red;
+}
+div#osszevont_id{
+	color: green;
+}
+
+/*HA esetleg id-n belül szeretnén class-t használni*/
+div#szines_szoveg{
+	font-size:30px;
+}
+div#szines_szoveg .kek{
+	color: blue;	
+}
+div#szines_szoveg .piros{
+	color: red;	
+}
+div#szines_szoveg #sarga/*Fordítva is lehet!*/{
+	color: yellow;	
+}
+h2, h3, h4, #id_hasonlo, .class_hasonlo /*Természetesen a div#id_hasonlo és div.class_hasonlo nevekkel is hasonló eredményre juthatunk!*/{
+	font-size:22px;
+	color:purple;	
+}
+
+/*Ugyanaz a tulajdonság több elemtípusnak is*/

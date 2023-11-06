@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>3D transzformációk CSS-ben</title>
+    <link rel="stylesheet" type="text/css" href="animacio.css" />
+    <style>
+        h1{
+            text-align:center;
+        }
+        .animalatlanDoboz{
+            position:relative;
+            width:500px;
+            height:200px;
+            padding:50px;
+            font-size:20px;
+            margin:0px auto;
+            border:1px solid black;
+            background-color: #333333;
+            color:#ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Alap animáció -->
+    <h1>Alap animáció </h1>
+    <div class="animalatlanDoboz alapAnimacio">
+        Weboldal betöltődésével indul:<br><br>
+        .alapAnimacio{<br>
+        animation-name:ketAllapotosSzinezo;<br>
+        animation-duration:4s;<br>
+      }</div>
+    <div class="animalatlanDoboz alapAnimacio2">
+        Akkor indul, ha fölé megyünk egérrel:<br><br>
+        .alapAnimacio2:hover{<br>
+            animation-name:negyAllapotosSzinezo;<br>
+            animation-duration:10s;<br>
+          }
+    </div>
+    
+    <!-- Késleltetett animáció-->
+    <h1>Késleltetett animáció</h1>
+    <div class="animalatlanDoboz kesleltetettAnimacio">
+    2 másodperccel azután indul, hogy fölé mentünk egérrel:<br><br>
+    .kesleltetettAnimacio:hover{<br>
+        animation-name:ketAllapotosSzinezo;<br>
+        animation-duration:4s;<br>
+        animation-delay: 2s;<br>
+      }
+    </div>
+    <!-- Ismétlésszám megadása -->
+    <h1>Ismétlésszám megadása</h1>
+    <div class="animalatlanDoboz ismetlodoAnimacio">
+    Háromszor ismétlődik meg, a weboldal betöltődése után 1 másodperccel<br><br>
+    .ismetlodoAnimacio{<br>
+        animation-name:mozgato;<br>
+        animation-duration:4s;<br>
+        animation-delay:1s;<br>
+        animation-iteration-count: 3;<br>
+      }</div>
+      <div class="animalatlanDoboz vegtelenAnimacio">
+        VÉGTELENSZER ismétlődik meg, a weboldal betöltődése után 2 másodperccel<br><br>
+        .ismetlodoAnimacio{<br>
+            animation-name:mozgato;<br>
+            animation-duration:4s;<br>
+            animation-delay:2s;<br>
+            animation-iteration-count: infinite;<br>
+          }</div>
+    <!-- Animáció irányának megfordítása -->
+    <h1>Animáció irányának megfordítása</h1>
+    <div class="animalatlanDoboz alapMozgatoAnimacio">
+        .alapMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-direction: alternate;<br>
+          }
+    </div>
+    <div class="animalatlanDoboz forditottMozgatoAnimacio">
+        .forditottMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-direction:reverse;<br>
+          }
+    </div>
+    <div class="animalatlanDoboz odavisszaMozgatoAnimacio">
+        .odavisszaMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-direction:alternate-reverse;<br>
+          }
+    </div>
+    <!-- Animálás sebességének változtatása -->
+    <h1>Animálás sebességének változtatása</h1>
+    <div class="animalatlanDoboz easeMozgatoAnimacio" style="height:100px; width:300px;">
+        .easeMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:10s;<br>
+            animation-delay:2s;<br>
+            animation-timing-function: ease;<br>
+          }</div>
+    <div class="animalatlanDoboz linearMozgatoAnimacio"  style="height:100px; width:300px;">
+        .linearMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:10s;<br>
+            animation-delay:2s;<br>
+            animation-timing-function: linear;<br>
+          }</div>
+    <div class="animalatlanDoboz easeinMozgatoAnimacio"  style="height:100px; width:300px;">
+        .easeinMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:10s;<br>
+            animation-delay:2s;<br>
+            animation-timing-function: ease-in;<br>
+          }</div>
+    <div class="animalatlanDoboz easeoutMozgatoAnimacio"  style="height:100px; width:300px;">
+        .easeoutMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:10s;<br>
+            animation-delay:2s;<br>
+            animation-timing-function: ease-out;<br>
+          }</div>
+    <div class="animalatlanDoboz easeinoutMozgatoAnimacio"  style="height:100px; width:300px;">
+        .easeinoutMozgatoAnimacio{<br>
+            animation-name:divBoxVerseny;<br>
+            animation-duration:10s;<br>
+            animation-delay:2s;<br>
+            animation-timing-function: ease-in-out;<br>
+          }</div>
+    <!-- Kezdeti és végső kinézet megtartása -->
+    <h1>Kezdeti és végső kinézet megtartása</h1>
+    <div class="animalatlanDoboz kezdetiAllapotMegtartoAnimacio">
+        .kezdetiAllapotMegtartoAnimacio{<br>
+            animation-name:ketAllapotosSzinezo;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-fill-mode:forwards;<br>
+          }
+    </div>
+    <div class="animalatlanDoboz vegAllapotMegtartoAnimacio">
+        .vegAllapotMegtartoAnimacio{<br>
+            animation-name:ketAllapotosSzinezo;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-fill-mode:backwards;<br>
+          }
+    </div>
+    <div class="animalatlanDoboz kezdetiEsVegAllapotMegtartoAnimacio">
+        .kezdetiEsVegAllapotMegtartoAnimacio{<br>
+            animation-name:ketAllapotosSzinezo;<br>
+            animation-duration:4s;<br>
+            animation-delay:1s;<br>
+            animation-fill-mode:both;<br>
+          }
+    </div>
+        <!-- All In One -->
+        <h1>All In One</h1>
+        <div class="animalatlanDoboz allInOne" style="height:100px; width:700px;">
+            animation: negyAllapotosSzinezo example 5s linear 2s infinite alternate;</div>
+</body>
+
+</html>

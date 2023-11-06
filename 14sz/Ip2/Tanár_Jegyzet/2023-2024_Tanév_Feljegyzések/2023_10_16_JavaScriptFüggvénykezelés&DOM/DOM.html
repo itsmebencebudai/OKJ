@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[D]ocument [O]bject [M]odel</title>
+
+</head>
+
+<body>
+    <h1 id="cim">Szeretem a programozást</h1>
+    <h2 class="osztaly">14.sz</h2>
+    <p>A 2/14.sz a legjobb szoftverfejlesztő végzős osztály 2023-ban</p>
+    <div id="szamitas">eredmeny:</div>
+
+
+
+
+    <script>
+        document.getElementById("cim").innerHTML = "Szeretem a JavaScriptet";
+        //document.getElementsByClassName
+        //document.getElementsByName
+        //document.getElementsByTagName
+
+        //ÚJ elemek
+        //document.querySelector - Egy elemet választunki ki, több elem esetén a legelsőt
+        //document.querySelectorAll - Több elemet választunk ki és feltöltjük egy tömbbe
+        document.querySelector("p").innerHTML = "A 2/14.sz a <s>legjobb</s> szoftverfejlesztő végzős osztály 2023-ban";
+        document.querySelector("#cim").innerHTML = "Osztályinfó";
+        document.querySelector(".osztaly").innerHTML = "2/14.sz";
+
+        let a = 5;
+        let b = 3;
+        muveletEredmeny = a + b;
+        document.querySelector("#szamitas").innerHTML = muveletEredmeny;
+    </script>
+</body>
+
+</html>

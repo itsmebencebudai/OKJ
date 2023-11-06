@@ -1,0 +1,28 @@
+﻿Állatok
+Elefánt
+Afrikai
+Indiai
+Farkas
+Szürke farkas
+Dingó
+Sarki farkas
+Disznó
+Szavannai varacskosdisznó
+Mangalica
+Házi sertés
+Növények
+Mohák
+Harasztok
+Zárvatermők
+Nyitvatermők
+Moszatok
+Gombák
+Mérgező
+Gyilkos galóca
+Kerti Susulyka
+Selymes döggomba
+NEM Mérgező
+Csiperke
+Nyári vargánya
+Ízletes tőkegomba
+Sárga Rókagomba

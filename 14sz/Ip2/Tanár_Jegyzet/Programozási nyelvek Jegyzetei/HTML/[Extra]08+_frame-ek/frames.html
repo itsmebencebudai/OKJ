@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrameMain</title>
+</head>
+
+<body>
+  <!--A frameket a HTML már egyáltalán nem támogatja, de azért említést kell tenni róla(hátha még találkoztok velel az életben) :)
+
+A méretet a frameset beállításánál a rows és a cols attribútumok után kell megadnunk!
+megadható számként, szám+px végződés illetve százalékosan.
+
+További tulajdonságai lehetnek(ugyanazok mint iframe esetén!!!)
+
+scr - melyik az az oldal ami betöltődik az adott framebe alapértelmezetten
+frameborder - 0 vagy 1 értékkel, 0 az hogy nincs border 1 az hogy van
+name - a framet el lehet nevezni a későbbi rá való hovatkozáshoz, linkeknél volt róla szó
+noresize - nem engedi átméretezni a frame-et
+scrolling - yes, no vagy auto (yes esetén van, no esetén nincs, autó esetén a mérettől függ!)
+
+Illetve itt is létezik: marginwidth, marginhegiht és a longdesc
+marginheight- a felső és az alsó margót állítja be, azaz a tartalom és a frame közti távolságot
+marginwidth - a jobb és a bal oldali margót állítja be, azaz a tartalom és a szélső framek közötti távolságot
+longdesc - ezzel a tulajdonsággal pedig megadhatunk egy címet ami tartalmazhatja az adott framenek egy hosszabb terjedelmű leírását, NEM TARTALMÁT!
+-->
+  <frameset rows="25%,25%,50%">
+    <!--Vízszintes sorok létrehozása-->
+    <frame src="frame_egy.html" frameborder="0" noresize="noresize">
+      <frame src="frame_ketto.html" frameborder="0" scrolling="auto">
+        <frameset cols="25%,75%">
+          <!--Függőleges oszlopok készítése-->
+          <frame src="frame_harom.html" frameborder="0" marginheight="50" marginwidth="30">
+            <frame src="frame_negy.html" frameborder="0" name="leirasos" longdesc="hosszu_leiras.txt">
+        </frameset>
+  </frameset>
+
+</body>
+
+</html>

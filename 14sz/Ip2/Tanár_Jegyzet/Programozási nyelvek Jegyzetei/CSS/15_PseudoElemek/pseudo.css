@@ -1,0 +1,183 @@
+﻿/* Alap formázás minden pseudo class alkalmazására
+
+
+cssElem:pseudoTulajdonság {
+  tulajdonság: érték;
+}
+*/
+
+/*Pseudo osztályok csoportosítása, használat szerint:
+
+1) LINKEK
+[a:link] - Alapértelmezett link beállításai
+[a:visited] - Látogatott link beállításai
+[a:hover] - Link ami felé megyünk egérrel, beállításai
+[a:active] - Éppen kattintott link tulajdonságai
+*/
+a:link {
+	/*Alapértelmezett link beállításai kerülnek ide*/
+	color: red;
+	/*Az alapértelmezett link aláhúzott*/
+	font-size: 16px;
+	cursor: crosshair;
+}
+
+a:visited {
+	/*Látogatott link beállításai kerülnek ide(amire már kattintottunk)*/
+	color: green;
+	text-decoration: none;
+	cursor: e-resize;
+}
+
+a:hover {
+	/*Azok a linkek kerülnek ide, amik felé épp az egér kurzora került*/
+	color: blue;
+	cursor: help;
+}
+
+a:active {
+	/*A link kinézetét állíthatjuk be a kattintás pillanatában*/
+	color: yellow;
+	cursor: progress;
+}
+
+/*
+____________________________________________________________
+2) Bármi fölé megyünk egérrel
+[cssElem:hover] CssElem, ami felé az egér korzort helyezzük
+*/
+.simaDivElem {
+	width: 200px;
+	padding: 30px;
+	color: red;
+	background-color: black;
+	;
+}
+
+.simaDivElem:hover {
+	color: blue;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/*
+____________________________________________________________
+3) Addott sorszámú elem, több elem esetén, listák táblázatok, egyéb elemek estén 
+
+[cssElem:first-child] - Legelső elem a sorban 
+[cssElem:last-childs] - Legutolsó elem a sorban
+[cssElem:nth-child(even)] - páros elemek a sorban
+[cssElem:nth-child(odd)] - páratlan elemek a sorban
+[cssElem:nth-child(n)] - adott indexű elem a sorban
+*/
+ul li ol li:first-child {
+	/*Lista első elemének tulajdonsága*/
+	list-style-type: lower-latin;
+	/*Kisbetű beállítása*/
+}
+
+ul li ol li {
+	/*Alapértelmezett tulajdonság minden további elemre*/
+	list-style-type: lower-roman;
+	/*Kisbetű beállítása*/
+}
+
+ul li ol li:last-child {
+	/*Lista utolsó elemének tulajdonsága*/
+	list-style-type: decimal;
+	/*Kisbetű beállítása*/
+}
+
+
+/*
+____________________________________________________________
+4) Külünböző tulajdonsággal rendelkező űrlap elemek formázása
+
+[InputElem:checked] - Minden checked tulajdonsággal rendelkező input elem
+[InputElem:disabled] - Minden disabled tulajdonsággal rendelkező input elem
+[InputElem:enabled] - Minden enabled tulajdonsággal rendelkező input elem
+[InputElem:focus] - Minden focus-t kapott input elem(pl.: belekattintunk)
+[InputElem:in-range] - Megfelelő értékekkel rendelkező input elem(min-max segítségével beállított)
+[InputElem:invalid] - Minden NEM megfelelő értékekkel rendelkező input elem
+[InputElem:optional] - Minden required attribútum nélküli elem
+[InputElem:out-of-range] -NEM megfelelő értékekkel rendelkező input elem(min-max segítségével beállított)
+[InputElem:read-only] - Minden readonly tulajdonsággal rendelkező input elem
+[InputElem:read-write] - Minden NEM readonly tulajdonsággal rendelkező input elem
+[InputElem:required] - Minden required tulajdonsággal rendelkező input elem
+[InputElem:valid] - Minden megfelelő értékekkel rendelkező input elem
+stb...
+
+Továbi elemeket az alábbi linken találsz:
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+*/
+input {
+	display: block;
+	/*Az adott elemet blokk szintűvé állította, nem kell sortörés*/
+	margin: 10px;
+}
+
+input:focus {
+	background-color: black;
+	color: white;
+}
+
+input:required {
+	border: 1px solid red;
+}
+
+input:optional {
+	border: 1px solid green;
+}
+
+input:out-of-range {
+	color: red;
+}
+
+input:in-range {
+	color: blue;
+}
+
+input:read-only {
+	border: 3px solid grey;
+	color: grey;
+	font-weight: bold;
+}
+
+/*
+____________________________________________________________
+5) Pseudo elemek, általában adott CSS elemen belüli specifikus formázások beállítása
+
+[cssElem::first-line] - Addott CSS elem első sora, pl.: bekezdéseknél
+[cssElem::first-letter] - Addott CSS elem első betűje, pl.: bekezdéseknél (INICIÁLÉ készítés)
+[cssElem::before] - Adott CSS elem elé kerülő tartalom
+[cssElem::after] - Adott CSS elem mögé kerülő tartalom
+
+címsor elég kép kerülhet, a következő módon 
+h1::before {
+  content: url(kep.jpg);
+}
+
+[cssElem::marker] - Lista jelölő elemének formázása
+[cssElem::selection] - Adott rész kijelölésének beállításai
+
+*/
+p::first-line {
+	color: blue;
+}
+
+p::first-letter {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+p::selection {
+	background-color: black;
+	color: orange;
+}
+
+li::marker { /*Listajel módosítása*/
+	color: blue;
+	font-weight: bold;
+}

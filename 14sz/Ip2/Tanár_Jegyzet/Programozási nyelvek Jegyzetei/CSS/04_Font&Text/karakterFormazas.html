@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Karakterformázások</title>
+    <link rel="stylesheet" type="text/css" href="karakterFormazas.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Betűszín állítása</h1>
+    <p class="betuszin1">Színes szöveg [color: red;]</p>
+    <p class="betuszin2">Színes szöveg [color: #00FF00;]</p>
+    <p class="betuszin3">Színes szöveg [color: rgb(0, 0, 255);]</p>
+    <p class="betuszin4">Színes szöveg [color: rgb(0, 0, 255, 0.5);]</p>
+
+    <h1>Szöveg igazítás(vízszintes)</h1>
+    <p class="kozepre">Középre igazított szöveg [text-align: center;]</p>
+    <p class="jobbra">Jobbra igazított szöveg [text-align: right;]</p>
+    <p class="balra">Balra igazított szöveg [text-align: left;]</p>
+    <p class="sorkizart">Sorkizárt szöveg [text-align: justify;]</p>
+
+    <h1>Szöveg igazítás(függőleges)</h1>
+    Normal<p class="felulreSzoveg inline">Vízszintesen felülre igazított szöveg [vertical-align: text-top;]</p>
+    Normal<p class="alulraSzoveg inline">Vízszintesen alulra igazított szöveg [vertical-align: text-bottom;]</p>
+    Normal<p class="alsoIndex inline">Alsó index [vertical-align: sub;]</p>
+    Normal<p class="felsoIndex inline">Felső index [vertical-align: super;]</p>
+
+    <h1>Szöveg "Dekorálása"</h1>
+    <p class="vonalFelulre">Felülvonás [text-decoration: overline;]</p>
+    <p class="vonalAlul">Alulvonás [text-decoration: underline;]</p>
+    <p class="vonalKozepen">Vonal keresztül [text-decoration: line-through;]</p>
+    <p class="vonalMegszuntetes">Alapértelmezett vonal(eltünteve) [text-decoration: none;]</p>
+
+    <h1>Szöveg átalakítása</h1>
+    <p class="nagyBetusSzoveg">Nagybetűssé alakított szöveg [text-transform: uppercase;]</p>
+    <p class="kisBetusSzoveg">Kisebetűssé alakított szöveg [text-transform: lowercase;]</p>
+    <p class="nagyKezdobetusSzoveg">Nagy kezdőbetűs szöveg [text-transform: capitalize;]</p>
+
+    <h1>Szöveg elemek közti távolságok beállítása</h1>
+    <p class="elsoSorBehuzas">Első sori/Sorbehúzás behúzás [text-indent: 50px;]</p>
+    <p class="betuTavolsag">Betűk távolságának beállítása [letter-spacing: 5px;]</p>
+    <p class="sorMagassag">Sorok közti távolság beállítása [line-height: 2.5;]</p>
+    <p class="szoTavolsag">Szavak közti távolság beállítása [word-spacing: 10px;]</p>
+
+    <h1>Szöveg árnyék beállításai</h1>
+    <p class="simaArnyek">Sima árnyék [text-shadow: 1px 1px;]</p>
+    <p class="szinesArnyek">Színes Árnyék [text-shadow: 1px 1px blue;]</p>
+    <p class="elmosottArnyek">Elmosott árnyék [text-shadow: 1px 1px 3px blue;]</p>
+
+    <h1>Betű stílusának beállítása(Dőlt/Félkövér/Kiskapitális/Alap)</h1>
+    <p>Alapértelmezett betű dőlés a normal érték!</p>
+    <p class="doltBetu1">Dőlt betű(Italic) [font-style: italic;]</p>
+    <p class="doltBetu2">Dőlt betű(Oblique) [font-style: oblique;]</p>
+    <p class="felkoverBetu">Félkövér betű [font-weight: bold;]</p>
+    <p class="kisKapitalisSzoveg">Kiskapitális szöveg [font-variant: small-caps;]</p>
+
+    <h1>Betűméret megadásának módjai</h1>
+    <p class="betuMeretPixelben">Pixelben megadott betűméret [font-size: 26px;]</p>
+    <p class="betuMeretEm">Relatívan megadott (Szülő elemtől függ)[font-size: 2em;]</p>
+    <p class="betumeretVw">Felület méretéhez állított[font-size: 5vw;]</p>
+
+
+    <p class=""></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿#kulso_szegelyes_elem {
+	/*Tulajdonság*/
+	border: 10px solid black;
+	outline: 5px solid green;
+	outline-offset:5px;
+}
+
+/*Szegély Stílusa
+outline-style: dotted; - pontozott vonal
+outline-style: dashed; - szaggatott vonal
+outline-style: solid; - sima vonal
+outline-style: double; - dupla vonal
+outline-style: groove; - 3D hatású outline
+outline-style: ridge; - 3D hatású outline
+outline-style: inset; - 3D hatású outline
+outline-style: outset; - 3D hatású outline
+outline-style: none; - szegély kikapcsolása
+outline-style: hidden; - szegély elrejtése
+*/
+
+/*Szegély vastagsága(szélessége)
+outline-width: 10px; - konkrét értékkel megadva
+outline-width: medium; - szöveggel megadva( medium-közepes, thin-vékony, thick-vastag)
+*/
+
+/*Külső szegély színének megadása
+pl.: outline-color:#ff0000;
+
+A színt 4 fél képpen is megadhatjuk
+	1. HEX értékben : pl.:#ff0000;
+	2. RGB kódban : pl.: rgb(255,0,0);
+	3. RGBA kódban : pl.: rgba(255,0,0,0.5); //A 4. érték 0 és 1.0 közötti értékű
+	4. A szín nevét használva : pl.: red;	
+*/
+
+/*Az outlineokat sajnos NEM lehet oldalanként megadni*/
+
+/*Outline OFFSET
+outline-offset:10px; 
+Az outline offset tulajdonsáságval azt állítjuk be, hogy milyen távolságra legyen a szegélytől a külső szegélyünk*/
+
+/*ALL IN ONE!
+outline:1px solid red;
+*/

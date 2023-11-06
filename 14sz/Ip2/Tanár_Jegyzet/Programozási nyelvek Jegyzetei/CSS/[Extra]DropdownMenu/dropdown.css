@@ -1,0 +1,50 @@
+﻿/*
+A dropdown, magyarul legördülő menüt is több féle képpen készíhetünk, segítségével ilyen könnyen navigálhatunk az oldalunk tartalmán belül*/
+
+  /* Efőlé érve(hover) jelennek meg a "rejtett" elemek */
+.legorduloGomb {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Az adott elem ami a legördülő menüket szokta felépíteni, ide töltenek be a legördülő rész elemei */
+  .legorduloMenuElem {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Legördülő elem tartalma, alapnak el van rejtve (alapnak nem látszódik) */
+  .legorduloTartalom {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* A linkek a gomb tartalmán belül */
+  .legorduloTartalom a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* A tartalmon belüli linkek módosítása ha felé megyünk egérrel */
+  .legorduloTartalom a:hover {background-color: #f1f1f1}
+  
+  /* Megjelenítsani az elemet, amikor épp felé megyünk */
+  .legorduloMenuElem:hover .legorduloTartalom {
+	display: block;
+  }
+  
+  /* Hover effekt hatására megváltoztani a háttérszínt */
+  .legorduloMenuElem:hover .legorduloGomb {
+	background-color: #3e8e41;
+  }
+

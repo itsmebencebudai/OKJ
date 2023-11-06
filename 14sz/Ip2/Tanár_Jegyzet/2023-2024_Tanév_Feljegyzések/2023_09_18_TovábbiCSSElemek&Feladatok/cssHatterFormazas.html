@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háttér formázása</title>
+    <style>
+        body{
+            /*
+            color: szöveggel, hexa kóddal, rgb, rgba, hsl, hsla kóddal
+            Lásd szinek.html fájl
+            */
+            background-color: #123456;
+            /*
+            Háttérkép beillesztése url cím megadása után, lehet statikus vagy dinamikus
+            Ügyelni kell az url szövegre, meg az idézőjelekre a fájl körül
+            */
+            background-image: url("cat.jpg");
+            /*
+            Háttérkép ismétlődésének beállítása, amennyiben kisebb mint a hely ahova beillesztjük
+            background-repeat:no-repeat; --> nincs ismétlés
+            background-repeat:repeat-x; -->vízszintes ismétlés
+            background-repeat:repeat-y; -->függőleges ismétlés
+            background-repeat:repeat; -->"alapértelmezetten" ismétel
+            */
+            background-repeat: no-repeat;
+            /*
+            Háttérkép pozíciója amennyiben nem ismételjük: left, right, center valamint, top, center és bottom és ezek kombinációja
+            */
+            background-position: center center;
+            /*
+            Háttér mérete, beállítjuk mennyi helyet fogolaljon el a háttérkép
+            */
+            /*background-size: cover;*/
+            /*
+            Háttérkép "rögzítése", görgetés esetén sem mozdul el: fixed, alapnak igen!
+            */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

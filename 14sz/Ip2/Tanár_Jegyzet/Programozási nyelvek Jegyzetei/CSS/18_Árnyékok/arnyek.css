@@ -1,0 +1,66 @@
+﻿/*
+2 lehetőségünk van árnyékot adni egy elemnek:
+[text-shadow] - Adott szöveges elem köré helyezünk árnyékot
+[box-shadow] - Adott div elem box modellje köré helyezünk árnyékot
+Árnyékok esetében 2-4 paraméterrel dolgozhatunk
+
+2 paraméter esetén
+-első: az árnyék x irányú eltolása, pixelben
+-második: az árnyék y irányú eltolása, pixelben
+-az árnyék színe alapértelmezetten fekete
+
+3 paraméter esetén
+-első: az árnyék x irányú eltolása, pixelben
+-második: az árnyék y irányú eltolása, pixelben
+-az árnyék színének megadása, névvel, hexa kóddal, rgb, rgba, hsl, hsla módszerrel
+
+4 paraméter esetén
+-első: az árnyék x irányú eltolása, pixelben
+-második: az árnyék y irányú eltolása, pixelben
+-harmadik: az árnyék elmosásának nagysága, pixelben megadva
+-az árnyék színének megadása, névvel, hexa kóddal, rgb, rgba, hsl, hsla módszerrel
+
+Lehetőségünk van ha szeretnénk, egyszerre több árnyékot is adni egy elemnek
+*/
+
+/* Szöveg árnyék*/
+.alapSzovegArnyek {
+	text-shadow: 2px 2px;
+}
+
+.zoldSzovegArnyek {
+	text-shadow: 2px 2px green;
+}
+
+.kekElmosottSzovegArnyek {
+	text-shadow: 2px 2px 5px blue;
+}
+.kiemeltSzoveg{
+	color: white;
+  	text-shadow: 2px 2px 4px #000000;
+}
+.tobbSzovegArnyek{
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.szovegSzegely{
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*Doboz árnyék*/
+.alapDobozArnyek {
+	box-shadow: 10px 10px;
+}
+
+.zoldDobozArnyek {
+	box-shadow: 5px 5px green;
+}
+
+.kekElmosottDobozArnyek {
+	box-shadow: 5px 5px 10px blue;
+}
+.tobbDobozArnyek{
+	box-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+}
+/*CSS dobozok esetén nincs szükségünk árnyékból készült szegélyre, 
+hisz arra ott van a hivatalos [border] tulajdonság!

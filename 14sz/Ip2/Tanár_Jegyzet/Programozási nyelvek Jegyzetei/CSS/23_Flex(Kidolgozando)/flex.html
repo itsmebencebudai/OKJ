@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>3D transzformációk CSS-ben</title>
+    <link rel="stylesheet" type="text/css" href="flex.css" />
+    <style>
+        .vizszintesTarolo {
+            display: flex;/*Az adott elemre így alkalmazhatjuk a flex tulajdonságokat*/
+            flex-direction:column;/*Fő irány, "axis" meghatározása */
+            height:200px;
+            background-color: rgba(0, 100, 0, 0.8);
+            color: white;
+        }
+
+        .fuggolegesTarolo {
+            display: flex;/*Az adott elemre így alkalmazhatjuk a flex tulajdonságokat*/
+            flex-direction:row;/*Fő irány, "axis" meghatározása  (Ez az alapértelmezett)*/
+            height:400px;
+            background-color: rgba(0, 0, 100, 0.8);
+            color: white;
+        }
+
+        .flexElem {
+            min-width: 100px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Row Containerek -->
+    <div class="vizszintesTarolo">
+        <div class="flexelem">1.</div>
+        <div class="flexelem">2.</div>
+        <div class="flexelem">3.</div>
+    </div>
+
+    <!-- Column Containerek -->
+    <div class="vizszintesTarolo">
+        <div class="flexelem">1.</div>
+        <div class="flexelem">2.</div>
+        <div class="flexelem">3.</div>
+    </div>
+
+    <!-- szöveg -->
+
+
+    <!-- szöveg -->
+
+
+    <!-- szöveg -->
+
+</body>
+
+</html>

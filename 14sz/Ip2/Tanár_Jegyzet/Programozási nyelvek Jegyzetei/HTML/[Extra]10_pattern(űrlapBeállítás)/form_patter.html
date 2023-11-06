@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patternről Tippek Haladóknak</title>
+</head>
+
+<body>
+    <form action="futtato_oldal.php" method="post">
+        <fieldset>
+            <legend>Alapértelmezett értékek megadása</legend>
+
+            <!--Csak betűk megadásának típusai: kicsi és nagybetű:-->
+            Csak kisbetű pontosan 5 karakter:<input pattern="[a-z]{5}" type="text" name="kisebetu_pontosan" size="60"
+                placeholder="csak kisbetű pontosan 5 darab karakter"><br>
+            <!--pattern="[a-z]{5}"-->
+            Csak nagybetű pontosan 5 karakter:<input pattern="[A-Z]{5}" type="text" name="nagyebetu_pontosan" size="60"
+                placeholder="csak nagybetű pontosan 5 darab karakter"><br>
+            <!--pattern="[A-Z]{5}"-->
+            Kis és nagybetű pontosan 5 karakter:<input pattern="[A-Za-z]{5}" type="text" name="kis_nagyebetu_pontosan"
+                size="60" placeholder="kis és nagybetű pontosan 5 darab karakter"><br>
+            <!--pattern="[A-Za-z]{5}"-->
+
+            <!--A mező hosszára való hivatkozások-->
+            Csak kisebetű 5-10 karakter max:<input pattern="[a-z]{5,10}" type="text" name="kisebetu_kozott" size="60"
+                placeholder="5-10 karakternyi kisbetű"><br>
+            <!--pattern="[A-Z]{5-10}"-->
+            Csak kisbetű legalább 8 karakter:<input pattern="[a-z]{8,}" type="text" name="kisebetu_legalabb" size="60"
+                placeholder="legalább 8 karakternyi kisbetű"><br>
+            <!--pattern="[A-Z]{8,}"-->
+            Legalább 8 bármilyen karakter:<input pattern=".{8,}" type="text" name="karakter_legalabb" size="60"
+                placeholder="8 karakter"><br>
+            <!--pattern=".{8,}"-->
+
+            <!--Csak számok megadásának lehetősége-->
+            Négy jegyű szám - pl.: irányítószám:<input pattern="[0-9]{4}" type="text" name="negy_szamjegy" size="60"
+                placeholder="4 jegyű szám"><br>
+            <!--pattern="[0-9]{4}"-->
+            Akármekkora szám megadása(akár üres is maradhat!):<input pattern="\d*" type="text" name="akarhany_szamjegy"
+                size="60" placeholder="bármennyi jegyű szám"><br>
+            <!--pattern="\d*"-->
+            10 jegyű szám:<input pattern="\d{10}" type="text" name="akarhany_szamjegy" size="60"
+                placeholder="10 jegyű szám"><br>
+            <!--pattern="\d{10}"-->
+
+            <!-- \s  a space karaktert jelöli erre konkrét példa van lentebb!-->
+        </fieldset>
+        <br><br><br>
+
+        <fieldset>
+            <legend>Néhány minta haladó beállításokkal</legend>
+            Angol Név:<input pattern="[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}" type="text" name="vez_nev" size="60"
+                placeholder="csak kis és nagybetu"><br>
+            <!--Konkrét nevet ad meg: pattern="[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}" de nekünk ez nem igazán jó!-->
+
+            Magyar Név:<input pattern="[A-ZÁÉÍÓÖŐÚÜŰ]{1}[a-záéíóöőúüű]{1,}\s[A-ZÁÉÍÓÖŐÚÜŰ]{1}[a-záéíóöőúüű]{1,}"
+                type="text" name="vez_nev" size="60" placeholder="csak kis és nagybetu"><br>
+            <!--Konkrét nevet ad meg: pattern="[A-ZÁÉÍÓÖŐÚÜŰ]{1}[a-záéíóöőúüű]{1,}\s[A-ZÁÉÍÓÖŐÚÜŰ]{1}[a-záéíóöőúüű]{1,}" és így már jó a magyar nevekhez is!-->
+
+            Nick név:<input pattern="[A-Za-z0-9]{5,30}" type="text" name="nick_nev" size="60"
+                placeholder="kis és nagybetű valamint szám"><br>
+            <!--pattern="[A-Za-z0-9]{5,30}"-->
+
+            Jelszó:<input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" name="jelszo" size="60"
+                placeholder="min 8 karakter legalább egy kis és nagybetűt valamint szám"
+                title="min 8 karakter legalább egy kis és nagybetűt valamint szám"><br>
+            <!--csillagozottan jelenik meg a szöveg, pattern az alábbi: pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
+
+            Életkor:<input pattern="[0-9]{1,3}" title="0 és 999 év között csak!!!" type="text" name="kor" max="120"
+                step="5"><br>
+            <!--type="number" helyett: pattern="[0-9]{1-3} -->
+
+            E-mail cím:<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="text" name="email"><br>
+            <!--type="email" helyett: pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+
+            Rendszám:<input pattern="([A-Za-z]{3})-([0-9]{3})" type="text" name="rendszam"
+                placeholder="pl.:ABC-123"><br>
+            <!--pattern="([A-Za-z]{3})-([0-9]{3})"-->
+
+            Telefonszám:<input pattern="([0-9]{2})-([0-9]{2})-([0-9]{3})-([0-9]{4})" type="text" name="telszam"
+                placeholder="pl.:06-30-123-4567"><br>
+            <!--pattern="([0-9]{2})-([0-9]{2})-([0-9]{3})-([0-9]{4})" -->
+
+            <!--
+            További tulajdonságok, akinek így nem lenne elég, részletes a form videómban
+            -value segítségével alapértelmezett értéket adhatunk az elemnek
+            -placeholder tulajdonsággal egy minta szöveget adhatunk az adott mezonek
+            -step esetén ha valamilyen értékállítót használunk, annak a mértékét szabhatjuk meg
+            -disabled esetén nem lehet értéket adni az adott mezőnek!
+            -readonly esetén az adott elem csak olvasható, NEM módosítható!
+            -autofocus esetén megkapja az automatikus fókuszt az adott ellem
+            -required tulajdonság esetén a kitöltése az adott elemnek kötelező
+            -max tulajdonságnál megadhatjuk a maximálisan elfoglalható értéket(pl.: számoknál)
+            -min tulajdonságnál megadhatjuk a minimálisan elfoglalható értéket(pl.: számoknál)
+            -maxlength tulajdonság esetén megadhatjuk maximum hány karaktert írhatunk a beviteli mezőbe
+            -size esetén az adott input elem méretét(hosszát) adhatjuk meg
+            -pattern beállításnál személyre szabhatjuk a megadható bemeneti adatot
+
+            Input type elemek:submit az adatok elküldéséhez
+            -->
+            <input type="submit" value="Ellenőrzés"><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+<!--További jegyzetek itt: http://www.w3schools.com/html/
+illetve a http://html5pattern.com/ -on! -->

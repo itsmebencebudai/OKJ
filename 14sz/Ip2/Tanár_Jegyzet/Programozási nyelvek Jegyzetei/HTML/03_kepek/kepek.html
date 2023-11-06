@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<title>Képek beillesztése a weboldalra</title>
+</head>
+
+<body>
+	<!--img: kép elhelyezésének tag-je, egy elemű nincs külön záró tag-->
+	<!--src: kép forrásának attributuma, többféleképpen is megadható a fájl helyétől függően-->
+	<!--alt: kép leírása ha, rossz lenne a hivatkozás, vagy nem elérhető a forrás-->
+	<!--title: kép címkéje, abban az esetben jelenik meg ha a kép felé visszük az egeret-->
+	<!--width: kép szélességének meghatározása, általában pixelben, manapság inkábbCSS-t használunk helyette-->
+	<!--height: kép magasságának meghatározása, általában pixelben, manapság inkábbCSS-t használunk helyette-->
+
+	<img src="html_logo.png" alt="Ez egy HTML logo!" title="Ugyanazon mappa tartalma" width="200px" height="200px" >
+	<!--Relatív hivatkozás-->
+	<img src="./kepek/html_logo.png" alt="Ez egy HTML logo!" title="Almappa tartalma" width="200" height="200" >
+	<!--Relatív hivatkozás-->
+	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="Ez egy HTML logo!"
+		title="webes elérési út" width="200" height="200" >
+	<!--Abszolút, link hivatkozás-->
+	<img src="file://g:\html_feladat\html_logo.png" alt="Ez egy HTML logo!" title="számítógépen belüli elérési út"
+		width="200" height="200" >
+	<!--Abszolút-->
+
+	<!--Leggyakoribb kép kiterjesztések: jpg, jpeg, png, svg, ico, gif, apng-->
+
+</html>

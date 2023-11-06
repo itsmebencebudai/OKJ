@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image map beállítása</title>
+</head>
+
+<body>
+  <img src="naprendszer.jpg" width="1200" height="400" alt="naprendszerunk" usemap="#naprendszer">
+
+  <map name="naprendszer">
+    <!--Szögletes megjelenítés esetén 2 csúcsot kell megjelölnünk(pl.: bal felső és jobb alsó)-->
+    <!--Vízszintes koordináta, függőleges koordináta,vízszintes koordináta, függőleges koordináta,-->
+    <area shape="rect" coords="568,15,900,70" title="Információ a naprendszerről"
+      href="https://hu.wikipedia.org/wiki/Naprendszer">
+
+    <!--Polygon-os megjelenítésnél a fontosabb koordinátákat kell leírni adatként párossával (x,y) koordináták ismétlésével-->
+    <!--Vízszintes koordináta, függőleges koordináta ismétlése addig amíg körbe nem rajzolod az "objektumot"-->
+    <area shape="poly" coords="0,0,250,0,285,90,295,185,265,320,230,400,0,400" title="Nap"
+      href="https://hu.wikipedia.org/wiki/Nap">
+
+    <!--Kör hivatkozáskor pedig elég megadni az adott kör középpontját és a hozzá tartozó sugarat-->
+    <!--"Vízszintes koordináta, függőleges koordináta, kör sugara"-->
+    <area shape="circle" coords="316,265,20" alt="Merkúr bolygó" title="Merkúr"
+      href="https://hu.wikipedia.org/wiki/Merk%C3%BAr">
+    <area shape="circle" coords="370,265,20" title="Vénusz" href="https://hu.wikipedia.org/wiki/V%C3%A9nusz">
+    <area shape="circle" coords="440,265,35" title="Föld" href="https://hu.wikipedia.org/wiki/F%C3%B6ld">
+    <area shape="circle" coords="518,266,27" title="Mars" href="https://hu.wikipedia.org/wiki/Mars_(bolyg%C3%B3)">
+    <area shape="circle" coords="657,232,90" title="Jupiter" href="https://hu.wikipedia.org/wiki/Jupiter">
+    <area shape="circle" coords="860,242,45" title="Szaturnusz" href="https://hu.wikipedia.org/wiki/Szaturnusz">
+    <area shape="circle" coords="1007,255,35" title="Uránusz" href="https://hu.wikipedia.org/wiki/Ur%C3%A1nusz">
+    <area shape="circle" coords="1096,255,13" title="Neptunusz"
+      href="https://hu.wikipedia.org/wiki/Neptunusz_(bolyg%C3%B3)">
+    <area shape="circle" coords="1155,255,8" title="Plútó"
+      href="https://hu.wikipedia.org/wiki/Pluto_(t%C3%B6rpebolyg%C3%B3)">
+  </map>
+
+</body>
+
+</html>

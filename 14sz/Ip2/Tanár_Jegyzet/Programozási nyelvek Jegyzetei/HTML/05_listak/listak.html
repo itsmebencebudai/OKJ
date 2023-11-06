@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<title>Listák típusai és létrehozásuk</title>
+</head>
+
+<body>
+	<!--Rendezetlen (unordered) lista, egyesek számozatlan listának hívják magyarul-->
+	<ul>
+		<li>Elefánt</li>
+		<li>Oroszlán</li>
+		<li>Zsiráf</li>
+	</ul>
+	<!--Rendezett (ordered) lista, egyesek számozott listának hívják magyarul-->
+	<!--Típus Opciók: 1,A,a,I,i-->
+	<ol type="1">
+		<li>Elefánt</li>
+		<li>Oroszlán</li>
+		<li>Zsiráf</li>
+	</ol>
+	<!--Leíró (description) lista-->
+	<dl>
+		<dt>Rendezetlen lista</dt>
+		<!--DT description title-->
+		<dd>Az elemek számozás nélkül, jelekkel vannak csak megkülönböztetve.</dd>
+		<!--DD description data-->
+		<dt>Rendezett lista</dt>
+		<dd>Az elemek számokkal vannak sorba rendezve.</dd>
+	</dl>
+	<!--Egymásba ágyazott több szintű lista-->
+	<br />
+	<ul>
+		<li>Növények</li>
+		<li>Állatok
+			<!--A lista elem lezáró tagjét azután az elem után kell elhelyezi, ameddig szeretnénk, hogy a beágyazott listánk tartson!-->
+			<ul>
+				<li>Elefánt</li>
+				<li>Oroszlán</li>
+				<li>Zsiráf</li>
+			</ul>
+		</li><!--Azaz ide kerül például!-->
+		<li>Gombák</li>
+	</ul>
+</body>
+
+</html>

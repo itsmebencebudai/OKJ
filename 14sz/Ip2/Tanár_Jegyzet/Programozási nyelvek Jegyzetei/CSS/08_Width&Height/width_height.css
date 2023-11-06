@@ -1,0 +1,47 @@
+﻿#szeles_magas_anyuka {
+	background-color: red;
+	width: 50%;
+	height: 50%;
+}
+
+#szeles_magas {
+	background-color: black;
+	border: 1px solid orange;
+	width: inherit;
+	height: inherit;
+}
+
+/*
+Alapértelmezett megadási módok:
+
+-Auto érték esetén a böngésző maga dönti el, mekkor a megfelelő méret! (elég veszélyes használni ) xD 
+
+-initial érték megadása esetén beállítja azt az alapértelmezett értékekre!
+
+-konkrét értékkel: px, cm, stb...
+width:200px;
+height:200px;
+
+-Százalékosan:
+width:30%;
+height:30%;
+
+Százalékos esetén megszabhatjuk a megjelenés minimális illetve maximális méretét
+(szétcsuszások elkerülése miatt)
+
+A maximális értékeket:
+max-height:150px;
+max-width: 300px;
+
+Minimális értékeket:
+min-height:100px;
+min-width:150px;
+
+-inherit tulajdonság esetén, öröklődik a mérete a szülőtől
+pl.: 
+width:inherit;
+height:inherit;
+	
+
+
+*/

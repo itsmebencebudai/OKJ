@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascriptFile.js" ></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <!--Ide jön az oldal tartalma-->
+    <h1>Itt bármi lehet</h1>
+    <div id="elso"></div>
+
+
+
+
+
+
+    <!--Body rész végére jön a JS rész meghívása-->
+    <script>
+
+        //változó deklarálás
+        let nev="Feri";
+        let Nev="Pisti";
+
+        const ALLANDO="Az iskola szuper!";
+        var godMode=true;
+        var godMode="Király László"
+
+
+        //Kiíratás
+        //Felugró ablakban:
+        alert(nev);
+        alert(Nev);
+
+        //Konzol használata, böngészőben F12
+        console.log(godMode);
+
+        //Weboldalra való kiírás
+        //Tartalom létrehozása
+        document.write(ALLANDO);
+        //Meglévő tartalom módosítása
+        document.querySelector("h1").innerHTML=nev;//querySelector
+        //"#idNeve" , ".classNeve" - querySelectorAll
+        document.getElementById("elso").innerHTML="Első div";
+
+
+        //Operátorok
+        //Aritmetikai - Matematikai operátorok:
+        // +, - , * ,/ , %, **
+
+        //Összehasonító operátorok:
+        // ==, ===, !=, !==, <=, >=, <, >
+
+        //Értékadó operátor:
+        // =
+
+        //Logikai operátor
+        // || - vagy, && - és, ! - tagadás
+
+
+
+        //Random szám generálás:
+        let randomSzam=Math.round(Math.random()*100);
+
+        //Prompt használatával érték beolvasása
+        let beolvasottSzam=Number(prompt("Adj meg egy számot:"));
+
+        console.log(randomSzam);
+
+
+        let valtozo="Változó";
+        //Kiíratás
+        //Változó és szöveg kiírása
+        document.write("Szöveg "+valtozo+"<br>");
+        document.write(`Szoveg ${valtozo} <br>`)
+    </script>
+    <script src="javascriptFile.js" ></script>
+</body>
+</html>

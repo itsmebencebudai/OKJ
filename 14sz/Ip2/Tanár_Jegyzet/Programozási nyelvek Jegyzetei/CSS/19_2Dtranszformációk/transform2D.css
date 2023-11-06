@@ -1,0 +1,65 @@
+﻿/*
+2D Transzformációk
+translate() - Az elem elmozdítása, x és y irányba
+rotate() - Az elem elforgatása adott szögben
+scaleX() - Az elem átméretezése X tengely mentén
+scaleY() - Az elem átméretezése Y tengely mentén
+scale() - Az elem átméretezése X és Y tengely mentén
+skewX() - Az elem megdöntése X tengely mentén
+skewY() - Az elem megdöntése Y tengely mentén
+skew() - Az elem megdöntése X és Y tengely mentén
+matrix() - Több 2D-s transzformáció megadása egyszerre
+*/
+
+/*translate() - Elmozdítás*/
+.mozgatas:hover {
+    transform: translate(30px, 20px);
+}
+
+/*rotate() - Forgatás*/
+.forgatas:hover {
+    transform: rotate(30deg)
+        /*Negatív irány, az ellentétes irányú mozgást jelöli*/
+}
+
+/*scale() - Átméretezés*/
+.atmeretezesXY:hover {
+    transform: scale(2, 2);
+    /*Egy alatti értékek esetén kicsinyítés figyelhező meg*/
+}
+
+.atmeretezesX:hover {
+    transform: scaleX(1.5);
+    /*Egy alatti érték esetén X irányú összefűzés van*/
+}
+
+.atmeretezesY:hover {
+    transform: scaleY(0.5);
+    /*Egynél nagyobb érték esetén Y irányú nyújtás van*/
+}
+
+/*skew() - Döntés*/
+.dontes:hover {
+    transform: skew(20deg, 10deg);
+    /*Ha csak egy értéket adunk meg akkor a második érték 0-nak számít, így csak X irányú döntés lesz*/
+}
+
+.dontesX:hover {
+    transform: skewX(30deg);
+    /*X irányú döntés*/
+}
+
+.dontesY:hover {
+    transform: skewY(45deg);
+    /*Y irányú döntés*/
+}
+
+/*matrix() - All in ONE*/
+.matrix:hover {
+    transform: matrix(2, 0, 1, 2, 100, 100);
+}
+
+/*
+A formázások matrix() esetén a következő:
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+*/

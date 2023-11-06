@@ -1,0 +1,54 @@
+﻿#szegely {
+	/*Tulajdonság*/
+	border-bottom: 3px solid green;
+	border-top: 3px solid green;
+}
+
+/*Szegély Stílusa
+border-style: dotted; - pontozott vonal
+border-style: dashed; - szaggatott vonal
+border-style: solid; - sima vonal
+border-style: double; - dupla vonal
+border-style: groove; - 3D hatású border
+border-style: ridge; - 3D hatású border
+border-style: inset; - 3D hatású border
+border-style: outset; - 3D hatású border
+border-style: none; - szegély kikapcsolása
+border-style: hidden; - szegély elrejtése
+*/
+
+/*Szegély vastagsága(szélessége)
+border-width: 10px; - konkrét értékkel megadva
+border-width: medium; - szöveggel megadva( medium-közepes, thin-vékony, thick-vastag)
+*/
+
+/*Szegély színének megadása
+pl.: border-color:#ff0000;
+
+A színt 4 fél képpen is megadhatjuk
+	1. HEX értékben : pl.:#ff0000;
+	2. RGB kódban : pl.: rgb(255,0,0);
+	3. RGBA kódban : pl.: rgba(255,0,0,0.5); //A 4. érték 0 és 1.0 közötti értékű
+	4. A szín nevét használva : pl.: red;	
+*/
+
+/*Oldalanként beállított szegély
+Felső szegély beállítása:
+border-top-style:	border-top-width:	border-top-color:
+
+Jobb oldali szegély beállítása:
+border-right-style:	border-right-width:	border-right-color:
+
+Alsó szegély beállítása:
+border-bottom-style:	border-bottom-width:	border-bottom-color:
+
+Baloldali szegély beállítása:
+border-left-style:	border-left-width:	border-left-color:
+*/
+
+/*ALL IN ONE!
+border:1px solid red;
+vagy speciálisan oldalaként is megadható! border-top, border-right, border-bottom, border-left;
+*/
+
+/*Illetve lezetik border-radius(szegély lekerekítés) és border-image(szegélyre kép beillesztése) tulajdonság de ezekről majd CSS3 résznél beszélünk!*/

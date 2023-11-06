@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Linkek beállítási lehetőségei CSS-ben</title>
+    <link rel="stylesheet" type="text/css" href="link.css" />
+</head>
+
+<body>
+    <!-- Ugyanarra a linkre mutató elemek egyszerre lesznek látogatottak bármelyikre kattintunk -->
+    <a href="#">Teszt link01 ugyanarra az oldalra mutat</a>
+    <a href="#">Teszt link02 ugyanarra az oldalra mutat</a>
+    <a href="#">Teszt link03 ugyanarra az oldalra mutat</a>
+    <a href="#">Teszt link04 ugyanarra az oldalra mutat</a>
+
+    <br>
+    <br>
+    <br>
+    <!-- Különböző linkek estén, természetesen a látogatott link beállítás csak akkor aktiválódik, ha korábban azt az oldalt már meglátogattuk előtte. -->
+    <a href="https://hu.wikipedia.org/wiki/" target="_blank">Teszt link01 - Wikipedia (HU)</a>
+    <a href="https://www.wikipedia.org/" target="_blank">Teszt link02 - Wikipedia (ENG)</a>
+    <a href="https://www.w3schools.com/" target="_blank">Teszt link03 - W3Schools</a>
+    <a href="https://stackoverflow.com/" target="_blank">Teszt link04 - Stackoverflow</a>
+
+</body>
+
+</html>

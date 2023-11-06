@@ -1,0 +1,176 @@
+﻿/*
+Animációk tulajdonságai
+
+    [@keyframes] - Animáció leírása, pontosan milyen állapotok találhatóak meg benne
+    [animation-name] - Az animáció neve, ami alapján meghívhatjuk
+    [animation-duration] - Az animáció időtartama, másodpercben (pl.: 2s)
+    [animation-delay] - Az animáció késleltetésének mértéke, szintén másodpercben
+    [animation-iteration-count] - Animáció futtatásának mennyisége:darabra megadva, vagy végtelen
+    [animation-direction] - Animáció iránya, lásd lentebb
+    [animation-timing-function] -Animálás sebesség görbéjének változtatása
+    [animation-fill-mode] - Kezdeti és végső kinézet megtartása
+    [animation] - Minden tulajsonság megadása 1 sorban
+*/
+
+/*Keyframes - Kulcspontok*/
+@keyframes ketAllapotosSzinezo {
+    from {background-color: blue;}/*Kezdőállapot*/
+    to {background-color: green;}/*Végállapot*/
+  }
+
+  @keyframes negyAllapotosSzinezo {
+    0%   {background-color: red;}
+    25%  {background-color: white;}
+    50%  {background-color: green;}
+    100% {background-color: red;}
+  }
+  @keyframes mozgato{
+    0%{left:0px;}
+    50%{left:100px;}
+    100%{left:0px;}
+  }
+  @keyframes divBoxVerseny{
+    0%{left:0px;}
+    100%{left:300px;}
+  }
+/*animation-name(NÉV) & animation-duration(HOSSZ)*/
+.alapAnimacio{
+  animation-name:ketAllapotosSzinezo;
+  animation-duration:4s;
+}
+.alapAnimacio2:hover{
+  animation-name:negyAllapotosSzinezo;
+  animation-duration:10s;
+}
+
+/*animation-delay(VÁRAKOZTATÁS*/
+.kesleltetettAnimacio:hover{
+  animation-name:ketAllapotosSzinezo;
+  animation-duration:4s;
+  animation-delay: 4s;
+
+  /*Ha a várakoztatás ideje negatív, akkor az animáció az adott idő letelte utáni állapotot veszi fel egyből!*/
+}
+/*animation-iteration-count(ISMÉTLÉSSZÁM)*/
+.ismetlodoAnimacio{
+  animation-name:mozgato;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-iteration-count: 3;
+}
+/*animation-direction(ANIMÁLÁS IRÁNYA)*/
+.vegtelenAnimacio{
+  animation-name:mozgato;
+  animation-duration:4s;
+  animation-delay:2s;
+  animation-iteration-count: infinite;
+}
+
+/*animation-timing-function(IDŐZÍTÉS)*/
+
+/*
+normal - Az animáció normal módban hajtódik végre, ez az alapértelmezett
+reverse - Az animáció fordítottan hajtódik végre (visszelé)
+alternate - Az animációt először előre, majd visszafelé játssza le 
+alternate-reverse - Az animációt először hátrafelé, majd előrefelé játssza le
+
+Alapértelmezett beállítás: [normal]
+*/
+.alapMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-direction: alternate;
+}
+.forditottMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-direction:reverse;
+}
+.odavisszaMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-direction:alternate-reverse;
+}
+
+/*animation-timing-function(Animálás sebességének változtatása)*/
+
+/* 
+ease - Lassan kezdődő, majd gyors, majd lassan befejeződő animációt állít be (Alapértelmezett érték)
+linear - Az elejétől a végéig azonos sebességű animációt  állít be 
+ease-in - Lassú indítású animációt állít be 
+ease-out - Lassú végű animációt állít be 
+ease-in-out - Lassú kezdetű és végű animációt állít be  
+*/
+
+.easeMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:10s;
+  animation-delay:2s;
+  animation-timing-function: ease;
+}
+.linearMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:10s;
+  animation-delay:2s;
+  animation-timing-function: linear;
+}
+.easeinMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:10s;
+  animation-delay:2s;
+  animation-timing-function: ease-in;
+}
+.easeoutMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:10s;
+  animation-delay:2s;
+  animation-timing-function: ease-out;
+}
+.easeinoutMozgatoAnimacio{
+  animation-name:divBoxVerseny;
+  animation-duration:10s;
+  animation-delay:2s;
+  animation-timing-function: ease-in-out;
+}
+
+/*animation-fill-mode(Kezdeti és végső kinézet megtartása)*/
+
+/* 
+none - Alapértelmezett érték. Az animáció semmilyen stílust nem alkalmaz az elemre a végrehajtás előtt vagy után 
+forwards - Az elem megtartja az utolsó kulcsképkocka által beállított stílusértékeket (az animáció irányától és az animáció iterációinak számától függően) 
+backwards - Az elem megkapja az első kulcsképkocka által beállított stílusértékeket (az animáció irányától függően), és megtartja ezt az animáció késleltetési időszaka alatt 
+both - Az animáció követni fogja az előre és visszafelé vonatkozó szabályokat, mindkét irányba kiterjesztve az animáció tulajdonságait  
+*/
+.kezdetiAllapotMegtartoAnimacio{
+  animation-name:negyAllapotosSzinezo;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-fill-mode:backwards;
+}
+.vegAllapotMegtartoAnimacio{
+  animation-name:negyAllapotosSzinezo;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-fill-mode:forwards;
+}
+.kezdetiEsVegAllapotMegtartoAnimacio{
+  animation-name:negyAllapotosSzinezo;
+  animation-duration:4s;
+  animation-delay:1s;
+  animation-fill-mode:both;
+}
+/*animation(All In One)*/
+.allInOne{
+  animation-name: negyAllapotosSzinezo;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*Helyett:*/
+  animation: negyAllapotosSzinezo example 5s linear 2s infinite alternate;
+}
+

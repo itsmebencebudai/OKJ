@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Táblázatok formázásai</title>
+  </head>
+  <body>
+    <table>
+      <!--Alapértelmezett táblázat megjelenítő tag-->
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <th>Táblázat fejléce</th>
+        <!--table header-->
+        <!-- <th> elemek alapértelmezetten félkövér formázásúak-->
+      </tr>
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <td>Táblázat adata</td>
+        <!--table data-->
+      </tr>
+    </table>
+
+    <!--COLspan és ROWspan-->
+    <!--border attributum, NEM VALID, de segíti a megértést, mert szegélyt rak a cellák köré-->
+    <table border="1">
+      <!--Alapértelmezett táblázat megjelenítő tag-->
+        <caption>Táblázat címkéje</caption>
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <th>Táblázat fejléce</th>
+        <!--table header-->
+        <th>Táblázat fejléce</th>
+        <!--table header-->
+        <th>Táblázat fejléce</th>
+        <!--table header-->
+        <!-- <th> elemek alapértelmezetten félkövér formázásúak-->
+      </tr>
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <td rowspan="2">Függőlegesen összevont cella</td>
+        <!--ROWSPAN függőleges cella összevonás-->
+        <td colspan="2">Vízszintesen összevont cella</td>
+        <!--COLSPAN vízszintes cella összevonás-->
+        <!--Vízszintes cellaösszevonás esetén az adott sorba adott mennyiséggel kevesebb elem kell -->
+      </tr>
+
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <td colspan="2">Vízszintesen összevont cella</td>
+        <!--COLSPAN vízszintes cella összevonás-->
+        <!--Függőleges cellaösszevonás esetén az adott oszlopban, megadott sor mennyiségig, kevesebb cellát kell létrehozni, mert ugye azokat korábban összevontuk -->
+      </tr>
+    </table>
+
+    <!--Widht és Height attributuma is létezik, leformázza, de már NEM VALID!-->
+    <table height="200">
+      <!--Alapértelmezett táblázat megjelenítő tag-->
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <th>Táblázat fejléce</th>
+        <!--table header-->
+        <!-- <th> elemek alapértelmezetten félkövér formázásúak-->
+      </tr>
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <td>Táblázat adata</td>
+        <!--table data-->
+      </tr>
+    </table>
+
+    <!--<thead>, <tbody>, <tfoot>-->
+    <table>
+      <!--Alapértelmezett táblázat megjelenítő tag-->
+      <thead><!--FEJLÉC rész-->
+        <tr>
+          <!--Adott táblázat sorát töri-->
+          <th>Táblázat fejléce</th>
+          <!--table header-->
+          <!-- <th> elemek alapértelmezetten félkövér formázásúak-->
+        </tr>
+      </thead>
+      <tbody><!--TARTALOM rész-->
+      <tr>
+        <!--Adott táblázat sorát töri-->
+        <td>Táblázat adata</td>
+        <!--table data-->
+      </tr>
+    </tbody>
+    <tfoot><!--LÁBRÉSZ rész-->
+        <tr>
+          <!--Adott táblázat sorát töri-->
+          <td>Táblázat adata</td>
+          <!--table data-->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

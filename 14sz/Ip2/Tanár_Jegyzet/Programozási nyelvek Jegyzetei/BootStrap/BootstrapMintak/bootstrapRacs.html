@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Bootstrap rácsszerkezet minta</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* piros szóval kezdődő id-ket formázok ezzel a tulajdonsággal */
+        div[id^="piros"] {
+            background-color: red;
+            height: 25vh;
+        }
+
+        /* kek szóval kezdődő id-ket formázok ezzel a tulajdonsággal */
+        div[id^="kek"] {
+            background-color: blue;
+            height: 25vh;
+            color: white;
+        }
+
+        /* zold szóval kezdődő id-ket formázok ezzel a tulajdonsággal */
+        div[id^="zold"] {
+            background-color: green;
+            height: 25vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Konténer típusok:
+    [.container]
+    [.container-sm] 
+    [.container-md] 
+    [.container-lg] 
+    [.container-xl] 
+    [.container-xxl] 
+    [.container-fluid]  -->
+    <div class="container">
+        <!-- Az alábbi szerkezetet ha megnézed böngészőben láthatod, hogyan változik a bootstrap rács szerkezete, a rendelkezésre álló helytől függően -->
+        <div class="row">
+            <!-- [col-12] szelesseg <= 576px esetén egy elem szélessége 12 egység -->
+            <!-- [col-sm-6] 576px < szelesseg <= 768px esetén egy elem szélessége 6 egység -->
+            <!-- [col-md-4] 768px < szelesseg <= 992px esetén egy elem szélessége 4 egység -->
+            <!-- [col-lg-3] 992px < szelesseg <= 1200px esetén egy elem szélessége 3 egység -->
+            <!-- [col-xl-2] 1200px < szelesseg <= 1400px esetén egy elem szélessége 2 egység -->
+            <!-- [col-xxl-1] 1400px < szelesseg esetén egy elem szélessége 1 egység -->
+            <!-- Megjegyzés:Az adott méret esetén lévő egységek szélessége természetesen eltérhet a mintától! -->
+            <div id="piros1" class=" col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                1.
+            </div>
+            <div id="kek1" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                2.
+            </div>
+            <div id="zold1" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                3.
+            </div>
+            <div id="piros2" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                4.
+            </div>
+            <div id="kek2" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                5.
+            </div>
+            <div id="zold2" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                6.
+            </div>
+            <div id="piros3" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                7.
+            </div>
+            <div id="kek3" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                8.
+            </div>
+            <div id="zold3" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                9.
+            </div>
+            <div id="piros4" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                10.
+            </div>
+            <div id="kek4" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                11.
+            </div>
+            <div id="zold4" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                12.
+            </div>
+        </div>
+
+
+        <p id="meret"></p>
+        <!-- Természetesen lehet a cellák mérete változó is, az arányok összegének azonban érdemes a 12-t megadni -->
+        <div class="container" style="margin-top:20px;">
+            <div class="row">
+                <div id="piros" class="col-8">[1] 8 egység széles elem, nem változik adott méretek után!</div>
+                <div id="kek" class="col-4">[2] 4 egység széles elem, nem változik adott méretek után!</div>
+            </div>
+        </div>
+
+        <!--Offset tulajdonság-->
+        <!--Igazítás amennyiben responsivean szeretnénk beállítani az "üres helyeket"-->
+        <!--Az offset tulajdonság az elemek baloldali margóját állítja be responsivean!-->
+        <div class="row" style="border:1px solid black; padding:10px;">
+            <div class="col-md-4" style="border:1px solid green;">.col-md-4</div>
+            <div class="col-md-4 offset-md-4" style="border:1px solid blue;">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row" style="border:1px solid black; padding:10px;">
+            <div class="col-md-3 offset-md-3" style="border:1px solid green;">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3" style="border:1px solid blue;">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row" style="border:1px solid black; padding:10px;">
+            <div class="col-md-6 offset-md-3" style="border:1px solid blue;">.col-md-6 .offset-md-3</div>
+        </div>
+
+        <!--Margin tulajdonság-->
+        <!--Létezik a margin tulajdonság is bootstrapban ezek előre be vannak állítva mint a többi bootstrap esetén-->
+        <!--Olyankor használjuk amikor az elosztás szélessége változó!
+
+            .mt - Margin TOP
+            .mb - Margin BOTTOM
+            .ml - Margin LEFT
+            .mr - Margin RIGHT
+            .mx - X Tengely(vízszintes)
+            .my - Y tengely(függőleges)
+            
+            pl.:            
+            .mx-auto  - Automatikus margó minden irányból(középre igazít)
+
+
+            A távolságok listáját az alábbi linken találod (0-5-ig):
+            https://getbootstrap.com/docs/4.0/utilities/spacing/
+        -->
+    </div>
+
+
+
+    <script>
+        window.addEventListener('resize', elemSzelesseg); //Automatikusan lefut a JS kód ha átméretezem az ablakot
+        function elemSzelesseg() {
+            var ablakSzelesseg = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var ablakMagassag = window.innerHeight || document.documentElement.clientHeight || document.body
+                .clientHeight;
+            var x = document.getElementById("meret");
+            x.innerHTML = "Az ablak belső szélessége: " + ablakSzelesseg + " px , magassága: " + ablakMagassag + "px.";
+            if (ablakSzelesseg > 1400) {
+                document.getElementById("piros1").innerHTML = "[1] 1 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 1 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 1 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 1 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 1 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 1 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 1 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 1 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 1 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 1 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 1 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 1 egység széles elem";
+            } else if (ablakSzelesseg > 1200 && ablakSzelesseg <= 1400) {
+                document.getElementById("piros1").innerHTML = "[1] 2 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 2 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 2 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 2 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 2 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 2 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 2 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 2 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 2 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 2 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 2 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 2 egység széles elem";
+            } else if (ablakSzelesseg > 992 && ablakSzelesseg <= 1200) {
+                document.getElementById("piros1").innerHTML = "[1] 3 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 3 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 3 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 3 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 3 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 3 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 3 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 3 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 3 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 3 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 3 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 3 egység széles elem";
+            } else if (ablakSzelesseg > 768 && ablakSzelesseg <= 992) {
+                document.getElementById("piros1").innerHTML = "[1] 4 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 4 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 4 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 4 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 4 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 4 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 4 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 4 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 4 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 4 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 4 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 4 egység széles elem";
+            } else if (ablakSzelesseg > 576 && ablakSzelesseg <= 768) {
+                document.getElementById("piros1").innerHTML = "[1] 6 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 6 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 6 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 6 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 6 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 6 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 6 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 6 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 6 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 6 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 6 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 6 egység széles elem";
+            } else {
+                document.getElementById("piros1").innerHTML = "[1] 12 egység széles elem";
+                document.getElementById("piros2").innerHTML = "[4] 12 egység széles elem";
+                document.getElementById("piros3").innerHTML = "[7] 12 egység széles elem";
+                document.getElementById("piros4").innerHTML = "[11] 12 egység széles elem";
+                document.getElementById("kek1").innerHTML = "[2] 12 egység széles elem";
+                document.getElementById("kek2").innerHTML = "[5] 12 egység széles elem";
+                document.getElementById("kek3").innerHTML = "[8] 12 egység széles elem";
+                document.getElementById("kek4").innerHTML = "[11] 12 egység széles elem";
+                document.getElementById("zold1").innerHTML = "[3] 12 egység széles elem";
+                document.getElementById("zold2").innerHTML = "[6] 12 egység széles elem";
+                document.getElementById("zold3").innerHTML = "[9] 12 egység széles elem";
+                document.getElementById("zold4").innerHTML = "[12] 12 egység széles elem";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

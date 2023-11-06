@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Kép tulajdonságainak lehetőségei Bootstrappel</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <img src="mintaKep.jpg" class="img-fluid" alt="Bootstrap Logo" title="img-fluid">
+    <div style="width:600px; margin:0px auto; border:1px solid black">
+        <!--[img-fluid] - tulajdonsággal a képet felruházzuk azzal a tulajdonsággal hogy 100%-ban kitöltse a rendelkezésre álló teret(szülő elem), szélessége 100%-lesz, magassága pedig automatikus, így responsive képet kapunk-->
+        <img src="mintaKep.jpg" class="img-fluid" alt="Bootstrap Logo" title="img-fluid">
+
+
+        <!--[img-thumbnail] - tulajdonsággal szegélyt adunk az elemünknek, lekerekített 1px-es keretet ad az elemnek-->
+        <img src="mintaKep.jpg" class="img-thumbnail" alt="Bootstrap Logo" title="img-thumbnail">
+        <!--
+            További szegély beállítási lehetőségek:        
+            https://getbootstrap.com/docs/4.0/utilities/borders/
+        -->
+
+
+        <!--[rounded] - kifejezéssel lekerekíthetjük azt-->
+        <img src="mintaKep.jpg" class="rounded" alt="Bootstrap Logo" title="rounded">
+        <!--
+            Több féle opció is létezik a lekerekítésre:
+            <img src="..." alt="..." class="rounded"> - alap keretkítés
+            <img src="..." alt="..." class="rounded-top"> - felső elemeket kerekíti le
+            <img src="..." alt="..." class="rounded-right"> - jobb oldali elemeket kerekíti le
+            <img src="..." alt="..." class="rounded-bottom"> - alsó elemeket kerekíti le
+            <img src="..." alt="..." class="rounded-left"> - bal oldali elemeket kerekíti le
+            <img src="..." alt="..." class="rounded-circle"> - kör alakúra kerekíti az elemet
+            <img src="..." alt="..." class="rounded-0"> - megszűnteti a kerekítést
+        -->
+
+
+        <!--[float-start] és [float-end] illetve a [float-none] tulajdonsággal igazíthatjuk, az elejére végére illetve ki lehet kapcsolni az igazítást-->
+        <img src="mintaKep.jpg" class="float-start" alt="Bootstrap Logo" title="float-start" style="width:200px;">
+        <img src="mintaKep.jpg" class="float-end" alt="Bootstrap Logo" title="float-end" style="width:200px;">
+        <img src="mintaKep.jpg" class="float-none" alt="Bootstrap Logo" title="float-none" style="width:200px;">
+        <!--Az igazítást akár mérettől függővé is teheted, az alábbi módon: float-lg-start float-md-none (sm, md, lg, xl, xxl)-->
+
+
+        <!--
+            További lebegtetés beállítási lehetőségek:        
+            https://getbootstrap.com/docs/5.1/utilities/float/
+        -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A "nagy" form áttekintés!</title>
+</head>
+
+<body>
+	<form action="futtato_oldal.php" method="post">
+		<!--Vagy method="post" -->
+		<!--Mi a különbség get és post között akkor mégis?
+		GET
+			Kisebb méretű adatok, például néhány szó elküldéséhez használható csak. 
+			Titkos adatok, például jelszó elküldésére ne használjuk, mert az elküldés után megjelenő honlap URL-jében 
+			megjelenik az összes megadott adat!
+		POST
+			Az adatok mérete itt nincs limitálva, és titkos adatokat is csak a POST-tal küldhetünk el. 
+			Általában ezt szoktam használni a GET hátrányai miatt.-->
+		<fieldset>
+			<legend>Form címke</legend>
+			<!--Input type elemek:text, password, number, email, date, time,  -->
+			Vezetéknév:<input type="text" name="vez_nev" required size="10" readonly value="Kiss"><br>
+			<!--egyszerű szöveg típusú beviteli mező-->
+			Keresztnév:<input type="text" name="ker_nev" required maxlength="10" size="20" placeholder="Józsi"><br>
+			Jelszó:<input type="password" name="jelszo"><br>
+			<!--csillagozottan jelenik meg a szöveg-->
+			Életkor:<input type="number" name="kor" autofocus max="120" step="5"><br>
+			<!--csak szám típusú karaktert fogad el-->
+			E-mail cím:<input type="email" name="email"><br>
+			<!--csak email típusú értéket fogadja el (@ .)-->
+			Dátum:<input type="date" name="datum" disabled><br>
+			<!--csak dátum típusú karaktert fogad el (pl.:2000-08-20) -->
+			Idő:<input type="time" name="ido" disabled><br>
+			<!--csak idő típusú karaktert fogad el (pl:10:00)-->
+			Rendszám:<input type="text" name="rendszam" pattern="([A-Za-z]{3})-([0-9]{3})"><br>
+			<!--Egyéni Bemeneti adat megadása-->
+			<!--
+			Ezeken kívül létezik még datetime, datetime-local, month, week, tel, link, search, és range opció.
+			Érdekesség: pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" jelszó esetén beállítható az alábbi sor, 
+			így legalább 8 karakter hosszú legalább egy kis és nagybetűt valamint számot tartalmazó input kerül csak elfogadásra
+			-->
+
+			<!--
+				-value segítségével alapértelmezett értéket adhatunk az elemnek
+				-placeholder tulajdonsággal egy minta szöveget adhatunk az adott mezőnek
+				-step esetén ha valamilyen értékállítót használunk, annak a mértékét szabhatjuk meg
+				-disabled esetén nem lehet értéket adni az adott mezőnek!
+				-readonly esetén az adott elem csak olvasható, NEM módosítható!
+				-autofocus esetén megkapja az automatikus fókuszt az adott ellem
+				-required tulajdonság esetén a kitöltése az adott elemnek kötelező
+				-max tulajdonságnál megadhatjuk a maximálisan elfoglalható értéket(pl.: számoknál)
+				-min tulajdonságnál megadhatjuk a minimálisan elfoglalható értéket(pl.: számoknál)
+				-maxlength tulajdonság esetén megadhatjuk maximum hány karaktert írhatunk a beviteli mezőbe
+				-size esetén az adott input elem méretét(hosszát) adhatjuk meg
+				-pattern beállításnál személyre szabhatjuk a megadható bemeneti adatot
+			-->
+
+			<!--Input type elemek: radio-->
+			<input type="radio" name="nem" value="f" checked>Férfi<br>
+			<!--checked az automatikusan kiválaszott elem-->
+			<input type="radio" name="nem" value="n">Nő<br>
+			<input type="radio" name="nem" value="e">Egyéb<br>
+			<!--Az elemek közül "nevenként" csak az egyik jelölhető-->
+
+			<!--Input type elemek: checkbox, avagy a jelölőnégyzet-->
+			<input type="checkbox" name="like">
+			Likeoltam a videót<br>
+			<input type="checkbox" name="share">
+			Megosztottam a videót<br>
+			<!--Az elemek közül akár mind kijelölhető-->
+
+			<!--Lenyíló lista-->
+			Lenyíló lista:
+			<select>
+				<!--Lenyíló lista létrehozó tag-->
+				<optgroup label="Értékscsoport 01">
+					<!--optgroup egy adott csoport "kiemeléséhez"-->
+					<option value="ertek01" selected>Szöveg 01</option>
+					<!--Selected opció az automatikus kiválasztáshoz-->
+					<option value="ertek02">Szöveg 02</option>
+					<!--Listaelem-->
+					<option value="ertek03">Szöveg 03</option>
+					<option value="ertek04">Szöveg 04</option>
+					<option value="ertek05">Szöveg 05</option>
+				</optgroup>
+				<optgroup label="Értékscsoport 02">
+					<option value="ertek01">Szöveg 01</option>
+					<option value="ertek02">Szöveg 02</option>
+					<option value="ertek03">Szöveg 03</option>
+					<option value="ertek04">Szöveg 04</option>
+					<option value="ertek05">Szöveg 05</option>
+				</optgroup>
+			</select><br>
+
+			<!--Szöveg "terület"-->
+			<textarea name="szoveges_uzenet" rows="10" cols="30">
+				Erre a területre lehet majd szöveget írni!
+			</textarea><br>
+			<!--rows a sorok száma, cols az oszlopoké-->
+
+
+			<!--Fájl feltöltése és címke létrehozás-->
+			<label for="file">Feltöltendő fájl:</label><input type="file" id="fajl"><br>
+			<!--Címke használata-->
+			<!--Használatához kell:
+			A form címkének állítsuk be az alábbi attribútumot: enctype="multipart/form-data"
+			A form elküldési módja legyen POST: method="post"-->
+
+			<!--Input type elemek:submit az adatok elküldéséhez-->
+			<input type="submit" value="Felirat"><br>
+
+			<!--Egyéb gomb létrehozási lehetőség-->
+			<button type="button" onclick="alert('Felugró üzenet!')">Kattints!</button><br>
+
+		</fieldset>
+	</form>
+</body>
+
+</html>

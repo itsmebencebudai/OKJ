@@ -1,0 +1,5 @@
+HTML:
+https://hu.wikipedia.org/wiki/HTML
+
+CSS:
+https://hu.wikipedia.org/wiki/Cascading_Style_Sheets

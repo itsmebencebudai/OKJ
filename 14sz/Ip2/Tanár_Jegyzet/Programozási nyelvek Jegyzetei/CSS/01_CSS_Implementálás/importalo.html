@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Importálása</title>
+	<meta name="author" content="Nagy Ferenc" />
+	
+	 <!--Külső (External) stílus használata egy külső dokumentumra való hivatkozással a HEAD részen belül-->
+	<link rel="stylesheet" type="text/css" href="stilus.css">
+	<!--Segítségével több oldalnak is adhatod meg ugyanazt a kinézetet, egy ehhez hasonló sor beillesztésével!-->
+
+
+	<!--Belső (Internal) stílus használat HEAD részen belül STYLE tagek között-->
+	<style>
+		h1 
+		{f
+			color: yellow;
+		}
+	</style>
+	<!--Olyankor jó amikor csak az adott oldalra jellemző tulajdonságokat szeretnénk megadni!-->
+</head>
+<body>
+	 <!--Soron belül - helyi(Inline) stílus használata-->
+	 <h1 style="color:blue; margin-left:30px;">Ez egy fejléc szöveg.</h1>
+	 <!--Csak akkor adjuk meg ha az adott elemnek speciális tulajdonságai vannak, amit máshol nem szeretnénk!-->
+</body>
+</html>

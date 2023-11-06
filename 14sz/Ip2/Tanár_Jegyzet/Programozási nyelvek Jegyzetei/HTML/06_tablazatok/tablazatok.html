@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Táblázatok HTML-ben</title>
+</head>
+
+<body>
+    <!--<table> <th> <td> <tr> <caption>-->
+    <table>
+        <caption>Egyszerű táblázat</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/2</td>
+            <td>1/3</td>
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+            <td>2/3</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+            <td>3/3</td>
+        </tr>
+    </table>
+
+    <!--border, colspan, rowspan-->
+    <!--border-t table tag-en belül (HTML 5 nem támogatja)-->
+    <table border="1">
+        <!--border 1(szegély) vagy 0(nincs szegély)-->
+        <caption>Egyszerű táblázat</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td colspan="2">1/1-2</td>
+            <!--colspan vízszintes cella összevonás(egymás mellett)-->
+            <td>1/3</td>
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+            <td>2/3</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+            <td>3/3</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <!--border 1(szegély) vagy 0(nincs szegély)-->
+        <caption>Egyszerű táblázat</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/2</td>
+            <td rowspan="3">1-3/3</td>
+            <!--függőleges cella összevonás(egymás alatt)-->
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+        </tr>
+    </table>
+
+    <!--align-t (HTML 5 nem támogatja)-->
+    <table border="1" align="center" width="70%">
+        <!--border 1(szegély) vagy 0(nincs szegély)-->
+        <!--align: left,right és center értéket vehet fel-->
+        <!--width: pixelben megadható vagy százalékban-->
+        <caption>Egyszerű táblázat</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/2</td>
+            <td>1/3</td>
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+            <td>2/3</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+            <td>3/3</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Nevek</caption>
+        <tr>
+            <th colspan="2">Teljes neve</th>
+            <th>Életkor</th>
+        </tr>
+        <tr>
+            <td>Nagy</td>
+            <td>Tamás</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Kis</td>
+            <td>József</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Béla</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+
+    <thead> </thead>
+    <!--Fejléc elemek külön formázására szoktuk használni, főleg CSS-sel, ha a fejléc több soros akár!-->
+    <tbody> </tbody>
+    <!--Táblázat tartalmát tudjuk egyben formázni a tag alkalamzásával CSS segítségével-->
+    <tfoot> </tfoot>
+    <!--A lábléc elemek külön formázására szoktuk használni, főle CSS-sel, ha a lábléc több soros akár!(Összesítés táblázat végén)-->
+    <table>
+        <thead>
+            <tr>
+                <th>Termék</th>
+                <th>Ár</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nvidai 3080Ti</td>
+                <td>1.500.000 Ft</td>
+            </tr>
+            <tr>
+                <td>Samsung 4k monitor</td>
+                <td>300.000Ft</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Összesen</td>
+                <td>1.800.000 Ft</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--CSS nélkül nem sok értelme van a <thead>, <tbody>, <tfoot> elemeknek-->
+
+
+    <colgroup> </colgroup>
+    <!--Több függőles oszlopot szeretnék kiemelni a táblázat elején-->
+    <!--További infók itt: https://www.w3schools.com/tags/tag_colgroup.asp-->
+
+
+
+    <!--A nem támogatott elemeket manapság CSS segítségével szoktuk megoldani, de még régebbi oldalak esetén elég gyakran előfordulnak-->
+
+</body>
+
+</html>

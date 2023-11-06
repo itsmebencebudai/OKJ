@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Színek a CSS-ben</title>
+    <style>
+        /*Adott névvel való szín megadás*/
+        #szovegesSzin {
+            color: red;
+        }
+
+        /*HEXA kóddal való szín megadás*/
+        #hexaSzin {
+            color: #0000FF;
+            /*color: 00F*/
+        }
+
+        /*RGB kóddal való szín megadás*/
+        #rgbSzin{
+            color: rgb(0,255,0);
+        }
+
+        /*RGBA kóddal való szín megadás*/
+        /*Ebben az esetben a 4. tulajdonság az áttetszőség 0-1 közötti érték!*/
+        #rgbaSzin{
+            color: rgb(0,255,0,0.5);
+        }
+        /*HSL kóddal való szín megadás*/
+        /*
+        HUE: 0-360 közötti érték (árnyalat)
+        SATURATION: 0%-100% közötti érték (szaturáció)
+        LIGHTNESS: 0%-100% közötti érték (fényesség)
+        */
+        #hslSzin{
+            color: hsl(65,100%,50%);
+        }
+
+
+        /*HSLA kóddal való szín megadás*/
+        /*
+        HUE: 0-360 közötti érték (árnyalat)
+        SATURATION: 0%-100% közötti érték (szaturáció)
+        LIGHTNESS: 0%-100% közötti érték (fényesség)
+        ALPHA: 0-1 közötti érték! (áttetszőség/alfa csatorna)
+        */
+        #hslaSzin{
+            color: hsla(65,100%,50%,0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="szovegesSzin">Szín megadása adott kifejezéssel</h1>
+    <h1 id="hexaSzin">Szín megadása hexa kóddal</h1>
+    <h1 id="rgbSzin">Szín megadása rgb kóddal</h1>
+    <h1 id="rgbaSzin">Szín megadása rgba kóddal</h1>
+    <h1 id="hslSzin">Szín megadása hsl kóddal</h1>
+    <h1 id="hslaSzin">Szín megadása hsla kóddal</h1>
+</body>
+
+</html>

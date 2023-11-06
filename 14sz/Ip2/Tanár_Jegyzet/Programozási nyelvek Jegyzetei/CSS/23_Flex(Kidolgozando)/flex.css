@@ -1,0 +1,77 @@
+﻿/*Alap resetelések*/
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+/*Ahhoz, hogy flexBox segítségével rendezhessük az elemeinket a konténer(tároló) elemnek meg kell adni a [display:flex;] tulajdonságot
+
+--------------------------------------------------------------------------
+
+[flex-direction]: 
+(a flex elemek igazításának irány a "flexBox"-ban)
+
+[row] (alapértelmezett) -> vízszintes igazítás (jobbról balra)
+[row-reverse] -> vízszintes igazítás (balról jobbra)
+[column] -> függőleges igazítás (fentről lefelé)
+[column-reverse]-> függőleges igazítás (lentről felfelé)
+
+--------------------------------------------------------------------------
+
+[flex-warp]:
+Alapértelmezetten a flexBox elemek ki próbálják töltei a sort, vagy oszlopot, ha szerenténk hogy ezt még se tegyék 3 féle érték közül választhatunk. Melyet a [flex-warp] tulajdonság értékkekel szabályozhatunk
+
+[flex-warp:nowarp;] (alapértelmezett) -> egy sor mentén igazítás
+[flex-warp:warp;] ->több sorba töri a tartalmat, ha annak szükséges(fentről lefelé rendezve)
+[flex-warp:warp-reverse;]->több sorba töri a tartalmat, ha annak szükséges(lentről felfelé rendezve)
+
+
+[flex-flow]: a két tulajdonságot, (direction és wrap) értékeit adhatjuk meg neki egyszerre.
+*/
+
+/*
+Tengelyek: 
+  main-axis[fő tengely]
+  cross-axis[mellék tengely]
+
+row esetén:
+  -fő tengely a vízszintes
+  -mellék tengely a függőleges
+
+column esetén
+  -fő tengely a függőleges
+  -mellék tengely a vízszintes 
+
+--------------------------------------------------------------------------
+
+[justify content]
+hatása main axis-re van(FŐTENGELY), ha azoknak a mérete nem tölti ki a teljes flexbox szélességét vagy magasságát(iránytól függően)
+
+[flex-start] (alpértelmezett) -> a flexbox elejére igazítja az elemeket
+[flex-end] -> a flexbox végére igazítja az elemeket
+[center] -> az elemeket középre igazítja
+[space-between] ->Az elemeket szélre helyezi, az elemek közti távolság maximális méretű
+[space-around] ->Az elemek közti távolság kétszer akkora mint a széleken lévő távolság
+[space-evenly] ->Az elemek közti távolság egyenletes
+
+---------------------------------------------------------------------------
+
+align items : hatása a cross axis-re van(MELLÉKTENGELY) Nagyobb konténer esetén érdemes használni
+[flex-start] (alpértelmezett) -> Konténer elejére rendez melléktengely mentén
+[flex-end]-> Konténer végére rendez melléktengely mentén
+[center]-> Középre rendez melléktengely mentén
+[stretch] -> Megnyúlja az elemeket melléktengely mentén
+[baseline] -> a Baseline mentén rendezi az elemeket (különböző nagyságú elemek mentén látszódik "ritkábban használjuk"...)
+
+----------------------------------------------------------------------------
+
+align content: TÖBBSOROS igazítás(csak flex-flow wrap vagy wrap-reverse esetén működik)
+[normal] (alpértelmezett)
+[flex-start]
+[flex-end]
+[stretch]
+[space-between]
+[space-around]
+[space-evenly]
+*/
+

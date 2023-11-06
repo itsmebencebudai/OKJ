@@ -1,0 +1,29 @@
+/*A fájl tartalmát a feladat megoldásához NEM KELL MÓDOSÍTANIA*/
+/*A szükséges módosításokat a HTML fájlban hajtsa végre INLINE CSS segítségével*/
+
+body {}
+
+#igazito {
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+img {
+    height: 120px;
+    padding: 20px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p,
+li {
+    text-align: justify;
+}

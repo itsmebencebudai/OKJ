@@ -1,0 +1,69 @@
+body{
+	/*Tulajdonság*/
+	background-image:url("css_wallp.png");
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-attachment:fixed;
+}
+/*Az oldal háttér színét egyszerűen beállíthatjuk, az alábbi opciók szerint:
+body {
+	background-color:#00ff00;
+	
+	A színt 4 féle képpen is megadhatjuk
+	1. HEX értékben : pl.:#00ff00;
+	2. RGB kódban : pl.: rgb(0,255,0);
+	3. RGBA kódban : pl.: rgba(0,255,0,0.5); //A 4. érték 0 és 1.0 közötti értékű
+	4. A szín nevét használva : pl.: green;	
+} 
+
+Akár háttérképet is beilleszthetünk:
+body{
+	background-image:url("jc_logo.png");
+} 
+
+Kép ismétlése:
+body{
+	background-image:url("jc_logo.png");
+	background-repeat:repeat-x;
+} 
+
+Ismétlésnek szintén 3 típusát különböztetjük meg: 
+repeat-x ->Vizszintesen ismétel
+repeat-y ->Függőlegesen ismétel
+no-repeat ->Nem ismétel, csupán egyszer fog megjelenni az oldalon.
+
+Háttérkép egyéb beállításai, pozícionálása:
+body{
+	background-image:url("jc_logo.png");
+	background-repeat:no-repeat;
+	background-position:right top;
+} 
+Pozícionálási lehetőségek: 
+left top, center top, right top
+left center, center center, right center
+left bottom, center bottom, right bottom
+
+Esetleg pontos értékkel függőlegesen és vízsintesen- background-position:200px 200px;
+Esetleg százalékkal függőlegesen és vízsintesen- background-position:20% 10%;
+  
+
+Kép pozícionálása oldal görgetéshez:
+body{
+	background-image:url("css_wallp.png");
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-attachment:fixed;
+} 
+scroll- A háttér scrollozódik az elemekkel
+fixed - A háttér nézőpontja fixála van
+local - A háttér scrollozódik az elem mentén, együtt gördül vele.
+
+
+Mindent egyben? Lehetséges?
+.
+.
+. 
+PERSZE!!!
+body{
+	background:#ffffff url("img_tree.png") no-repeat right top;
+} 

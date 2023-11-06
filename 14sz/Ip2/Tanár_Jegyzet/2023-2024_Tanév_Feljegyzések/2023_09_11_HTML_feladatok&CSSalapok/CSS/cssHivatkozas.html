@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hivatkozás típusok</title>
+
+
+    <!--EXTERNAL CSS formázás-->
+    <!-- link:css kifejezésre tabot nyomva automatikusan generálódik-->
+    <link rel="stylesheet" href="style.css">
+    <!--Kézzel is megadhatjuk a külső fájlt-->
+    <link rel="stylesheet" type="text/css" href="cssFile.css">
+    <!--leggyengébb hivatkozási szint:  Csak akkor érvényes, ha NEM írja semmi felül-->
+    <!--használata: Ha több fájlon belül egységes képet akarunk kialakítani-->
+
+
+
+
+    <!--INTERNAL CSS formázás-->
+    <style>
+        /*
+        .azonosito{
+            tulajdonság: érték;
+            tulajdonság: érték;
+            tulajdonság: érték;
+        }
+        
+
+        közepes erősségű hivatkozási szint: Felülírja az external tulajdonságokat, de az INLINE-okat már nem tudja.
+        használata: Ha CSAK az adott dokumentumon belül szeretnénk több AZONOS típusú elemet formázni! 
+        */
+        p{
+            color:green;
+        }
+        h1{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!--INLINE CSS formázás-->
+    <!-- style attributumként hivatkozunk az adott html elemen belül-->
+    <!--legerőssebb hivatkozási szint: INLINE hivatkozás felülír, minden korábbi formázást, arra a tulajdonságra-->
+    <!--használata: HA CSAK EGY elemet adott tulajdonságát szeretnénk módosítani!-->
+    <h1>Szia Uram, CSS hivatkozás van eladó!</h1>
+    <p style="color:red">Piros Szoveg</p>
+</body>
+</html>

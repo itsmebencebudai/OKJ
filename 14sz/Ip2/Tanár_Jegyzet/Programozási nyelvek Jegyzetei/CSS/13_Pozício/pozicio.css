@@ -1,0 +1,86 @@
+﻿/*
+Pozíció típusok
+Static: Az elem nem módosítható semmilyen pozícionálású tulajdonsággal
+Relative: Az adott elem pozícióját módosíthatjuk, az eredeti helyétől számítva
+Fixed: A viewporthoz (böngészési felülethez) viszonyítva adom meg az elem helyét, és az abból a pozícióból nem mozdul el, görgetés hatására sem
+Absolute: A viewporthoz, vagy az őt tartalmazó div elemhez igazodik.
+Sticky: A relative és fixed pozíció kombinálása, a lényege, hogy amint az adott elem eltűnne a képernyőről, az eltűnés helyett oda „ragad”
+
+*/
+.Mozdithatatlan{
+	position:static;
+	background-color:grey;
+}
+.Elmozditott{
+	position:relative;
+	left:100px;
+	top: 30px;
+	background-color: blue;;
+}
+.AzAbszolUt{
+	position:absolute;
+	left:100px;
+	top: 30px;
+	background-color: yellow;;
+}
+
+.FixPanel {
+	
+	position:fixed;
+	left:0px;
+	top:50px;
+	background-color: red;
+}
+.Ragados{
+	position: sticky;
+	top:0px;
+	background-color: green;
+}
+
+
+/*
+-------------------------STATIC---------------------------
+Static beállítás esetén mint fentebb is olvasható nincs lehetőség pozícionálásra.
+
+
+Az értéket általában pixelben adjuk meg
+
+
+-------------------------RELATIVE--------------------------
+
+Top – Az elemet föntről lefelé mozdítja, eredeti pozíciójából
+Left – Az elemet balról jobbra mozdítja, eredeti pozíciójából
+Right – Az elemet jobbról balra mozdítja, eredeti pozíciójából
+Bottom – Az elemet lentről felfellé mozdítja, eredeti pozíciójából
+
+
+
+-------------------------FIXED-----------------------------
+
+Az értéket általában pixelben adjuk meg
+Top – Az elemet az viewport felső részéről mozdítja lefelé
+Left – Az elemet az viewport bal oldaláról mozdítja jobbra
+Right – Az elemet az viewport jobb oldaláról mozdítja balra
+Bottom – Az elemet az viewport alsó részéről mozdítja felfelé
+
+
+
+-------------------------ABSOLUTE---------------------------
+
+Top – Az elemet az viewport / szülő div felső részéről mozdítja lefelé
+Left – Az elemet az viewport / szülő div bal oldaláról mozdítja jobbra
+Right – Az elemet az viewport / szülő div jobb oldaláról mozdítja balra
+Bottom – Az elemet az viewport / szülő div alsó részéről mozdítja felfelé
+
+
+-------------------------STICKY-----------------------------
+Top – Az elemet ragadási pozícióját a felső résztől lefelé mozdítja, 
+Left – Az elemet ragadási pozícióját bal oldalról jobbra mozdítja
+Right – Az elemet ragadási pozícióját jobb oldalról balra mozdítja
+Bottom – Az elemet ragadási pozícióját lentről felfellé mozdítja
+
+
+
+Negatív érték adása esetén, a mozgatás irány megfordul!
+
+*/

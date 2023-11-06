@@ -1,0 +1,85 @@
+﻿/*
+A métereket többféle képpen is beállítáhatjuk CSS segítségével:
+-Ha állandó értéket szeretnénk nekik adni akkor használjuk az abszolút méreteket (Olyankor használjuk, ha az adott weboldalt bizonyos kijelzőmétere szeretnénk optimalizálni)
+
+-Ha responsive kijelző mérettő függővé szeretnénk tenni, akkor pedig a relatív méreteket szoktuk használni, ez utóbbi manapság elterjedt!
+*/
+
+
+
+/*
+Abszolút méret típusok:
+cm - Centiméter
+mm - Miliméter
+in - Hüvelyk(inch) 1 hüvelyk az 96pixel vagy 2.54cm
+px - Képpont(pixel) = 1/96 hüvelyk
+pt - Pont(points) = 1/72 hüvelyk
+pc - Pika(picas) =12pt
+
+A pixelek mérete relatív mert függ a megjelenítő eszköz pixelsűrűségétől, egy alacsony felbontású eszközön nagyobb lesz mint egy nagy felbontásún
+Leggyakrabban a [px] típust használjuk "statikus" méret beállításnál
+*/
+.egyCentisBetu {
+	font-size: 1cm;
+}
+
+.tizMilimeteresBetu {
+	font-size: 10mm;
+}
+
+.egyHuvelykesBetu {
+	font-size: 1in;
+}
+
+.tizPixelesBetu {
+	font-size: 10px;
+}
+
+.tizPontosBetu {
+	font-size: 10pt;
+}
+
+.ketPicaBetu {
+	font-size: 2pc;
+}
+
+
+/*
+Relatív méret típusok:
+em - Az adott szülő CSS elem betűméretének relatív nagyítása, 2em=a szülő elem betűnagyságának kétszeresével(elemenként más-más lehet)
+ex - Méret beállítása mely függ az x-magasságától az aktuális betűtípusnak (nagyon ritkán használjuk!)
+ch - A "0" karakter méretétől függ a mérete. (nagyon ritkán használjuk!)
+rem - A böngésző alapértelmezett betűméretének a nagyságával egyenlő, 2rem= a böngésző alapértelmezett betűméretének kétszerese(böngészőnként változó lehet)
+vw - Az adott megjelenítési eszköz szélességétől függ a nagysága (1vw = 1% kijelző szélességének)
+vh - Az adott megjelenítési eszköz magasságától függ a nagysága (1vh = 1% kijelző magassága)
+vmin - Relatív hivatkozás 1vmin egység = 1%(vh vagy vw, attól függ melyik a kisebb)
+vmax - Relatív hivatkozás 1vmin egység = 1%(vh vagy vw, attól függ melyik a nagyobb)
+% - Százalékos érték, az adott "szülő elemen belül"
+*/
+.ketEmBetu {
+	font-size: 2em;
+}
+
+.ketRemBetu {
+	font-size: 2rem;
+}
+
+.otVhBetu {
+	font-size: 5vh;
+}
+
+.otVwBetu {
+	font-size: 5vw;
+}
+
+.otVminBetu {
+	font-size: 5vmin;
+}
+
+.otVmaxBetu {
+	font-size: 5vmax;
+}
+
+/*
+Az legelterjedtebb relatív(responsive) betűtípusok a REM a VH és a VW
+*/

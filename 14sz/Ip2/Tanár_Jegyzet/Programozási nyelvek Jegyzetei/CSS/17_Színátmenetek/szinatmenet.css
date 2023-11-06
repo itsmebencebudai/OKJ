@@ -1,0 +1,94 @@
+﻿/* Három féle lehetőségünk van színátmenetek megadására CSS-ben
+
+Linear(Egyenes vonalú)
+-jobbról balra
+-balról jobbra
+-átlósan
+
+Radial(Kör vagy elipszis alakú)
+- elipszis az alapértelmezett
+- "kör" vagy "elipszis" belsejéből külseje felé
+
+Conic(Kúp formájú)
+-központi pont körül
+-torta diagrammok készítésére is használhatjuk akár, bizonyos állítható verzióit
+*/
+
+/*Linear gradient(Egyenes vonalú színátmenet)*/
+.balrolJobbra{
+	background-image: linear-gradient(to right, blue , green);
+}
+.fentrolLefele{
+	background-image: linear-gradient(blue, green);
+}
+.keresztbeBalfelulrolJobbalulra{
+	background-image: linear-gradient(to bottom right, blue, green);
+}
+.szogetMegadva{
+	background-image: linear-gradient(60deg, blue,green);
+}
+.tobbSzinu{
+	background-image: linear-gradient(red,white,green);
+}
+.szivarvany{
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+.attetszo{
+	background-image: linear-gradient(rgba(0,0,255,0), rgba(0,255,0,1));
+}
+.ismetlodo{
+	background-image: repeating-linear-gradient(blue, green 25%);
+}
+
+
+/* Radiális (körkörös színátmenet*/
+.korkorosAlap{
+	background-image: radial-gradient(green, white, red);
+}
+.korkorosSzazalek{
+	background-image: radial-gradient(green 25%, white 25%, red 50%);
+}
+.korAlaku{
+	background-image: radial-gradient(circle, green, white, red);
+}
+.ismetlodoKorkoros{
+	background-image: repeating-radial-gradient(green, white, red 20%);
+}
+
+/*Arányokat is megadhatunk ha szeretnénk, erre van 4 lehetőségünk:
+
+[closest-side]
+[farthest-side]
+[closest-corner]
+[farthest-corner]
+
+pl.: 
+background-image: radial-gradient(closest-side at 60% 55%, green, white, red);
+*/
+
+/*Conic típusú (kúpos aka TortaDiagramm szerű*/
+.alapKupos{
+	background-image: conic-gradient(red, white, green);
+}
+.szivarvanySzinuKupos{
+background-image: conic-gradient(red,orange,yellow,green,blue,indigo,violet);
+}
+.kuposSzogekkel{
+	background-image: conic-gradient(red 60deg, white 240deg, green 60deg);
+}
+.tortaDiagramm{
+	background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+	border-radius:50%;
+}
+.eltoltKozeppont{
+	background-image: conic-gradient(at 60% 45%, red, white, green);
+}
+.ismetlodoConic{
+	background-image: repeating-conic-gradient(blue, green 20%);
+}
+/*
+Színátmenet generátor: https://cssgradient.io/
+User Interface színátmenetek: https://uigradients.com/
+További színátmenet sémák: https://www.eggradients.com/
+*/
+

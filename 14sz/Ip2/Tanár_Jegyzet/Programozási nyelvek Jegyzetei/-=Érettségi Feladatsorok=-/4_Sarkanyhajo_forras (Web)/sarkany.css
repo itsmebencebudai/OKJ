@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+	background-image: url('viztukor.png');
+}
+
+#leiras{
+	background-image: url('fatyol.png');
+	width: 880px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+h1{
+	color: indigo;
+	font-variant: small-caps;
+	text-shadow: 1px 1px white;
+}
+
+p{
+  text-indent: 35px;
+  text-align: justify;
+  letter-spacing: -0.1px;
+  line-height: 150%;
+}
+
+.kepkeret {
+  width: 375px;
+  float: right;
+  text-align: center;
+  font-size: 75%;
+  padding: 0px 5px 5px;
+  margin-left: 10px;
+  background-image: url('fatyol.png');
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px gray;  
+}
+
+.kepkeret img{
+	width: 385px;
+  position: relative;
+  left: -5px;
+}
+
+
+a{
+  text-decoration: none;
+}

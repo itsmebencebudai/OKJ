@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Bootstrap táblázatok formázási lehetőségei</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+        <!--
+        Táblázat átméretezése
+        (Van lehetőség különböző tábla szélleségeket is megadni, vagy éppen a táblázatunkat kijelzőtől független responsive-vá tenni!)
+        table-responsive-sm
+        table-responsive-md
+        table-responsive-lg
+        table-responsive-xl
+        -->
+            <div class="table-responsive-xl">
+            <!-- 
+            [Cellák és táblázat színezésére használható opció, mindkét helyen megadható table és td, th, vagy tr tag-en belül is] 
+            [table-primary] Sötétebb kék árnyalatú szín beállítása
+            [table-secondary] Világosabb szürke árnyalatú szín beállítása
+            [table-success] Zöld árnyalatú szín beállítása
+            [table-danger] Piros árnyalatú szín beállítása
+            [table-warning] Sárga árnyalatú szín beállítása
+            [table-info] Világos kék árnyalatú szín beállítása
+            [table-light] Fehér árnyalatú szín beállítása
+            [table-dark] Sötétebb szürke árnyalatú szín beállítása 
+            -->
+                <table class="table table-striped table-bordered table-ligth table-hover table-sm">
+                <!-- Felhasználható bootstraposztályok
+                [.table] Alap Bootstrappel formázott táblát hoz létre
+                [.table-striped] A táblázat csíkozott lesz! 
+                [.table-bordered] A táblázat egy vékony szegélyt kap! 
+                [.table-borderless] A táblázat szegély nélkül jelenik meg
+                [.table-hover] Az adott sor ami felé megyünk az egérrel megváltoztatja színét
+                [.table-dark] Táblázat sötét módja
+                [.table-light] Táblázat világos módja 
+                [.table-sm] Kicsinyíti a táblázat sorainak magasságát
+                -->
+                    <caption>Személyek(Caption)</caption>
+                    <!--Caption tulajdonság bootstrap esetén a táblázat alján jelenik meg!-->
+                    <!-- A bootstrap megkívánja, hogy a fejléc elemeit a THEAD tag-ek közé helyezzük 
+                [.thead-dark] Táblázat feljéc sötét módja
+                [.thead-light] Táblázat fejléc sötét módja 
+                -->
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Név</th>
+                            <th>Életkor</th>
+                            <th>Foglalkozás</th>
+                        </tr>
+                    </thead>
+                    <!-- A táblázat további tartalma a tbody elemek közé terüljön -->
+                    <tbody>
+                        <!-- 
+                    Sorok és cell színezése:
+                    bg-primary
+                    bg-secondary
+                    bg-success
+                    bg-warning
+                    bg-danger
+                    bg-info 
+                    -->
+                        <!-- <tr class="table-primary"> -->
+                        <tr class="bg-primary">
+                            <td>Békés Csaba</td>
+                            <td>68</td>
+                            <td>Nyugdíjas</td>
+                        </tr>
+                        <!-- <tr class="table-secondary"> -->
+                        <tr class="bg-secondary">
+                            <td>Alka Ida</td>
+                            <td>21</td>
+                            <td>Robbantási szakértő</td>
+                        </tr>
+                        <!-- <tr class="table-success"> -->
+                        <tr class="bg-success">
+                            <td>Koaxk Ábel</td>
+                            <td>30</td>
+                            <td>Rendszergazda</td>
+                        </tr>
+                        <!-- <tr class="table-danger"> -->
+                        <tr class="bg-danger">
+                            <td>Trab Antal</td>
+                            <td>23</td>
+                            <td>Autószerelő</td>
+                        </tr>
+                        <!-- <tr class="table-warning"> -->
+                        <tr class="bg-warning">
+                            <td>Kukor Ica</td>
+                            <td>40</td>
+                            <td>Őstermelő</td>
+                        </tr>
+                        <!-- <tr class="table-info"> -->
+                        <tr class="bg-info">
+                            <td>Major Anna</td>
+                            <td>33</td>
+                            <td>Szakács</td>
+                        </tr>
+                        <!-- <tr class="table-light"> -->
+                        <tr class="bg-light">
+                            <td>Elektrom Ágnes</td>
+                            <td>26</td>
+                            <td>Villanyszerelő</td>
+                        </tr>
+                        <tr class="bg-dark">
+                            <td style="color:white">Tank Aranka</td>
+                            <td style="color:white">20</td>
+                            <td style="color:white">Katona</td>
+                        </tr>
+                        <!-- FONTOS:Ha table-dark tulajdonságot használjuk a háttérszínek nem fognak látszódni! -->
+                    </tbody>
+                    <!-- a tfoot elem a táblázat láblécelemeit tartalmazza(ha vannak ilyenek) -->
+                    <tfoot>
+                        <tr>
+                            <td>lablec szöveg</td>
+                            <td>lablec szöveg</td>
+                            <td>lablec szöveg</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

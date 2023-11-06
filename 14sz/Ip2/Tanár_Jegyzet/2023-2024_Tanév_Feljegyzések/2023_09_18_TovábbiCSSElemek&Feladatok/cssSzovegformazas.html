@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szövegformázás CSS segítségével</title>
+    <style>
+        /*font-*/
+        #betuTipus{
+            /*Segítségével beállíthatjuk a szöveg betűtípusát*/
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #betuVastagsag{
+            font-weight:bold;
+            /*Számmal is megadható 100-900*/
+            /*illetve szöveggel: normal, és bolder*/
+        }
+        #betuStilus{
+            font-style: italic;
+            /*betű dőlésének beállítása: italic, vagy oblique*/
+        }
+        #kisKapitalis{
+            font-variant:small-caps;
+            /*kis kapitális tulajdonság ki-be kapcsolása*/
+        }
+        #betuMeret{
+            font-size:20px;
+            /*Betű méretének beállítása
+                mértéke lehet: px, pt, em, rem, vh, vw
+            */
+        }
+
+
+        /*text-*/
+        #szin{
+            color:blue;
+            /*Szöveg színének megállítása, a korábban tanult, minden féle módon
+            szöveggel, hexa kóddal, rgb, rgba, hsl, és hsla kóddal*/
+        }
+        #igazitas{
+            text-align:center;
+            /*
+            center: középre igazítja a szöveget
+            justify: sorkizártra igazítja a szöveget
+            left(start):balra igazítja a szöveget
+            right(end): jobbra igazítja a szöveget
+            */
+        }
+        #szovegVonal{
+            text-decoration:underline;
+            /*
+            underline: vonalat helyez a szöveg alá
+            overline: vonalat helyez a szöveg fölé
+            line-trough: vonalat helyez a szöveg elé keresztbe
+            */
+        }
+        #elsoSoriBehuzas{
+            text-indent:10px;
+            /*
+            Az adott szöveges rész,mondjuk egy bekezdés esetén, beljebb kezdődik...
+            */
+        }
+        #szovegArnyek{
+            text-shadow:2px 2px 5px black;
+            /*
+                első paraméter: X irányú árnyék mérete
+                második paraméter: Y irányú árnyék mérete
+                harmadik praméter:
+                negyedik paraméter:
+            */
+        }
+
+
+    </style>
+</head>
+<body>
+     <div id="betutipus">Árvíztűrő tükörfúrógép</div>
+</body>
+</html>

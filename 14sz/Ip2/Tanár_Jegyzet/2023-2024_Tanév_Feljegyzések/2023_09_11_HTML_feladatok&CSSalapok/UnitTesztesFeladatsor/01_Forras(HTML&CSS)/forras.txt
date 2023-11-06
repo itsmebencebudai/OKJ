@@ -1,0 +1,11 @@
+W3Schools
+
+A W3Schools egy webfejlesztéssel foglalkozó online oktatási platform és referenciakönyvtár. Az oldal számos programozási nyelvet és technológiát foglal magában, például HTML-t, CSS-t, JavaScriptet, PHP-t, SQL-t, valamint a legújabb webes fejlesztési keretrendszereket és módszertanokat.
+A W3Schools az alábbiakban nyújt segítséget:
+
+    Interaktív oktatóanyagok: Az oldalon könnyen érthető és jól strukturált oktatóanyagok találhatók, amelyek lépésről lépésre vezetnek be a webfejlesztés világába. A kezdők számára is kiváló bevezetést nyújtanak, de haladóknak is hasznos forrás lehet a fejlesztési készségek fejlesztéséhez.
+    Kód példák és demók: A W3Schools rengeteg kód példát és interaktív demót kínál, amelyek segítenek megérteni a különböző programozási nyelveket és technikákat. Ezek a példák könnyen áttekinthetőek és kipróbálhatóak, így gyakorlati tapasztalatot szerezhetünk.
+    API dokumentáció és referenciák: Az oldal részletes dokumentációt és referenciákat kínál a különböző webes technológiákhoz, mint például a HTML elemekhez és attribútumokhoz, CSS tulajdonságokhoz, JavaScript objektumokhoz és metódusokhoz. Ezek a részletezett leírások és példák segítenek a nyelvi elemek és funkciók megértésében és használatában.
+    Praktikus segédletek: A W3Schools további segédleteket és tippeket kínál a webfejlesztéssel kapcsolatos témákhoz, mint például böngészőkompatibilitás, optimalizáció, biztonság és SEO (keresőoptimalizálás). Ezek a cikkek és útmutatók hasznosak lehetnek a projektek fejlesztése során felmerülő kihívások megoldásában.
+
+Összességében a W3Schools egy könnyen érthető és hozzáférhető forrás, amely széles körű webfejlesztési ismereteket és gyakorlati tudást nyújt. 

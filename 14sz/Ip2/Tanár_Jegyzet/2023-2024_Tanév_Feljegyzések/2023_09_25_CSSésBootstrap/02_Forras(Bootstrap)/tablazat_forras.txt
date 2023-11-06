@@ -1,0 +1,35 @@
+Modul neve
+Szerezhető pontszám
+Időtartam
+
+
+HTML & CSS modul
+15 pont
+30 perc
+
+Bootstrap modul
+15 pont
+30 perc
+
+
+JavaScript modul
+20 pont
+30 perc
+
+
+TypeScript modul
+20 pont
+30 perc
+
+
+Angular modul
+15 pont
+30 perc
+
+Szerver modul
+15 pont
+30 perc
+
+Összesen
+100 pont
+180 perc

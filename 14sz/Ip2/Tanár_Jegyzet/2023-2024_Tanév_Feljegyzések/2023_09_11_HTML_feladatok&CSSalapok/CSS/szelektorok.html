@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szelektorok  a CSS-ben</title>
+    <style>
+        /*Alapvető HTML elemekre való hivatkozás*/
+        h1 {
+            color:blue;
+        }
+
+        p {
+            color:purple;
+        }
+        /*Azonosítókkal való hivatkozás*/
+        /*Egy helyen szoktuk használni, egyet adunk meg egyszerre - Pl.: JS elem megjelölése*/
+        #fradi{
+            color:green;
+        }
+        /*Osztállyal való hivatkozás*/
+        /*Több helyen szoktuk használni, többet is adhatunk meg egyszerre -  Pl.: Bootstrap formázások listázása*/
+        .bolyai14sz
+        {
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kék szöveg</h1>
+    <p>Lila szöveg</p>
+
+    <!--Containerekben szoktunk hivatkozni azonosítókra általában-->
+    <!--div: block szintű konténer elem, egész sort kitölti, majd sort tör-->
+    <!--span: inline szintű konténer elem, sor adott részét tölti ki és nem töri a sort az elem után-->
+    
+    <!--Azonosítókra való hivatkozás: id:"azonosító_neve"-->
+    <div id="fradi">Freörer szigeteket hagyták nyerni...</div>
+
+    <span class="bolyai14sz">A 14.sz a legjobb végzős szoftverfejlesztő osztály a 2023-2024 tanévben</span>
+</body>
+
+</html>

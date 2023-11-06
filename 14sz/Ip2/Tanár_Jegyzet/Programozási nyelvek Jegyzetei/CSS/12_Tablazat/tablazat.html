@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Nagy Ferenc">
+	<title>Táblázatok formázási lehetőségei</title>
+	<link rel="stylesheet" type="text/css" href="tablazat.css" />
+</head>
+
+<body>
+	<!-- Alaptábla formázás nélkül(kivéve a TR ugye.) -->
+	<table>
+        <caption>Egyszerű táblázat</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/2</td>
+            <td>1/3</td>
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+            <td>2/3</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+            <td>3/3</td>
+        </tr>
+    </table>
+
+	<table class="KozepreIgazitottTabla">
+        <caption>Táblázat melynek minden eleme középre igazított</caption>
+        <tr>
+            <th>Oszlop 01</th>
+            <th>Oszlop 02</th>
+            <th>Oszlop 03</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/2</td>
+            <td>1/3</td>
+        </tr>
+        <tr>
+            <td>2/1</td>
+            <td>2/2</td>
+            <td>2/3</td>
+        </tr>
+        <tr>
+            <td>3/1</td>
+            <td>3/2</td>
+            <td>3/3</td>
+        </tr>
+    </table>
+
+	<!-- Összevont cellák esetén a cella eredeti pozíviója szabja meg a formázását -->
+	<table class="SzegelyesTablazat">
+		<caption>Összevont Szegélyes táblázat<caption>
+			<tr><th colspan="3">1. sor eleme</th><th rowspan="2">1. sor eleme</th></tr>
+			<tr><th>2. sor eleme</th><th>2. sor eleme</th><th>2. sor eleme</th></tr>
+			<tr><td>3. sor eleme</td><td>3. sor eleme</td><td>3. sor eleme</td><th rowspan="2">3. sor eleme</th></tr>
+			<tr><td>4. sor eleme</td><td>4. sor eleme</td><td>4. sor eleme</td></tr>
+			<tr><td>5. sor eleme</td><td>5. sor eleme</td><td>5. sor eleme</td><th rowspan="3">5. sor eleme</th></tr>
+			<tr><td rowspan="2">6. sor eleme</td><td>6. sor eleme</td><td rowspan="2">6. sor eleme</td></tr>
+			<tr><td>7. sor eleme</td></tr>
+		</table>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Űrlapok használata</title>
+  </head>
+  <body>
+    <!--Method lehet POST vagy GET
+        POST: Nagy mennyiségű adatot is akár, titkosítva(lassabb)
+        GET: Kis mennyiségű adatot, titkosítatlanul(gyors)
+    -->
+
+    <!--action: Átadja a form elemeit egy adott oldalnak-->
+    <form method="POST" action="futtato.php">
+      <!--Alapvető elem űrlapok helyét jelöli-->
+      <!--JavaScript esetén nem elhagyható...-->
+
+      <!-- input elemek:-->
+      <input type="button" /><!--Nyomógomb-->
+      <input type="checkbox" /><!--Jelölő négyzet(pipálós)-->
+      <input type="color" /><!--Színválasztó-->
+      <input type="date" /><!--Dátum-->
+      <input type="datetime-local" /><!--Helyi dátum-->
+      <input type="email" /><!--E-mail cím-->
+      <input type="file" /><!--Fájl tallózás-->
+      <input type="hidden" /><!--Rejtett-->
+      <input type="image" /><!--kép elem-->
+      <input type="month" /><!--hónap-->
+      <input type="number" /><!--szám-->
+      <input type="password" /><!--jelszó-->
+      <input type="radio" /><!--Rádió gomb(pöttyintős)-->
+      <input type="range" /><!--Intervallum(csúszka)-->
+      <input type="reset" /><!--Resetelés: alapértelmezettre állít-->
+      <input type="search" />><!--Keresés-->
+      <input type="submit" /><!--Beküldés főleg Php-nél használjuk-->
+      <input type="tel" /><!--Telefonszám-->
+      <input type="text" /><!--Szöveg megadása-->
+      <input type="time" /><!--idő-->
+      <input type="url" /><!--hivatkozás-->
+      <input type="week" /><!--adott hét kiválasztása-->
+
+      <select>
+        <!--legördülő lista-->
+        <optgroup label="Legördülő lista címkéje(NEM kiválaszható)">
+          <option>Legördülő lista eleme(kiválasztható)</option>
+          <option>Legördülő lista eleme(kiválasztható)</option>
+          <option>Legördülő lista eleme(kiválasztható)</option>
+          <option>Legördülő lista eleme(kiválasztható)</option>
+        </optgroup>
+      </select>
+
+      <textarea rows="10" cols="50">
+        Szövegdoboz
+      </textarea>
+
+        
+      <label for="mezőneve">Mező felirata</label>
+
+      <button>Kattintható gomb</button>
+
+
+      <!--
+        Attributumok
+        placeholder - "Mintaszöveg", ha belekattintunk a mezőbe eltűnik...
+        value - Alapérelmezett érték
+        min - szám mező legkisebb értéke
+        max - szám mező legnagyobb értéke
+        required - A mező kitöltése kötelező
+        hidden - mező elrejtése
+        name - Mező elnevezése PHPnál hivatkozáskor fontos
+        readonly - csak olvasható a mező tartalma, nem módosítható
+        maxlength - Beírható szöveg mennyiségének hossza
+        size - input mező mérete
+    -->
+    </form>
+  </body>
+</html>

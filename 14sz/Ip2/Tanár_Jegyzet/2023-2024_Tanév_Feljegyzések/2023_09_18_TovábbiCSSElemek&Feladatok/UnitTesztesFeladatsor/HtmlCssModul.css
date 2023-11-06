@@ -1,0 +1,30 @@
+/*A fájl tartalmát a feladat megoldásához NEM KELL MÓDOSÍTANIA*/
+/*A szükséges módosításokat a HTML fájlban hajtsa végre INLINE CSS segítségével*/
+
+body {
+    text-align: center;
+}
+
+table {
+    width: 40%;
+    margin: 0px auto;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+img {
+    height: 120px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}

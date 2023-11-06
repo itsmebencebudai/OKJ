@@ -1,0 +1,127 @@
+﻿/* Alap formázás minden link állapot leformázására
+a{
+	
+}
+*/
+a:link {
+	/*Alapértelmezett link beállításai kerülnek ide*/
+	color: red;
+	/*Az alapértelmezett link aláhúzott*/
+	font-size: 16px;
+	cursor: crosshair;
+	margin: 30px;
+	padding: 10px;
+	background-color: black;
+}
+
+a:visited {
+	/*Látogatott link beállításai kerülnek ide(amire már kattintottunk)*/
+	color: green;
+	text-decoration: none;
+	font-size: 2em;
+	cursor: e-resize;
+	margin: 30px;
+	padding: 10px;
+	background-color: black;
+}
+
+a:hover {
+	/*Azok a linkek kerülnek ide, amik felé épp az egér kurzora került*/
+	color: blue;
+	text-decoration: none;
+	font-size: 80%;
+	cursor: help;
+	margin: 30px;
+	padding: 10px;
+	background-color: black;
+}
+
+a:active {
+	/*A link kinézetét állíthatjuk be a kattintás pillanatában*/
+	color: yellow;
+	text-decoration: underline;
+	font-size: 100%;
+	cursor: progress;
+	margin: 30px;
+	padding: 10px;
+	background-color: black;
+}
+
+
+/*ÁLTALÁNOS BEÁLLÍTÁSI LEHETŐSÉGEK:
+
+
+1) Aláhúzás megjelenítés/eltüntetés
+
+Aláhúzás megjelenítése:
+text-decoration: underline; 
+
+Aláhúzás eltüntetés
+text-decoration: none; 
+
+____________________________________________________________
+
+2) Karakterek színének beállítása
+
+Hexa kóddal:
+color: #00FF00;
+
+Adott szín nevével:
+color: green;
+
+RGB kóddal:
+color: rgb(0,255,0);
+
+RGBA kóddal:
+color: rgba(0,255,0,0.5);
+
+HSL kóddal:
+color: hsl(100,100%,50%);
+
+HSLA kóddal
+color: hsla(100,100%,50%,0.5);
+
+____________________________________________________________
+
+3) Háttérszín beállítása, hasonló módokon lehet mint a betűszínt,
+de az attributum amit beállítunk az a:
+[background-color]
+____________________________________________________________
+
+4) Betűméret beállítása
+A betűméret beállítása a korábban megadott módokon folyhat a font-size tulajdonsággal.
+
+font-size:10px; - konkrét értékkel: px, cm, stb...
+font-size:150%; - százalékos értékkel(ilyenkor az erdeti mérethez való viszonított arányt adjuk meg
+
+____________________________________________________________
+
+5) Kurzor beállítása, ha az elem felé megyünk egérrel
+
+[cursor: auto;]
+[cursor: crosshair;]
+[cursor: default;]
+[cursor: e-resize;]
+[cursor: help;]
+[cursor: move;]
+[cursor: n-resize;]
+[cursor: ne-resize;]
+[cursor: nw-resize;]
+[cursor: pointer;]
+[cursor: progress;]
+[cursor: s-resize;]
+[cursor: se-resize;]
+[cursor: sw-resize;]
+[cursor: text;]
+[cursor: w-resize;]
+[cursor: wait;]
+
+____________________________________________________________
+
+6) Egyéb tulajdonságok,
+
+- ha a linknek adunk padding tulajdonságot, akár gombméretűre is rakhatjuk
+- alap linket sok mindenre, akár külön div elemre, vagy képre is beállíthatunk
+- linkeket vízszintes, függőleges vagy esetleg legördülő menük készítésére is használhatunk
+
+*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szegélyek, a css elemek kerete</title>
+    <style>
+        #divElem{
+            /*Szegély vastagsága(border-width):
+                px, pt, %, em, rem
+            */
+          border-width:10px;
+        /*
+            Szegélynek a stílusa(border-style)
+            dotted - Pontozott vonal
+            dashed - Szaggatott vonal
+            solid - Sima vonal
+            double - dupla vonal
+            groove - Defines a 3D grooved border. The effect depends on the border-color value
+            ridge - Defines a 3D ridged border. The effect depends on the border-color value
+            inset - Defines a 3D inset border. The effect depends on the border-color value
+            outset - Defines a 3D outset border. The effect depends on the border-color value
+            none - szegély kikapcsolása
+            hidden - szegély elrejtése
+        
+        */  
+        border-style: ridge;
+
+        /*
+        Szegély színe(border-color):
+        - Szöveggel való szín megadás
+        - HEXA kóddal való szín megadás
+        - RGB kóddal való szín megadás
+        - RGBA kóddal való szín megadás
+        - HSL kóddal való szín megadás
+        - HSLA kóddal való szín megadás
+        ergó ugyanúgy mint ahogy a cssSzinek.html állományban néztük
+        */
+        border-color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Az elemhez hogy látszódjon normálisan a szegély, nem árt tartalmat, vagy MÉRETET rendelni(width, height attributum)-->
+    <div id="divElem">
+        Tartalom
+    </div>
+</body>
+
+</html>

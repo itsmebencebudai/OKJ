@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nagy Ferenc">
+    <title>Színátmenet beállítási lehetőségek CSS-ben</title>
+    <link rel="stylesheet" type="text/css" href="szinatmenet.css" />
+    <style>
+        h1{
+            text-align: center;
+        }
+        .szinatmenetMintafelulet{
+            padding:50px;
+            width:100%;
+            text-align: center;
+            font-weight:bold;
+            font-size:22px;
+            margin:20px, 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Linear(Egyenes) színátmenet -->
+    <h1>Egyenes vonalú színátmenet</h1>
+    <div class="szinatmenetMintafelulet balrolJobbra">Balról jobbra [background-image: linear-gradient(to right, blue , green);]</div>
+    <div class="szinatmenetMintafelulet fentrolLefele">Fentről lefelé [background-image: linear-gradient(blue, green);]</div>
+    <div class="szinatmenetMintafelulet keresztbeBalfelulrolJobbalulra">Keresztbe [background-image: linear-gradient(to bottom right, blue, green);]</div>
+    <div class="szinatmenetMintafelulet szogetMegadva">Szöget megadva 60 fok [background-image: linear-gradient(60deg, blue,green);]</div>
+    <div class="szinatmenetMintafelulet tobbSzinu">Több színű [background-image: linear-gradient(red,white,green);]</div>
+    <div class="szinatmenetMintafelulet szivarvany">Szivárvány [background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);]</div>
+    <div class="szinatmenetMintafelulet attetszo">Áttetsző [background-image: linear-gradient(rgba(0,0,255,0), rgba(0,255,0,1));]</div>
+    <div class="szinatmenetMintafelulet ismetlodo">Ismétlődő [background-image: repeating-linear-gradient(blue, green 25%);]</div>
+    <!-- Radial(Kör) alakú színátmenet -->
+    <h1>Elipszis, kör alakú színátmenet</h1>
+    <div class="szinatmenetMintafelulet korkorosAlap">Elipszis alakú alap [background-image: radial-gradient(green, white, red);]</div>
+    <div class="szinatmenetMintafelulet korkorosSzazalek">Százalékos[background-image: radial-gradient(green 25%, white 25%, red 50%);]</div>
+    <div class="szinatmenetMintafelulet korAlaku" style="height:50vh">Kör alakú [background-image: radial-gradient(circle, green, white, red);]</div>
+    <div class="szinatmenetMintafelulet ismetlodoKorkoros">Ismétlődő, körkörös [background-image: repeating-radial-gradient(green, white, red 20%);]</div>
+    <!-- Conic(Kúp) alakú színátmenet -->
+    <h1>Kúp formájú, adott pont körüli</h1>
+    <div class="szinatmenetMintafelulet alapKupos">Alap kúpos [background-image: conic-gradient(red, white, green);]</div>
+    <div class="szinatmenetMintafelulet szivarvanySzinuKupos">Szivárvány színű kúpos [background-image: conic-gradient(red,orange,yellow,green,blue,indigo,violet);]</div>
+    <div class="szinatmenetMintafelulet kuposSzogekkel">Kúpos megadása szögekkel [background-image: conic-gradient(red 90deg, white 90deg, green 180deg);]</div>
+    <div class="szinatmenetMintafelulet kuposSzogekkel" style="border-radius:50%;">Torta diagramm szerű, border-radius segítségével [style="border-radius:50%;"]</div>
+    <div class="szinatmenetMintafelulet tortaDiagramm">Torta diagramm: [background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+        <br>border-radius:50%;]</div>
+    <div class="szinatmenetMintafelulet eltoltKozeppont">Eltolt középpontú Conic [background-image: conic-gradient(at 60% 45%, red, white, green);]</div>
+    <div class="szinatmenetMintafelulet ismetlodoConic">Ismétlődős Hengeres [background-image: repeating-conic-gradient(blue, green 20%);]</div>
+ 
+
+    <!-- Színátmenet generátor: https://cssgradient.io/ -->
+    <!-- User Interface színátmenetek: https://uigradients.com/ -->
+    <!-- További színátmenet sémák: https://www.eggradients.com/ -->
+    
+
+</body>
+
+</html>

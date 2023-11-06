@@ -1,0 +1,32 @@
+﻿#padding {
+	background-color: red;
+	/*Csak hogy látszódjanak a változások*/
+	border: 1px solid black;
+	padding: 50px 20px;
+}
+
+/*A padding segítségével meghatározhatjuk a tartalom és a div elem széle(border), közötti távolságot*/
+
+/*Hogyan adhatjuk meg? Alapértelmezetten minden irányba, ugyanazt az értéket adjuk meg így!
+padding:10px;
+
+Milyen értékeket vehet fel?
+- értékeket pixelben: padding:10px;
+- értékeket százalékban: padding:5%;
+- "inherit" érték esetén a szülő elem értékeit örökli
+
+Értékek beállítása külön-külön:
+- padding-top;
+- padding-right;
+- padding-bottom;
+- padding-left;
+
+Értékek beállítása egyszerre: 
+- pixelben megadott értékkel: padding: 10px 5px 5px 10px;
+- százalékban megadva:  padding: 10% 5% 5% 10%;
+
+	1.- top			1.- top				1.- top bottom		1. top, bottom, right, left
+	2.- right		2.- right,left		2.- right left
+	3.- bottom		3.- bottom
+	4.- left
+*/

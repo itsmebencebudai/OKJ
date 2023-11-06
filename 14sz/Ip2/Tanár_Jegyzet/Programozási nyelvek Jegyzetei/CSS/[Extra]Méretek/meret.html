@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Nagy Ferenc">
+	<link rel="stylesheet" type="text/css" href="meret.css">
+	<title>Elemek nagyságának beállítása(Absolute/Relative)</title>
+	<style>
+		h1, h2{
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Abszolút(statikus) méretek</h1>
+	<div class="egyCentisBetu">Egy centi nagyságú betűk[font-size:1cm;]</div>
+	<div class="tizMilimeteresBetu">Tíz miliméter nagyságú betűk[font-size:10mm;]</div>
+	<div class="egyHuvelykesBetu">Egy hüvelykes szöveg[font-size:1in;]</div>
+	<div class="tizPixelesBetu">Tíz pixel nagyságú betűk[font-size:10px;]</div>
+	<div class="szazPontosBetu">Tiz pont nagyságú betűk[font-size:10pt;]</div>
+	<div class="ketPicaBetu">Két picas nagyságú betűk[font-size:2pc;]</div>
+
+	<h1>Relatív méretek</h1>
+	<div class="Egyikszulo" style="font-size:20px">
+		<h2>20 pixeles betűméretes szülő elem</h2>
+		<div class="ketEmBetu">Két EM nagyságú betűk[font-size:2em;]</div>
+		<div class="ketRemBetu">Két REM nagyságú betűk[font-size:2rem;]</div>
+	</div>
+	<div class="Masikszulo" style="font-size:10px">
+		<h2>10 pixeles betűméretes szülő elem</h2>
+		<div class="ketEmBetu">Két EM nagyságú betűk[font-size:2em;]</div>
+		<div class="ketRemBetu">Két REM nagyságú betűk[font-size:2rem;]</div>
+	</div>
+	<h2>VH és VW</h2>
+	<div class="otVhBetu">Öt VH nagyságú betűk[font-size:5vh;]</div>
+	<div class="otVwBetu">Öt VW nagyságú betűk[font-size:5vw;]</div>
+	<div class="otVminBetu">Öt Vmin nagyságú betűk[font-size:5vmin;]</div>
+	<div class="otVmaxBetu">Öt Vmax nagyságú betűk[font-size:5vmax;]</div>
+</body>
+
+</html>

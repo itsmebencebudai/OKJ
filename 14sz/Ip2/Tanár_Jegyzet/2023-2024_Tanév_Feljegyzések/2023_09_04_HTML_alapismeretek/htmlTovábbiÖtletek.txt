@@ -1,0 +1,33 @@
+Case Sensitivity
+aposztróf és idézőjel használat
+
+blockquote, q, abbr, address, cite, bdo
+
+kommentelés verziói
+
+linkek: szövegre, gombokra, képekre, div elemekre
+
+képeknél leggyakoribb formátumok
+
+favicon
+
+táblázatok - colgroup,col
+
+több szintű kombinált listák
+
+block és inline elemek
+
+iframe
+
+javascript hivatkozás- 2 féle
+
+fájlok elérési útvonalának meghatározása
+
+Semantikus elemek, kivéve time és mark
+
+hogy néz ki a szép kód
+
+url felépítése
+
+formok
+media elemet
