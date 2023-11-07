@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPF_UI_Tutorials_01_The_Basics/1.0.0": {
+        "runtime": {
+          "WPF_UI_Tutorials_01_The_Basics.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF_UI_Tutorials_01_The_Basics/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

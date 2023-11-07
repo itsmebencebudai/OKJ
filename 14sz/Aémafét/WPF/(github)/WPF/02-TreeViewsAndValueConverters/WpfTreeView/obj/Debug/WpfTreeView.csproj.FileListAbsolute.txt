@@ -1,0 +1,15 @@
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\bin\Debug\WpfTreeView.exe.config
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\bin\Debug\WpfTreeView.exe
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\bin\Debug\WpfTreeView.pdb
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\MainWindow.g.cs
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\App.g.cs
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView_MarkupCompile.cache
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView_MarkupCompile.lref
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\MainWindow.baml
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.g.resources
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.Properties.Resources.resources
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.csproj.GenerateResource.cache
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.exe
+C:\Users\budai.bence\Desktop\youtube\WPF\02-TreeViewsAndValueConverters\WpfTreeView\obj\Debug\WpfTreeView.pdb
