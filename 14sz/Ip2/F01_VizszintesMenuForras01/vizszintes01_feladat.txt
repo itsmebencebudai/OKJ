@@ -1,0 +1,19 @@
+﻿Készítse el az alábbi menüt a minta segítségével:
+A menü az oldal közepére kerüljön, színe "midnightblue"
+
+Hozzon létre gombokat, DIV elemekkel melyekre a következők legyenek igazak
+
+A menük gombjai az alábbi linkekre mutasson, melyek, ÚJ ablakban nyíljanak meg:
+
+https://hu.wikipedia.org/wiki/
+https://www.w3schools.com/
+https://stackoverflow.com/
+https://www.youtube.com/
+
+A gombok tulajdonságai:
+háttérszínük fekete;
+betűszínük fehér;
+a szöveg középre igazított;
+a gomb szegélye szürke "gray" színű folyamatos vonal legyen.
+
+

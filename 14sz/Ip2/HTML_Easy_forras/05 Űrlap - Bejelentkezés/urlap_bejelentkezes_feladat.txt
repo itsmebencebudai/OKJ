@@ -1,0 +1,15 @@
+Csinálj egy ûrlapot, POST metódussal az adatokat a "bejelentkezes.php" fájl dolgozza fel majd!
+
+Hozz létre, egy beviteli mezõt, amibe megadhatjuk a felhasználói nevünket.
+-kitöltése kötelezõ
+-mintaszöveg:"Nicknév"
+
+Hozz létre egy beviteli mezõt ahol jelszót adhatunk meg.
+-kitöltése kötelezõ
+-típusa:jelszó
+-mintaszöveg: NINCS!
+
+
+Hoz létre egy kipipálható checkboxot, mellette balról a "Bejelentkezve maradok:" szöveg legyen látható.
+
+Készíts egy küldés gombot, "Bejelentkezés" felirattal

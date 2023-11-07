@@ -1,0 +1,16 @@
+Hozza létre a táblázatot a minta alapján:
+
+A táblázat az alábbi tulajdonságokkal rendelkezik
+
+A táblázat tartalmának elemeit 1 pixel vastag fekete szegély veszi körbe
+A szöveg benne vízszintesen és függőlegesen is középre igazított
+Belső margójának mérete 10pixel
+
+
+A fejléc elemek színe: #AAAAAA
+
+A páros sorok színe: #555555
+
+A páratlan sorok színe: #777777
+
+A táblázat címkéje 32 pixel méretű és félkövér betűstílusú

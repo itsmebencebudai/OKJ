@@ -1,0 +1,6 @@
+A HTML (angolul: HyperText Markup Language=hiperszöveges jelölõnyelv) egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki, és mára már internetes szabvánnyá vált a W3C (World Wide Web Consortium) támogatásával.
+Négyfajta szimbólum (leíró elem) található meg a HTML-ben:
+Strukturális elemek, amelyek leírják az adott szöveg "célját" például h1 mint elsõ szintû címsor (alcím).
+Prezentációs szimbólumok, amelyek leírják, hogy az adott szöveg hogyan nézzen ki: például <b>vastag</b> vastag kinézetet eredményez. 
+Hiperszöveg (hypertext) elemek, amelyek segítségével kapcsolat létesíthetõ a dokumentum egyes elemei és más dokumentumok között 
+Eszköz elemek, amelyek segítségével gombok, listák, beviteli mezõk hozhatók létre
