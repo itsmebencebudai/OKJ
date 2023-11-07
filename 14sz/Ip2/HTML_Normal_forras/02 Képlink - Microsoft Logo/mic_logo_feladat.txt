@@ -1,0 +1,6 @@
+Szúrd be az oldaladra a mic_logo.png képet, 
+ha rossz lenne a link az "A Microsoft cég logója" szöveget írja ki a böngészõ, 
+ha felé megyünk egérrel a "Microsoft Logo" szöveg jelenjen meg, 
+illetve a kép mérete legyen 300x300-as.
+
+Ebbõl készíts egy linket ami a "https://www.microsoft.com/hu-hu" oldara mutat és rákattintva az új ablakban nyílik meg.

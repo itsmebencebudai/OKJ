@@ -1,0 +1,25 @@
+﻿Az oldal címe legyen "A CSS története", valamint helyezzen el címsort is ezzel a szöveggel
+
+A tartalom kerüljön egy "igazito" azonosítóval rendelkező div elemre, melynek szélessége 800 pixel
+jobbról és balról igazodjon középre.
+
+Hozd létre az alábbi borderszerkezetet
+
+a címsorok szegélye legyen 50% széles 
+a címsor igazodjon középre
+illetve a címsor legyen nagybetűs
+Címsor szegélye(alsó)
+színe : Steel Blue - #4682B4 vagy (70,130,180)
+típusa: sima vonalú
+vastagsága: 5 pixel
+
+egy bekezdések szövege tartalmazza a forrásban található szöveget
+a bekezdések tartalma sorkizárt legyen
+a bekezdés tartalmazzon első sori behúzást : 10 pixel
+a bekezdés háttérszíne : dark cyan - #008B8B -  (0,139,139) 20%os áttetszőségű
+a bekezdésben bal oldalról szegélyezze, az alábbi tulajdonságokkal
+színe : Steel Blue - #4682B4 vagy (70,130,180)
+típusa: 3D ridge vonalú
+vastagsága: 10 pixel
+
+

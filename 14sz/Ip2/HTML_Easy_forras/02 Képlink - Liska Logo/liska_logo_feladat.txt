@@ -1,0 +1,6 @@
+Szúrd be az oldaladra a liska_logo.jpg képet, 
+ha rossz lenne a link az "Iskola Logója" szöveget írja ki a böngészõ, 
+ha felé megyünk egérrel a "Liska Logo" szöveg jelenjen meg, 
+illetve a kép mérete legyen 200x200-as.
+
+Ebbõl készíts egy linket ami a "http://liska-szki.hu" oldara mutat és rákattintva az új ablakban nyílik meg.

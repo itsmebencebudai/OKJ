@@ -1,0 +1,1 @@
+Formázd a forrásban megadott szöveget a minta szerint.

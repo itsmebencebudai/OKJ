@@ -1,0 +1,1 @@
+Készíts el egy három szintû listát a minta alapján.

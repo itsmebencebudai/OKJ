@@ -1,0 +1,11 @@
+﻿A stíluslapok már a HTML kezdete, 1990 óta jelen vannak valamilyen formában. A böngészők a stílus módosítására létrehozták saját leíró nyelvüket, melyet a webes dokumentumok megjelenésének módosítására lehetett használni. Eredetileg a stíluslapokat a felhasználók használták, mivel a HTML korai verziói még csak kevés prezentációs attribútumot tartalmaztak, így gyakran bízták a felhasználóra, hogy a webes dokumentumok hogyan jelenjenek meg.
+
+A webfejlesztők igényei folyamatosan növekedtek a stilisztikai lehetőségek irányába, így a HTML nyelvbe egyre több ilyen elem került. Ilyen lehetőségek mellett a stíluslapok kevésbé voltak fontosak, és egyetlen külső stílusleíró nyelv sem lett széleskörűen elfogadva a CSS megjelenése előtt.
+
+A CSS eredetileg Håkon Wium Lie ötlete volt 1994-ben. Bert Bos időközben egy Argo nevű böngészőn dolgozott, mely saját stíluslapokat használt; végül ők ketten döntöttek a CSS kifejlesztése mellett.
+
+Ekkor már több stílusleíró nyelv is létezett, de a CSS volt az első, ami a kapcsolás ötletét használta fel, vagyis a dokumentum stílusa több különböző stíluslapból tevődhetett össze. Ezáltal lehetőség nyílt arra, hogy a felhasználó által megadott stílus bizonyos esetekben felülírja a szerző stílusát, míg a többi esetben örökli azt. A stíluslapok ilyen kapcsolása mind a szerző, mind a felhasználó számára rugalmas vezérlést biztosított, mivel megengedte a vegyes stilisztikai beállításokat.
+
+Håkon ajánlata a "Mosaic és a Web" konferencián került bemutatásra Chicagóban, először 1994-ben, majd 1995-ben. Ebben az időben alakult meg a Word Wide Web Consortium is, mely később fellépett a CSS érdekében, és megalapított egy bizottságot a részletes kidolgozására. Håkon és Bert volt az elsődleges technikai vezetője a projektnek, melyhez további tagok csatlakoztak, többek között Thomas Reardon a Microsofttól. 1996 decemberében a CSS level 1 ajánlata hivatalosan is megjelent.
+
+1997 elején a CSS egy Chris Lilley vezette csoporthoz került a W3C-nél. A csoport azokkal a problémákkal foglalkozott, melyeket a CSS Level 1 kihagyott. A CSS Level 2 mint hivatalos ajánlat 1998 májusában jelent meg. A CSS Level 3 még jelenleg, 2014-ben is fejlesztés alatt áll, bár bizonyos funkcióit már használják a legújabb böngészők.

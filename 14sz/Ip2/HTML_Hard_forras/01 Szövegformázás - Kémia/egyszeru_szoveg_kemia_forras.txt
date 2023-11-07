@@ -1,0 +1,12 @@
+A molekuláris vegyületek képletei
+Tapasztalati képlet
+A tapasztalati képlet a vegyület sztöchiometriai összetételét adja meg és az elemek egymás után mellé írt vegyjelét tartalmazza. 
+A vegyjelek alsó indexe fejezi ki az összetevõk legegyszerûbb arányát. A tapasztalati képlet nem minden esetben adja meg, melyik vegyületrõl van szó.
+pl. CH2 (Ez megfelel pl. az eténnek és a propénnek is.)
+Molekulaképlet
+A molekulaképlet vagy összegképlet a valóságban önállóan létezõ molekula minõségi és mennyiségi összetételét fejezi ki, 
+amely alapján kiszámítható a relatív molekulatömeg. Megegyezhet a tapasztalati képlettel.
+pl. C2H4 (etén)
+Szerkezeti képlet, vagy más néven konstitúciós képlet
+A különbözõ szerkezeti képletek a molekulák szerkezetét is leírják, különbözõ, kiemelt szempontok szerint: 
+feltüntetik a molekulát alkotó atomok kapcsolódását és azok térbeli elrendezõdését. 

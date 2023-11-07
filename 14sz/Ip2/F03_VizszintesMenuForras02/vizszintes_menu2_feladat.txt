@@ -1,0 +1,29 @@
+A menük gombjai az alábbi linkekre mutasson, melyek, ÚJ ablakban! nyíljanak meg:
+
+https://hu.wikipedia.org/wiki/
+https://www.w3schools.com/
+https://stackoverflow.com/
+https://www.youtube.com/
+
+
+A link gombok tulajdonságai:
+betűszínük fehér
+a szöveg bennük középre igazított
+szélességük, magasságuk, margó és belső margó tulajdonságaikat egyénileg állítsd be
+szegélye 2 pixel vastag egyszínű fehér
+
+Alapállapotban, és látogatott állapotban
+háttérszínük #222222;
+
+Ha felé megyünk egérrel
+háttérszínük #222266;
+betű vastagsága félkövér
+
+A kattintás pillanatában
+háttérszínük fehér
+betűszín fekete
+betű vastagsága félkövér
+
+A kép méretének tulajdonságait és pozícióját rád bízom, a lényeg, hogy a menü előtt jelenjen meg, 
+bal odalon, valamilyen tanult módszer segítségével.
+

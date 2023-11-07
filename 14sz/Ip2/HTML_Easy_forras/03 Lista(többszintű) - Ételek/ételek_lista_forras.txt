@@ -1,0 +1,20 @@
+Egészségtelen ételek
+Hamburger
+Sajtos
+Dupla sajtos
+Pizza
+Szalámis
+Húsimádó
+Mexikói
+Popcorn
+Sós
+Vajas
+Egészséges ételek
+Csirkemell rizzsel
+Krémleves
+Brokkoli
+Paradicsom
+Zöldborsó
+Saláta
+Uborka saláta
+Káposzta saláta
