@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Vote Results</title>
+</head>
+
+<body>
+    <h2>Vote Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Option Selected</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% votes.forEach(vote=> { %>
+                <tr>
+                    <td>
+                        <%= vote.username %>
+                    </td>
+                    <td>
+                        <%= vote.option_selected %>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

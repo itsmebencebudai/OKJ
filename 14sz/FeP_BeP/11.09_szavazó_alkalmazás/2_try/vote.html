@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szavazás</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container vote-container">
+        <form action="/submit-vote" method="POST">
+            <label for="option">Válassz egy lehetőséget:</label>
+            <select id="option" name="option" required>
+                <option value="1">választási lehetőség 1</option>
+                <option value="2">választási lehetőség 2</option>
+                <option value="3">választási lehetőség 3</option>
+                <option value="4">választási lehetőség 4</option>
+                <option value="5">választási lehetőség 5</option>
+                <option value="6">választási lehetőség 6</option>
+                <option value="7">választási lehetőség 7</option>
+                <option value="8">választási lehetőség 8</option>
+                <option value="9">választási lehetőség 9</option>
+                <option value="10">választási lehetőség 10</option>
+            </select>
+            
+            <br>
+            <button type="submit">Nyújtsa be a szavazást</button>
+        </form>
+    </div>
+</body>
+</html>
