@@ -1,0 +1,10 @@
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\bin\Debug\WindowsFormsAutoClicker.exe.config
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\bin\Debug\WindowsFormsAutoClicker.exe
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\bin\Debug\WindowsFormsAutoClicker.pdb
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.Form1.resources
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.Properties.Resources.resources
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.csproj.GenerateResource.cache
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.exe
+C:\Users\budai.bence\Desktop\OKJ\Stb_programs_im_BORED\WindowsFormsAutoClicker\WindowsFormsAutoClicker\obj\Debug\WindowsFormsAutoClicker.pdb
