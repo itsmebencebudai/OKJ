@@ -1,0 +1,56 @@
+﻿<Window x:Class="Nobel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nobel"
+        mc:Ignorable="d"
+        Title="Nobel" Height="780" Width="720">
+
+    <Border Padding="10">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0" Color="AliceBlue"/>
+                <GradientStop Offset="0.7" Color="SteelBlue"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        
+        <StackPanel>
+
+                <!--<Expander Header="2. feladat" IsExpanded="False">
+                    <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" />
+                </Expander>-->
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Margin="0 0 15 0" Grid.Column="0">
+                    <TextBlock Text="Válasszon feladatot: " FontSize="20"/>
+                    <ComboBox SelectedIndex="0" Margin="0 5 0 0" SelectionChanged="FeladatValtozas" Name="ComboBox_Feladatok" FontSize="15">
+                        <ComboBoxItem IsEnabled="False">-- Feladatok --</ComboBoxItem>
+                        <ComboBoxItem Name="feladat3">3. feladat</ComboBoxItem>
+                        <ComboBoxItem Name="feladat4">4. feladat</ComboBoxItem>
+                        <ComboBoxItem Name="feladat5">5. feladat</ComboBoxItem>
+                        <ComboBoxItem Name="feladat6">6. feladat</ComboBoxItem>
+                        <ComboBoxItem Name="feladat7">7. feladat</ComboBoxItem>
+                        <ComboBoxItem Name="feladat8">8. feladat</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Feladat leírása: " FontSize="20"/>
+                    <TextBlock x:Name="DescriptionText" TextWrapping="Wrap" FontSize="15" />
+                </StackPanel>
+            </Grid>
+
+            <Grid Height="600" Margin="0 60 0 0 ">
+                <DataGrid x:Name="DataGrid_Eredmeny" AutoGenerateColumns="True"/>
+            </Grid>
+
+        </StackPanel>
+    </Border>
+
+
+</Window>
