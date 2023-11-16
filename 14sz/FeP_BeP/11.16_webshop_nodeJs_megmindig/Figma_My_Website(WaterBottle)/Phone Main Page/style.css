@@ -1,0 +1,282 @@
+.iphone-pro-max {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.iphone-pro-max .overlap-wrapper {
+  background-color: #ffffff;
+  width: 430px;
+  height: 932px;
+}
+
+.iphone-pro-max .overlap {
+  position: relative;
+  height: 932px;
+  background-image: url(./img/image-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.iphone-pro-max .donate {
+  position: absolute;
+  width: 394px;
+  height: 243px;
+  top: 87px;
+  left: 18px;
+  background-color: #404040;
+  border-radius: 20px;
+}
+
+.iphone-pro-max .image {
+  position: absolute;
+  width: 387px;
+  height: 191px;
+  top: 12px;
+  left: 4px;
+  object-fit: cover;
+}
+
+.iphone-pro-max .donate-button {
+  position: absolute;
+  width: 232px;
+  height: 35px;
+  top: 203px;
+  left: 81px;
+  background-color: #404040b2;
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.iphone-pro-max .text-wrapper {
+  position: absolute;
+  height: 44px;
+  top: -7px;
+  left: 38px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: #00127e;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.iphone-pro-max .TOP-products {
+  position: absolute;
+  width: 424px;
+  height: 203px;
+  top: 355px;
+  left: 3px;
+}
+
+.iphone-pro-max .overlap-group {
+  position: relative;
+  height: 203px;
+}
+
+.iphone-pro-max .rectangle {
+  position: absolute;
+  width: 403px;
+  height: 169px;
+  top: 34px;
+  left: 10px;
+  background-color: #404040;
+  border-radius: 26px;
+  box-shadow: inset 0px 4px 4px #00000040;
+}
+
+.iphone-pro-max .img {
+  position: absolute;
+  width: 424px;
+  height: 45px;
+  top: 0;
+  left: 0;
+}
+
+.iphone-pro-max .div {
+  position: absolute;
+  width: 364px;
+  height: 22px;
+  top: 11px;
+  left: 18px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone-pro-max .rectangle-2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 57px;
+  left: 18px;
+}
+
+.iphone-pro-max .rectangle-3 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 57px;
+  left: 150px;
+}
+
+.iphone-pro-max .rectangle-4 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 57px;
+  left: 281px;
+}
+
+.iphone-pro-max .water-bottles-phone {
+  position: absolute;
+  width: 417px;
+  height: 328px;
+  top: 581px;
+  left: 7px;
+  background-color: #404040;
+  border-radius: 37px;
+}
+
+.iphone-pro-max .button-right {
+  left: 342px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 164px;
+}
+
+.iphone-pro-max .overlap-2 {
+  position: absolute;
+  width: 385px;
+  height: 48px;
+  top: 12px;
+  left: 16px;
+}
+
+.iphone-pro-max .rectangle-5 {
+  position: absolute;
+  width: 385px;
+  height: 47px;
+  top: 1px;
+  left: 0;
+  background-color: #404040;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #ffffff;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.iphone-pro-max .text-wrapper-2 {
+  position: absolute;
+  width: 374px;
+  height: 47px;
+  top: 0;
+  left: 5px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.iphone-pro-max .button-left {
+  left: 21px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 164px;
+}
+
+.iphone-pro-max .rectangle-6 {
+  position: absolute;
+  width: 182px;
+  height: 182px;
+  top: 94px;
+  left: 117px;
+  background-image: url(./img/rectangle-16-1.svg);
+  background-size: 100% 100%;
+}
+
+.iphone-pro-max .menu-collapsed {
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  top: 24px;
+  left: 11px;
+}
+
+.iphone-pro-max .overlap-3 {
+  position: relative;
+  width: 478px;
+  height: 63px;
+  top: -29px;
+  left: -41px;
+  background-color: #404040;
+}
+
+.iphone-pro-max .group {
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  top: 29px;
+  left: 41px;
+}
+
+.iphone-pro-max .line {
+  width: 56px;
+  top: -8px;
+  position: absolute;
+  height: 8px;
+  left: 0;
+}
+
+.iphone-pro-max .line-2 {
+  width: 30px;
+  top: 16px;
+  position: absolute;
+  height: 8px;
+  left: 0;
+}
+
+.iphone-pro-max .line-3 {
+  width: 44px;
+  top: 4px;
+  position: absolute;
+  height: 8px;
+  left: 0;
+}
+
+.iphone-pro-max .waterbottle-com {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 9px;
+  left: 131px;
+}
+
+.iphone-pro-max .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: #00127e;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
