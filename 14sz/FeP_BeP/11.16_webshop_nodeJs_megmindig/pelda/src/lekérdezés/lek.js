@@ -1,26 +1,31 @@
-import { getData }  from "../script.js";
+
 // Felhasználó ID bekérése a prompt ablakban
 const userId = prompt("Kérem, adja meg a felhasználó ID-jét:");
 
 // Ellenőrzés, hogy valóban van-e megadva ID
 if (userId !== null && userId !== "") {
     // Felhasználó adatainak lekérése a szerverről
-    getData(`http://localhost:8000/user/${userId}`).then((userData) => {
+    getData(`http://localhost:8000/api/user/${userId}`).then((userData) => {
+
+            console.log(userData);
             // Ellenőrzés, hogy a szerver visszatért-e adatokkal
-            if (userData.length > 0) {
+            if (userData) {
                 // Az adatok megjelenítése a táblázatban
                 const userTable = document.getElementById("user-list");
-
-                userData.forEach((user) => {
-                    const row = userTable.insertRow();
+                const row = userTable.insertRow();
                     row.innerHTML = `
-                        <td>${user.userID}</td>
-                        <td>${user.name}</td>
-                        <td>${user.email}</td>
-                        <td>${user.password}</td>
-                        <td>${user.accountNumber}</td>
-                    `;
+                       
+                        <td>${userData.name}</td>
+                        <td>${userData.email}</td>
+                        <td>${userData.accountNumber}</td>
+                    `;    
+
+                    row.innerHTML +='<td>'
+                    
+                    userData.address.forEach((address) => {
+                    row.innerHTML += address.zipCode+', '+ address.city + ' ' + address.street+'<br>';
                 });
+                    row.innerHTML +='</td>'
             } else {
                 alert("Nincs találat a megadott ID-re.");
             }

@@ -1,10 +1,9 @@
-import { postData } from "../script.js";
 
 function regDataSave(data) {
     let loading = document.getElementById("loading");
     loading.style.visibility = "visible";
    
-    postData("http://localhost:8000/user",data)
+    postData("http://localhost:8000/api/user",data)
     .then((response) => {
             return response.json();
         }).then((data) => {

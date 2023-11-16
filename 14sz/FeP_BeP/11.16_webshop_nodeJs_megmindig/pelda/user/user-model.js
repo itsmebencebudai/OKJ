@@ -23,7 +23,7 @@ function getAllUserInfos (req,res) {
 }
 
 function getUserDataFromID(req,res) {
-    var con = mysql.createConnection(new Config());
+    var con = mysql.createConnection(config.database);
     con.connect(function(err) {
         if (err) throw err;
         console.log('sikeres csatlakozás');
@@ -52,4 +52,5 @@ function getUserDataFromID(req,res) {
     })     
 }
 
-
+exports.getAllUserInfos = getAllUserInfos
+exports.getUserDataFromID = getUserDataFromID
