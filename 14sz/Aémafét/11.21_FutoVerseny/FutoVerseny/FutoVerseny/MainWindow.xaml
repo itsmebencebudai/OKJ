@@ -1,0 +1,15 @@
+﻿<Window x:Class="FutoVerseny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Futóverseny Alkalmazás" Height="260" Width="467">
+    <Grid>
+        <ListBox Name="versenyzokListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="200" Margin="10"/>
+        <TextBox Name="nevTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="20" Margin="220,10,0,0"/>
+        <TextBox Name="szuletesiDatumTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="20" Margin="220,40,0,0"/>
+        <TextBox Name="orszagTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="20" Margin="220,70,0,0"/>
+        <TextBox Name="idoTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="20" Margin="220,100,0,0"/>
+        <Button Content="Hozzáadás" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Margin="360,10,0,0" Click="HozzaadasButton_Click"/>
+        <Button Content="Eredménylista" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25" Margin="360,50,0,0" Click="EredmenylistaButton_Click"/>
+        <Button Content="Mentés" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Margin="360,90,0,0" Click="MentesButton_Click"/>
+    </Grid>
+</Window>

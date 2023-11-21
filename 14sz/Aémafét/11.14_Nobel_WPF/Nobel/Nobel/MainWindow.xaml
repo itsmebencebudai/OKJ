@@ -45,9 +45,14 @@
                 </StackPanel>
             </Grid>
 
-            <Grid Height="600" Margin="0 60 0 0 ">
+            <!--<Grid Height="600" Margin="0 60 0 0 ">
                 <DataGrid x:Name="DataGrid_Eredmeny" AutoGenerateColumns="True"/>
-            </Grid>
+                <TextBlock x:Name="Eredmeny" TextWrapping="Wrap" FontSize="15"/>
+            </Grid>-->
+            <TextBlock x:Name="Feladat"  Text="Nincs kiválasztott feladat!" FontSize="20" Margin="0 100 0 0"/>
+            <TextBlock x:Name="Eredmeny" TextWrapping="Wrap" FontSize="20" Margin="0 5 0 0"/>
+            <Grid Height="600" Margin="0 60 0 0 "/>
+
 
         </StackPanel>
     </Border>
