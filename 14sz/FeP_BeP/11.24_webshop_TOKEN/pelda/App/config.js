@@ -3,7 +3,7 @@ const config = module.exports
 
 class Config {
     user =  "root";
-    password = "my-secret-pw";
+    password = "";
     database = "webshop";
     host = "localhost";
     constructor() {

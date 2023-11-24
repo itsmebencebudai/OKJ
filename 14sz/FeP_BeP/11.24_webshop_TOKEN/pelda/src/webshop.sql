@@ -1,5 +1,5 @@
--- Active: 1675412648823@@127.0.0.1@3306@webshop
-CREATE DATABASE webshop
+-- Active: 1695968358990@@127.0.0.1@3306@webshop1124
+CREATE DATABASE webshop1124
     DEFAULT CHARACTER SET = 'utf8' COLLATE utf8_hungarian_ci;
 
 create table IF NOT EXISTS User (
