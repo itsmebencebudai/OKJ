@@ -1,0 +1,26 @@
+﻿<Window x:Class="TaskManagerWPF.AddTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Task" Height="347" Width="296">
+    <Grid Margin="0,0,2,0">
+        <Label Content="Task Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <TextBox Name="nameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10"/>
+
+        <Label Content="Task Description:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+        <TextBox Name="descriptionTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="60" Margin="10,60,0,0" TextWrapping="Wrap"/>
+
+        <Label Content="Due Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+        <DatePicker Name="dueDatePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,150,0,0"/>
+
+        <Label Content="Priority:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,180,0,0"/>
+        <ComboBox Name="priorityComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="10,200,0,0">
+            <ComboBoxItem>High</ComboBoxItem>
+            <ComboBoxItem>Medium</ComboBoxItem>
+            <ComboBoxItem>Low</ComboBoxItem>
+        </ComboBox>
+
+
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="30" Margin="10,240,0,0" Click="Add_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="30" Margin="100,240,0,0" Click="Cancel_Click"/>
+    </Grid>
+</Window>
