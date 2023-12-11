@@ -54,3 +54,37 @@ function Legnagyobb_Fizetes() {
     return console.log("A legnagyobb fizetés: ", maxnev, maxfizetes);
 }
 Legnagyobb_Fizetes();
+
+function AtlagEletkor() {
+    let osszeletkor = 0;
+    let eletkordb = 0;
+    let atlag = 0;
+    for (let i = 0; i < Dolgozok.length; i++) {
+        osszeletkor += Dolgozok[i].kor;
+        eletkordb++;
+    }
+    return console.log("AtlagEletkor: " + (atlag = osszeletkor / eletkordb).toFixed(0));
+}
+AtlagEletkor();
+
+function AtlagFizetes() {
+    let osszfizetes = 0;
+    let fizetesdb = 0;
+    let atlag = 0;
+    for (let i = 0; i < Dolgozok.length; i++) {
+        osszfizetes += Dolgozok[i].fizetes;
+        fizetesdb++;
+    }
+    return (atlag = osszfizetes / fizetesdb).toFixed(0);
+}
+
+function AtlagFizetes_Felettiek() {
+    let returnarray = [];
+    for (let i = 0; i < Dolgozok.length; i++) {
+        if (Dolgozok[i].fizetes >= AtlagFizetes()) {
+            returnarray.push(Dolgozok[i].nev);
+        }
+    }
+    return console.log("AtlagFizetes_Felettiek: " + returnarray);
+}
+AtlagFizetes_Felettiek();
