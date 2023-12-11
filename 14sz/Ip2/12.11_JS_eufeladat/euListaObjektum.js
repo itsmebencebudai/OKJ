@@ -170,28 +170,42 @@ console.log(`${orszag} csatlakozott?  ` + CsatlakozottOrszag(orszag));
 
 function MajusCsatlakozas() {
     let volt = false;
+    let valasz =""
     EuropaiUnio.forEach(item => {
         if (item.csatlakozas.includes(".05.")) {
             volt = true;
         }
+        if(!volt)
+        {
+            valasz = "nem"
+        }else{
+            valasz = "igen"
+        }
     });
-    return volt;
+    return valasz;
 }
 console.log("Volt májusban csatlakozas? " + MajusCsatlakozas());
 
 function HonapCsatlakozas(honap) {
     let volt = false;
     let orszag= "";
+    let valasz = "";
     EuropaiUnio.forEach(item => {
         if (item.csatlakozas.includes("." + honap + ".")) {
             volt = true;
             orszag = item.orszag;
         }
+        if(!volt)
+        {
+            valasz = "nem"
+        }else{
+            valasz = "igen"
+        }
     });
-    return volt + ` (${orszag})`;
+    return valasz + ` (${orszag})`;
 }
 let honap = "01";
-console.log(`Volt a ${honap}. honapban/ben csatlakozas? ` + HonapCsatlakozas(honap));
+console.log(`Volt a ${honap}. honapban csatlakozas? ` + HonapCsatlakozas(honap));
 
 function UtolsoCsatlakozas() {
     let orszagneve = "";
