@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film kiválasztás</title>
+</head>
+
+<body>
+    <h2>Filmek kiválasztása</h2>
+
+    <form id="selectMoviesForm" action="/filmkivalasztas" method="POST">
+        <input type="hidden" id="userid" name="userid" value="">
+        <!-- Add a hidden input field for selected movies -->
+        <input type="hidden" id="selectedMovies" name="selectedMovies" value="">
+
+        <label for="selectedMovie">Válasszon filmet:</label>
+        <select id="selectedMovie" name="selectedMovie" multiple>
+            <!-- Add the "multiple" attribute to allow multiple selections -->
+            <option value=""></option>
+        </select>
+
+        <button type="button" onclick="submitMovies()">Kiválasztotta a filmet?</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("/filmek")
+                .then(response => response.json())
+                .then(data => {
+                    var selectElement = document.getElementById("selectedMovie");
+
+                    data.forEach(movie => {
+                        var option = document.createElement("option");
+                        option.text = `${movie.title} (${movie.releaseYear})`;
+                        option.value = movie.id;  
+                        selectElement.add(option);
+                    });
+                })
+                .catch(error => console.error("Error fetching movie data:", error));
+
+            fetch("/bejelentkezett-felhasznalo")
+                .then(response => response.json())
+                .then(data => {
+                    var useridInput = document.getElementById("userid");
+                    useridInput.value = data.loggedInUserId;
+                })
+                .catch(error => console.error("Error fetching user data:", error));
+        });
+
+        function submitMovies() {
+            var selectedMovies = document.getElementById("selectedMovie");
+            var selectedMovieIds = Array.from(selectedMovies.selectedOptions, option => option.value);
+
+            var selectedMoviesInput = document.getElementById("selectedMovies");
+
+            if (selectedMoviesInput) {
+                selectedMoviesInput.value = JSON.stringify(selectedMovieIds);
+                document.getElementById("selectMoviesForm").submit();
+            } else {
+                console.error("Element with ID 'selectedMovies' not found.");
+            }
+        }
+    </script>
+</body>
+
+</html>

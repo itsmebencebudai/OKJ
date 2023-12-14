@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+
+<body>
+    <h2>Regisztráció</h2>
+    <form id="registerForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <button type="submit">Regisztráció</button>
+    </form>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = {
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                name: document.getElementById('name').value,
+            };
+
+            const response = await fetch('http://localhost:3000/regisztracio', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+            console.log(result);
+        });
+
+    </script>
+</body>
+
+</html>
