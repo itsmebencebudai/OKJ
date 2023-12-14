@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const User = require("./user");
 
 // ez a függvény visszaadja az összes felhasználó adatát
- function getAllUserInfos(req,res) {
+function getAllUserInfos(req,res) {
     var con = mysql.createConnection(config.database);
     con.connect(function(err) {
         if (err) throw err;

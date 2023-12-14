@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek feltöltése</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container vote-container">
+        <form action="/filmupload" method="POST" enctype="multipart/form-data">
+            <label for="cím">Adja meg a film címét:</label>
+            <input type="text" id="cím" name="cim" placeholder="Adja meg a film címét" required>
+
+            <label for="link">Adja meg a film linkjét:</label>
+            <input type="text" id="link" name="link" placeholder="Adja meg a film linkjét" required>
+
+            <label for="ar">Adja meg a film árát:</label>
+            <input type="number" id="ar" name="ar" placeholder="Adja meg a film árát" required>
+
+            <label for="hossz">Adja meg a film hosszát:</label>
+            <input type="number" id="hossz" name="hossz" placeholder="Adja meg a film hosszát" required>
+
+            <br>
+            <button type="submit">Film feltöltése</button>
+        </form>
+    </div>
+</body>
+
+
+</html>

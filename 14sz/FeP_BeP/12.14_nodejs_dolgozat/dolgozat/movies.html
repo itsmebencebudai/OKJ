@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container vote-container">
+        <form action="/kivalasztottfilmek" method="POST">
+            <label for="option">Válassz egy lehetőséget:</label>
+            <select id="option" name="option" required>
+                <option value="Madagaszkár 1">Madagaszkár 1</option>
+                <option value="Madagaszkár2">Madagaszkár 2</option>
+                <option value="John Vick">John Vick</option>
+                <option value="Breaking Bad">Breaking Bad</option>
+                <option value="Lego Movie">Lego Movie</option>
+                <option value="The Maze">The Maze</option>
+            </select>
+            <br>
+            <button type="submit">Kiválasztotta a filmet?</button>
+        </form>
+    </div>
+</body>
+</html>
