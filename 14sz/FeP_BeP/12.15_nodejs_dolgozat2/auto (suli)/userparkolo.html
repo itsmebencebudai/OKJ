@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autok</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            width: 100%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            background-color: black;
+            border-color: white;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="autokList"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+
+            const response = await fetch(`http://localhost:3000/bejelentkezett-felhasznalo`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            const result = await response.json();
+            console.log(result);
+
+            var userId = result.loggedInUserId;
+
+
+
+            fetch(`http://localhost:3000/parkolo/${userId}`).then((response) => { return response.json(); }).then(response => {
+                console.log(response);
+                const autok = response;
+                const autokList = document.getElementById('autokList');
+                response.forEach(auto => {
+                    const autoDiv = document.createElement('div');
+
+                    autoDiv.innerHTML = `
+                            <table>
+                                <caption>Auto</caption>
+                                <tr>
+                                    <td>típus:</td>
+                                    <td>${auto.típus} </td>
+                                </tr>
+                                <tr>
+                                    <td>marka:</td>
+                                    <td>${auto.marka} </td>
+                                </tr>
+                                <tr>
+                                    <td>gyartasiev:</td>
+                                    <td>${auto.gyartasiev}</td>
+                                </tr>
+                                <tr>
+                                    <td>muszaki:</td>
+                                    <td>${auto.muszaki}</td>
+                                </tr>
+                                <tr>
+                                    <td>ar:</td>
+                                    <td>${auto.ar}</td>
+                                </tr>
+                                <tr>
+                                    <td>felszereltseg:</td>
+                                    <td>${auto.felszereltseg}</td>
+                                </tr>
+                            </table>
+                        `;
+                    autokList.appendChild(autoDiv);
+                });
+            }).catch((error) => {
+                console.error('Hiba a autok letöltésekor:', error);
+            });
+        })
+
+    </script>
+</body>
+
+</html>
