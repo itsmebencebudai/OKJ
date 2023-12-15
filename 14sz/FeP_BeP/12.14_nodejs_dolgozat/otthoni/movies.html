@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            background-color: #2c3e50;
+            color: whitesmoke;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #34495e;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="movieList"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            try {
+                const response = await fetch('http://localhost:3000/filmek');
+
+                if (!response.ok) {
+                    console.error('A kérés letöltése sikertelen:', response.status, response.statusText);
+                    return;
+                }
+
+                const movies = await response.json();
+                console.log('Movies:', movies);
+
+                const movieList = document.getElementById('movieList');
+                movies.forEach(movie => {
+                    const movieDiv = document.createElement('div');
+
+                    const actors = JSON.parse(movie.actors);
+
+                    movieDiv.innerHTML = `
+                        <table>
+                            <caption>Filmek</caption>
+                            <tr>
+                                <th colspan="2">${movie.title}</th>
+                            </tr>
+                            <tr>
+                                <td>Időtartam:</td>
+                                <td>${movie.duration} minutes</td>
+                            </tr>
+                            <tr>
+                                <td>Kategóriák:</td>
+                                <td>${movie.categories}</td>
+                            </tr>
+                            <tr>
+                                <td>Kiadás Év:</td>
+                                <td>${movie.releaseYear}</td>
+                            </tr>
+                            <tr>
+                                <td>Igazgatók:</td>
+                                <td>${movie.directors}</td>
+                            </tr>
+                            <tr>
+                                <td>Színészek:</td>
+                                <td>${displayActors(actors)}</td>
+                            </tr>
+                        </table>
+                    `;
+                    movieList.appendChild(movieDiv);
+                });
+            } catch (error) {
+                console.error('Hiba a filmek letöltése:', error);
+            }
+        });
+
+        function displayActors(actors) {
+            return Object.entries(actors).map(([actor, role]) => `${actor}: ${role}`).join(', ');
+        }
+    </script>
+</body>
+
+</html>
