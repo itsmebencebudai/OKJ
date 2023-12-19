@@ -1,0 +1,33 @@
+﻿<Window x:Class="mozi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mozi"
+        mc:Ignorable="d"
+        Title="Moziműsor" HorizontalAlignment="Center" Height="450" Width="703" WindowStartupLocation="CenterScreen">
+
+
+
+    <Window.Resources>
+        <Style x:Key="MenuGombLabel" TargetType="Label">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Button Content="X" HorizontalAlignment="Left" Height="24" Margin="655,6,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label Style="{StaticResource MenuGombLabel}" Content="Mozi"  HorizontalAlignment="Left" Height="70" Margin="20,20,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="FilmOnHover" Style="{StaticResource MenuGombLabel}" Content="Film" HorizontalAlignment="Left" Height="70" Margin="100,20,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Style="{StaticResource MenuGombLabel}" Content="Ember" HorizontalAlignment="Left" Height="70" Margin="180,20,0,0" VerticalAlignment="Top" Width="70"/>
+        <ComboBox HorizontalAlignment="Left" Height="29" Margin="103,104,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label Content="Típus:" HorizontalAlignment="Left" Height="27" Margin="22,105,0,0" VerticalAlignment="Top" Width="70"/>
+        <ListBox HorizontalAlignment="Left" Height="268" Margin="17,153,0,0" VerticalAlignment="Top" Width="666"/>
+        <Label Style="{StaticResource MenuGombLabel}" Content="Kilép" HorizontalAlignment="Left" Height="70" Margin="260,20,0,0" VerticalAlignment="Top" Width="70"/>
+    </Grid>
+</Window>
