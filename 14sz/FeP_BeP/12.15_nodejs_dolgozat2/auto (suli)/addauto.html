@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Auto</title>
+</head>
+
+<body>
+    <h2>Auto</h2>
+    <form id="addForm">
+
+        <label for="típus">típus:</label>
+        <input type="text" id="típus" name="típus" required><br>
+
+        <label for="marka">marka:</label>
+        <input type="text" id="marka" name="marka" required><br>
+
+        <label for="gyartasiev">gyartasiev:</label>
+        <input type="text" id="gyartasiev" name="gyartasiev" required><br>
+
+        <label for="muszaki">muszaki:</label>
+        <input type="text" id="muszaki" name="muszaki" required><br>
+
+        <label for="ar">ar:</label>
+        <input type="text" id="ar" name="ar" required><br>
+
+        <label for="felszereltseg">felszereltseg:</label>
+        <input type="text" id="felszereltseg" name="felszereltseg" required><br>
+
+        <button type="submit">feltöltése</button>
+    </form>
+    <script>
+        document.getElementById('addForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const tipus = document.getElementById('típus').value;
+            const marka = document.getElementById('marka').value;
+            const gyartasiev = document.getElementById('gyartasiev').value;
+            const muszaki = document.getElementById('muszaki').value;
+            const ar = document.getElementById('ar').value;
+            const felszereltseg = document.getElementById('felszereltseg').value;
+
+            const formData = {
+                tipus: tipus,
+                marka: marka,
+                gyartasiev: gyartasiev,
+                muszaki: muszaki,
+                ar: ar,
+                felszereltseg: felszereltseg,
+            };
+
+            console.log(formData);
+
+            if (!formData.tipus || !formData.marka || !formData.gyartasiev || !formData.muszaki || !formData.ar || !formData.felszereltseg) {
+                alert('Kérem töltse ki a mezőket');
+                return;
+            }
+
+            const response = await fetch(`http://localhost:3000/addauto/${tipus}/${marka}/${gyartasiev}/${muszaki}/${ar}/${felszereltseg}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                console.error('A kérés letöltése sikertelen:', response.status, response.statusText);
+                return;
+            }
+
+            const result = await response.json();
+            console.log(result);
+
+            if (result.redirect) {
+                window.location.href = result.redirect;
+            }
+        });
+    </script>
+</body>
+
+</html>

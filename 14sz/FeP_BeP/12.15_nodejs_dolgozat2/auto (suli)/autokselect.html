@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autok kiválasztás</title>
+</head>
+
+<body>
+    <h2>Autok kiválasztása</h2>
+
+    <form id="selectAutoForm">
+        <label id="selectedUser"></label><br>
+
+        <input type="hidden" id="userid" name="userid" value="">
+
+        <label for="selectedAuto">Válasszon Autot:</label>
+        <select id="selectedAuto" name="selectedAuto">
+        </select>
+
+        <button type="submit">Kiválasztotta az Autot?</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("/mindenauto")
+                .then(response => response.json())
+                .then(data => {
+                    var selectElement = document.getElementById("selectedAuto");
+
+                    data.forEach(auto => {
+                        var option = document.createElement("option");
+                        option.text = `${auto.típus} ${auto.marka} (${auto.gyartasiev})`;
+                        option.value = auto.id;
+                        selectElement.add(option);
+                    });
+                })
+                .catch(error => console.error("Error a autok lekérdezésekor:", error));
+        });
+
+        var loggedInUserId;
+        fetch("/bejelentkezett-felhasznalo")
+            .then(response => response.json())
+            .then(data => {
+                var useridInput = document.getElementById("userid");
+                useridInput.value = data.loggedInUserId;
+                loggedInUserId = data.loggedInUserId;
+            })
+            .catch(error => console.error("Error a felhasználó lekérdezésekor:", error));
+
+        document.getElementById('selectAutoForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const autoId = document.getElementById("selectedAuto").value;
+            const userId = loggedInUserId;
+
+            const response = await fetch(`http://localhost:3000/autoparkolo/${autoId}/user/${userId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            const result = await response.json();
+            console.log(result);
+
+            if (result.redirect) {
+                window.location.href = result.redirect;
+            }
+            
+        });
+    </script>
+</body>
+
+</html>
