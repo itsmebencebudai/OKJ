@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "mozi-WPF/1.0.0": {
+        "runtime": {
+          "mozi-WPF.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "mozi-WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
