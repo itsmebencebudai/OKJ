@@ -6,31 +6,9 @@ namespace mozi_WFA
 {
     public partial class frmFilm : Form
     {
-        readonly string connectionString = "server=localhost;user=root;database=mozimusor;port=3306;password=";
+        private readonly string connectionString = "server=localhost;user=root;database=mozimusor;port=3306;password=";
 
         private MySqlConnection mySqlConnection;
-
-        public class ComboBoxItem
-        {
-            readonly string displayValue;
-            readonly string hiddenValue;
-
-            public ComboBoxItem(string d, string h)
-            {
-                displayValue = d;
-                hiddenValue = h;
-            }
-
-            public string HiddenValue
-            {
-                get { return hiddenValue; }
-            }
-
-            public override string ToString()
-            {
-                return displayValue;
-            }
-        }
 
         public frmFilm()
         {
@@ -76,7 +54,7 @@ namespace mozi_WFA
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            frmFilmLista frmFilmListaOpen = new frmFilmLista();
+            frmFilmLista frmFilmListaOpen = new frmFilmLista(textBox1.Text);
             frmFilmListaOpen.Show();
         }
 
@@ -91,12 +69,12 @@ namespace mozi_WFA
                 MySqlConnection conn = new MySqlConnection(connectionString);
                 conn.Open();
 
-                string selectedValue = comboBox1.SelectedItem as string;  // Ellenőrizze, hogy az objektum string-e
+                string EAZONvalue = textBox2.Text;
 
-                if (selectedValue != null)
+                if (EAZONvalue != null)
                 {
                     // Használja a kiválasztott string értéket a lekérdezésében
-                    string InsertUpdateQuery = $"INSERT INTO `film` (`cím`, `hossz`, `mufaj`, `rendezo`, `gyart_ev`, `szarmazas`) VALUES ('{textBox3.Text}','{numericUpDown1.Value}','{textBox2.Text}','{selectedValue}','{textBox4.Text}','{textBox5.Text}')";
+                    string InsertUpdateQuery = $"INSERT INTO `film` (`cím`, `hossz`, `mufaj`, `rendezo`, `gyart_ev`, `szarmazas`) VALUES ('{textBox1.Text}','{numericUpDown1.Value}','{textBox3.Text}','{EAZONvalue}','{textBox4.Text}','{textBox5.Text}')";
 
                     try
                     {
@@ -107,23 +85,42 @@ namespace mozi_WFA
                         MessageBox.Show("Nem sikerült a feltöltés! " + ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    string FAZONQuery = $"SELECT FAZON FROM film WHERE cím LIKE '{textBox2.Text}'";
-                    MySqlDataReader FAZONQuery_reader = new MySqlCommand(FAZONQuery, conn).ExecuteReader();
-                    while (FAZONQuery_reader.Read())
+                    string FAZONLekérdezés = $"SELECT FAZON FROM film WHERE cím LIKE @cím";
+                    using (MySqlCommand cmd = new MySqlCommand(FAZONLekérdezés, conn))
                     {
-                        textBox1.Text = $"{FAZONQuery_reader[0]}";
+                        cmd.Parameters.AddWithValue("@cím", textBox1.Text);
+
+                        try
+                        {
+                            object eredmény = cmd.ExecuteScalar();
+
+                            if (eredmény != null)
+                            {
+                                string FAZONÉrték = eredmény.ToString();
+                                MessageBox.Show($"Film sikeresen feltöltve. FAZON: {FAZONÉrték}");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Film nem található az adatbázisban.");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Hiba a Film feltöltésekor: {ex.Message}");
+                        }
+                        finally
+                        {
+                            conn.Close();
+                        }
                     }
                 }
                 else
                 {
-                    // Kezelje az esetet, amikor a kiválasztott elem nem string típusú
-                    MessageBox.Show("Érvénytelen kiválasztás a ComboBox1-ben");
+                    MessageBox.Show("Érvénytelen kiválasztás a Rendezo választásakor");
                 }
 
                 conn.Close();
             }
-
-
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -142,20 +139,58 @@ namespace mozi_WFA
         {
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
-            string torol = $"DELETE FROM film WHERE film.FAZON = {textBox1.Text}";
+            string delete = $"DELETE FROM film WHERE film.cím LIKE '{textBox1.Text}'";
             DialogResult dialogResult = MessageBox.Show("Bizotsan törli?", "Törlés", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 try
                 {
-                    new MySqlCommand(torol, conn).ExecuteNonQuery();
+                    new MySqlCommand(delete, conn).ExecuteNonQuery();
                     MessageBox.Show("Sikeresen törölve");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Nem sikerült a törölés");
+                    MessageBox.Show("Nem sikerült a törölés! " + ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection conn = new MySqlConnection(connectionString);
+
+            try
+            {
+                conn.Open();
+                string selectedDirector = comboBox1.SelectedItem.ToString();
+                string rendezoQuery = "SELECT EAZON FROM ember WHERE nev LIKE @selectedDirector";
+
+                using (MySqlCommand command = new MySqlCommand(rendezoQuery, conn))
+                {
+                    command.Parameters.AddWithValue("@selectedDirector", selectedDirector);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            textBox2.Text = reader["EAZON"].ToString();
+                        }
+                    }
                 }
 
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt a rendezo azonosítójának lehívásakor! " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
     }

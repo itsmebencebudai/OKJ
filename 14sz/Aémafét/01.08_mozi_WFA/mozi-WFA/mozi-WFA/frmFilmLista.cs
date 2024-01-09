@@ -14,47 +14,49 @@ namespace mozi_WFA
 {
     public partial class frmFilmLista : Form
     {
-        readonly string connectionString = "server=localhost;user=root;database=mozimusor;port=3306;password=";
+        private readonly string kapcsolatString = "server=localhost;user=root;database=mozimusor;port=3306;password=";
 
-        private MySqlConnection mySqlConnection;
-        private MySqlDataReader mySqlDataReader;
-        private DataTable dataTable;
+        private MySqlConnection mysqlKapcsolat;
+        private MySqlDataReader mysqlAdatOlvaso;
+        private DataTable adatTabla;
 
-        public frmFilmLista()
+        public frmFilmLista(string cimFrmFilmbol)
         {
             InitializeComponent();
 
-            dataTable = new DataTable();
-            mySqlConnection = new MySqlConnection(connectionString);
+            this.textBox1.Text = cimFrmFilmbol;
 
-            mySqlConnection.Open();
+            adatTabla = new DataTable();
+            mysqlKapcsolat = new MySqlConnection(kapcsolatString);
 
-            string sqlQuery = $"SELECT cím,hossz,mufaj,rendezo,gyart_ev,szarmazas FROM film INNER JOIN ember ON film.RENDEZO=ember.EAZON";
-            mySqlDataReader = new MySqlCommand(sqlQuery, mySqlConnection).ExecuteReader();
-            dataTable.Load(mySqlDataReader);
-            dataGridView1.DataSource = dataTable;
+            mysqlKapcsolat.Open();
 
-            mySqlConnection.Close();
+            string sqlLekerdezes = $"SELECT cím, hossz, mufaj, rendezo, gyart_ev, szarmazas FROM film INNER JOIN ember ON film.RENDEZO=ember.EAZON";
+            mysqlAdatOlvaso = new MySqlCommand(sqlLekerdezes, mysqlKapcsolat).ExecuteReader();
+            adatTabla.Load(mysqlAdatOlvaso);
+            dataGridView1.DataSource = adatTabla;
+
+            mysqlKapcsolat.Close();
         }
 
-        private void frmFilmLista_Load(object sender, EventArgs e)
+        private void FrmFilmLista_Load(object sender, EventArgs e)
         {
 
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            dataTable = new DataTable();
-            mySqlConnection = new MySqlConnection(connectionString);
+            adatTabla = new DataTable();
+            mysqlKapcsolat = new MySqlConnection(kapcsolatString);
 
-            mySqlConnection.Open();
+            mysqlKapcsolat.Open();
 
-            string sqlQuery = $"SELECT cím,hossz,mufaj,rendezo,gyart_ev,szarmazas FROM film INNER JOIN ember ON film.RENDEZO=ember.EAZON WHERE cím LIKE '%{textBox1.Text}%'";
-            mySqlDataReader = new MySqlCommand(sqlQuery, mySqlConnection).ExecuteReader();
-            dataTable.Load(mySqlDataReader);
-            dataGridView1.DataSource = dataTable;
+            string sqlLekerdezes = $"SELECT cím, hossz, mufaj, rendezo, gyart_ev, szarmazas FROM film INNER JOIN ember ON film.RENDEZO=ember.EAZON WHERE cím LIKE '%{textBox1.Text}%'";
+            mysqlAdatOlvaso = new MySqlCommand(sqlLekerdezes, mysqlKapcsolat).ExecuteReader();
+            adatTabla.Load(mysqlAdatOlvaso);
+            dataGridView1.DataSource = adatTabla;
 
-            mySqlConnection.Close();
+            mysqlKapcsolat.Close();
         }
     }
 }

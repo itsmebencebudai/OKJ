@@ -53,7 +53,6 @@ namespace mozi_WFA
                     connection.Close();
                 }
 
-
                 MessageBox.Show("Sikeres a mozi.sql végrehajtása!");
             }
             catch (Exception ex)
@@ -62,7 +61,6 @@ namespace mozi_WFA
                 MessageBox.Show("Hiba a mozi.sql végrehajtása során: " + ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void InitializeDatabaseConnection()
         {
@@ -156,7 +154,8 @@ namespace mozi_WFA
 
         private void KeresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmFilmLista frmFilmListaOpen = new frmFilmLista();
+            string NoCím = "";
+            frmFilmLista frmFilmListaOpen = new frmFilmLista(NoCím);
             frmFilmListaOpen.Show();
         }
 
