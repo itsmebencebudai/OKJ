@@ -169,7 +169,8 @@ delimiter //
 drop procedure userLogin;
 CREATE PROCEDURE if not EXISTS userLogin(IN mail Varchar(50), pwd varchar(50))
 BEGIN
-    select userID, name, email from User  WHERE User.email = mail And User.password = SHA2(pwd,256);
+    select userID, name, email from User
+    WHERE User.email = mail And User.password = SHA2(pwd,256);
 END;
 
 delimiter ;
