@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Address extends Model
+class CartItems extends Model
 {
     use HasFactory;
-    protected $table = 'Address';
-    protected $fillable = ['zipCode','city','street','delivery'];
+    protected $table = 'Cart_Item';
+    protected $fillable = ['quantity'];
+    public $timestamps = false;
 }

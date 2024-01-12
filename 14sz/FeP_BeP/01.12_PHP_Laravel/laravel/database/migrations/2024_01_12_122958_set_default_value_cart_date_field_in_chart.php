@@ -10,14 +10,8 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('User', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('password');
-            $table->string('accountNumber');
-            $table->string('token');
-            $table->timestamps();
+        Schema::table('cart', function (Blueprint $table) {
+            $table->timestamp('cartDate')->default(now())->change();
         });
     }
 
@@ -26,6 +20,8 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('User');
+        Schema::table('cart', function (Blueprint $table) {
+            $table->dropColumn('cartDate');
+        });
     }
 };

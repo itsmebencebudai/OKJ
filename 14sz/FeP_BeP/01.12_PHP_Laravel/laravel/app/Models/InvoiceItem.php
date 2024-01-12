@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Address extends Model
+class InvoiceItem extends Model
 {
     use HasFactory;
-    protected $table = 'Address';
-    protected $fillable = ['zipCode','city','street','delivery'];
+    protected $table = 'Invoice_Item';
+    public $timestamps = false;
 }

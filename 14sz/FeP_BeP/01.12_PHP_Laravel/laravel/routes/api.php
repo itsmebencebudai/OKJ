@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\CartController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -38,5 +39,8 @@ Route::get("/address/{id}", [AddressController::class, 'show']);
 Route::post("/address", [AddressController::class, 'store']);
 Route::put("/address/{id}", [AddressController::class, 'update']);
 Route::delete("/address/{id}", [AddressController::class, 'destroy']);
+
+
+Route::get("/cart", [CartController::class, 'index']);
 
 
