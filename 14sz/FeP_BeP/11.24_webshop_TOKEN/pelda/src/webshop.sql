@@ -1,4 +1,4 @@
--- Active: 1695968358990@@127.0.0.1@3306@webshop1124
+-- Active: 1697197325232@@127.0.0.1@3306@webshop
 CREATE DATABASE webshop1124
     DEFAULT CHARACTER SET = 'utf8' COLLATE utf8_hungarian_ci;
 
@@ -177,7 +177,7 @@ delimiter ;
 
 drop PROCEDURE userUpdateToken;
 
-CREATE PROCEDURE if not EXISTS userUpdateToken(IN id int, token Text)
+CREATE PROCEDURE if not EXISTS userUpdateToken(IN id int, token text)
 BEGIN
     UPDATE User Set User.token = token where User.userID = id;     
 END;
@@ -195,3 +195,5 @@ select userID, name, email from User  WHERE  User.password = sha2("macika",256);
 
 88daa826fbe1108a8eff7848f62560dfd81754dae90dcd0bed9882a8065fd8b6;
 select sha2('macika',256);
+
+SET uj_olvasojegy = CONCAT(UPPER(SUBSTRING(UUID(), 1, 4)),'-',LPAD((SELECT felhasznalo_id + 1 FROM felhasznalo), 4, '0'));
