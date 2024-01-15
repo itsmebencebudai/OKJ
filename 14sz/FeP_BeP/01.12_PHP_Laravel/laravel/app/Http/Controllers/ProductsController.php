@@ -25,7 +25,7 @@ class ProductsController extends Controller
         }
 
         try {
-            $Products = new Products;
+            $Products = new Product;
             $Products->productName = $request->productName;
             $Products->description = $request->description;
             $Products->price = $request->price;
@@ -44,7 +44,7 @@ class ProductsController extends Controller
 
     public function show($id)
     {
-        $Products = Products::find($id);
+        $Products = Product::find($id);
         if (empty($Products)) {
             return response()->json([
                 'message' => 'There is no Product to this ID'
@@ -55,9 +55,9 @@ class ProductsController extends Controller
 
     public function update(Request $request, int $id)
     {
-        if (Products::where('productID', $id)->exists()) {
+        if (Product::where('productID', $id)->exists()) {
             try {
-                $Products = Products::find($id);
+                $Products = Product::find($id);
                 $Products->productName = is_null($request->productName) ? $Products->productName : $request->productName;
                 $Products->description = is_null($request->description) ? $Products->description : $request->description;
                 $Products->price = is_null($request->price) ? $Products->price : $request->price;
@@ -75,8 +75,8 @@ class ProductsController extends Controller
 
     public function destroy(int $id)
     {
-        if (Products::where('productID', $id)->exists()) {
-            $Products = Products::find($id);
+        if (Product::where('productID', $id)->exists()) {
+            $Products = Product::find($id);
             $Products->delete();
             return response()->json([
                 'message' => 'Product deleted'
