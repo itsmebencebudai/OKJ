@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "co1dt8nUur96sPdvL5f5w8cnuc8PQBUJBlyN8NYPH39oA+SycvZuwtawt6gTyKmPwVjHTyHQjqXoYb1Zn1eong==",
+  "dgSpecHash": "K1G5j1EoEkpKdHvJtaCBCOJB+B1baR6VeguiThTN27J4PK3j+6xsseI78oIQXwdwWwTOQxe0W2aHzJiV412ySg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\budai.bence\\Desktop\\OKJ\\14sz\\Aémafét\\01.09_mozi_WPF\\mozi-WPF\\mozi-WPF\\mozi-WPF.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\OKJ\\14sz\\Aémafét\\01.09_mozi_WPF\\mozi-WPF\\mozi-WPF\\mozi-WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bence\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Bence\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Bence\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Bence\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

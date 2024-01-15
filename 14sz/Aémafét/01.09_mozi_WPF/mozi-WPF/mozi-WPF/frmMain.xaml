@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mozi_WPF"
         mc:Ignorable="d"
-        Title="Mozi" Height="500" Width="500">
+        Title="Mozi" Height="550" Width="550" WindowStartupLocation="CenterScreen">
+    
+
 
     <Window.Resources>
         <Style TargetType="Button">
@@ -14,10 +16,26 @@
         </Style>
     </Window.Resources>
 
+    <Window.Icon>
+        <BitmapImage UriSource="images/mozi.ico" />
+    </Window.Icon>
+    
     <Grid Height="500" Width="500">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="84*"/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Margin="20,20,420,400">
-            <Button Height="60" Width="60">
+        <StackPanel Margin="20,20,12,17">
+            <Button Height="60" Width="60" >
                 <Button.Content>
                     <Image Source="images/mozi2.png"/>
                 </Button.Content>
@@ -25,8 +43,8 @@
             <TextBlock Text="Mozi" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Margin="100,20,340,400">
-            <Button  Height="60" Width="60">
+        <StackPanel Margin="8,20,12,17" Grid.Column="1">
+            <Button  Height="60" Width="60" x:Name="Button1" Click="Button1_Click">
                 <Button.Content>
                     <Image Source="images/film.png"/>
                 </Button.Content>
@@ -34,7 +52,7 @@
             <TextBlock Text="Film" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Margin="180,20,260,400">
+        <StackPanel Margin="8,20,12,17" Grid.Column="2">
             <Button Height="60" Width="60">
                 <Button.Content>
                     <Image Source="images/ember.png"/>
@@ -43,8 +61,8 @@
             <TextBlock Text="Ember" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Margin="260,20,180,400">
-            <Button Height="60" Width="60">
+        <StackPanel Margin="8,20,14,17" Grid.Column="3">
+            <Button Height="60" Width="60" Click="ButtonExit_Click">
                 <Button.Content>
                     <Image Source="images/kilep.png"/>
                 </Button.Content>
@@ -52,15 +70,22 @@
             <TextBlock Text="Kilép" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <TextBlock Text="Idő: " Margin="365,36,28,444"/>
+        <TextBlock Name="idoLabel" Text="Idő: " Margin="31,36,28,61" Grid.Column="4"/>
 
-        <ComboBox HorizontalAlignment="Left" Height="21" Margin="83,133,0,0" VerticalAlignment="Top" Width="123"/>
-        <Label Content="Típusű:" HorizontalAlignment="Left" Height="26" Margin="14,127,0,0" VerticalAlignment="Top" Width="57"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="22" Margin="83,0,0,0" VerticalAlignment="Center" Width="123" SelectionChanged="ComboBox_SelectionChanged" Grid.Row="1" Grid.ColumnSpan="3" />
+        <Label Content="Típus:" HorizontalAlignment="Left" Height="26" Margin="14,0,0,0" VerticalAlignment="Center" Width="57" Grid.Row="1"/>
 
-        <DataGrid HorizontalAlignment="Left" Height="301" Margin="17,171,0,0" VerticalAlignment="Top" Width="469"/>
-        <Menu HorizontalAlignment="Left" Height="47" Margin="100,80,0,0" VerticalAlignment="Top" Width="78">
-            <MenuItem Header="Szekeszt"/>
-            <MenuItem Header="Keres"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="301" Margin="17,7,0,0" VerticalAlignment="Top" Width="469" AutoGenerateColumns="False" SelectionMode="Single" Grid.Row="2" Grid.ColumnSpan="5" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Név" Binding="{Binding nev}" />
+                <DataGridTextColumn Header="Kerület" Binding="{Binding kerulet}" />
+                <DataGridTextColumn Header="Típus" Binding="{Binding típus}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Menu x:Name="menu" HorizontalAlignment="Center" Height="47" Margin="0,80,0,0" VerticalAlignment="Top" Width="78" Visibility="Hidden" Grid.RowSpan="2" Grid.Column="1">
+            <MenuItem Header="Szekeszt" Click="SzekesztMenuItem_Click"/>
+            <MenuItem Header="Keres" Click="KeresMenuItem_Click"/>
         </Menu>
 
     </Grid>

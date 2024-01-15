@@ -5,54 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mozi_WPF"
         mc:Ignorable="d"
-        Title="Film" Height="300" Width="300">
+        Title="Film" Height="520" Width="520" WindowStartupLocation="CenterScreen">
+    
+    <Window.Icon>
+        <BitmapImage UriSource="images/mozi.ico" />
+    </Window.Icon>
     
     <Window.Resources>
         <Style TargetType="TextBox">
             <Setter Property="BorderThickness" Value="0.5"/>
             <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="FontSize" Value="8"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="TextAlignment" Value="Center" />
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="8"/>
+            <Setter Property="FontSize" Value="10"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Text" Value=" "/>
         </Style>
         <Style TargetType="Label">
-            <Setter Property="FontSize" Value="9"/>
-            <Setter Property="Width" Value="60"/>
-            <Setter Property="Height" Value="20"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="Height" Value="50"/>
         </Style>
         <Style TargetType="Button">
-            <Setter Property="Height" Value="25"/>
-            <Setter Property="Width" Value="25"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="50"/>
         </Style>
         <Style TargetType="StackPanel">
-            <Setter Property="Height" Value="42" />
-            <Setter Property="Width" Value="30"/>
+            <Setter Property="Height" Value="82" />
+            <Setter Property="Width" Value="60"/>
         </Style>
     </Window.Resources>
 
     <Grid>
-        <Label Content="Azonosító:" Margin="14,41,226,223"/>
-        <Label Content="Cím:" Margin="41,67,199,197" />
-        <Label Content="Hossz:" Margin="34,122,206,142" />
-        <Label Content="Műfaj:" Margin="34,142,206,122" />
-        <Label Content="Rendező:" Margin="23,165,217,99" />
-        <Label Content="Gyártási év:" Margin="14,183,226,81"/>
-        <Label Content="Származás:" Margin="16,203,224,61" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="307*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
 
-        <StackPanel Margin="251,200,19,34" Height="50">
-            <Button>
+        <Label Content="Azonosító:" Margin="10,16,18,438"/>
+        <Label Content="Cím:" Margin="22,88,6,366" />
+        <Label Content="Hossz:" Margin="11,201,17,253" />
+        <Label Content="Műfaj:" Margin="17,253,11,201" />
+        <Label Content="Rendező:" Margin="18,288,10,166"/>
+        <Label Content="Gyártási év:" Margin="16,327,8,107" />
+        <Label Content="Származás:" Margin="14,375,10,59" />
+
+        <StackPanel Margin="12,343,27,39" Height="102" Grid.Column="2">
+            <Button Click="UresUrlap_Click">
                 <Button.Content>
-                    <Image Source="images/kilep.png"/>
+                    <Image Source="images/user.png"/>
                 </Button.Content>
             </Button>
             <TextBlock Text="Üres űrlap" TextWrapping="Wrap" Height="25"/>
         </StackPanel>
 
-        <StackPanel Margin="251,154,19,88">
-            <Button>
+        <StackPanel Margin="11,272,28,130" Grid.Column="2" >
+            <Button Click="DeleteButton_Click">
                 <Button.Content>
                     <Image Source="images/delete.png"/>
                 </Button.Content>
@@ -60,27 +71,31 @@
             <TextBlock Text="Töröl"/>
         </StackPanel>
 
-        <StackPanel Margin="251,107,19,135">
-            <Button>
-                <Image Source="/images/ment.png"/>
+        <StackPanel Margin="12,204,27,198" Grid.Column="2">
+            <Button Click="MentButton_Click">
+                <Button.Content>
+                    <Image Source="images/ment.png"/>
+                </Button.Content>
             </Button>
             <TextBlock Text="Ment"/>
         </StackPanel>
 
-        <StackPanel Margin="251,67,19,175">
-            <Button>
-                <Image Source="/images/keres.png"/>
+        <StackPanel Margin="14,129,25,273" Grid.Column="2">
+            <Button Click="KeresButton_Click">
+                <Button.Content>
+                    <Image Source="images/keres.png"/>
+                </Button.Content>
             </Button>
             <TextBlock Text="Keres"/>
         </StackPanel>
 
-        <TextBox HorizontalAlignment="Left" Height="45" Margin="69,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
-        <TextBox HorizontalAlignment="Left" Height="15" Margin="69,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="32" Margin="12,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Grid.Column="1"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="96" Margin="12,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Grid.Column="1"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="32" Margin="12,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Grid.Column="1"/>
+        <TextBox x:Name="numericUpDown1" HorizontalAlignment="Left" Height="34" Margin="12,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Grid.Column="1"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="32" Margin="12,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Grid.Column="1"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="32" Margin="12,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Grid.Column="1"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Margin="12,285,0,0" Height="34" Grid.Column="1" SelectionChanged="ComboBox1_SelectionChanged"/>
 
     </Grid>
 </Window>
