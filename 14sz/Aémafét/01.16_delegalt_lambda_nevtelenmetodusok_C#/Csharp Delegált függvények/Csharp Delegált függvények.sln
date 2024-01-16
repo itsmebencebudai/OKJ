@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp Delegált függvények", "Csharp Delegált függvények\Csharp Delegált függvények.csproj", "{4004F5AA-FBF8-47AD-83A5-59273699A01F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4004F5AA-FBF8-47AD-83A5-59273699A01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4004F5AA-FBF8-47AD-83A5-59273699A01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4004F5AA-FBF8-47AD-83A5-59273699A01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4004F5AA-FBF8-47AD-83A5-59273699A01F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {477C9D90-0D6B-4507-B923-65E63EAA811B}
+	EndGlobalSection
+EndGlobal
