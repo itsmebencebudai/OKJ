@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mozi_WPF"
         mc:Ignorable="d"
-        Title="Filmek" Height="200" Width="300">
+        Title="Filmek" Height="320" Width="420" WindowStartupLocation="CenterScreen">
+
+    <Window.Icon>
+        <BitmapImage UriSource="images/mozi.ico" />
+    </Window.Icon>
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="227*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Szűrés Cím alapján" RenderTransformOrigin="0.5,0.5" Margin="13,9,135,1" FontSize="11">
+            <TextBox x:Name="textBox1" TextChanged="TextBox1_TextChanged" Height="21"/>
+        </GroupBox>
+
+        <DataGrid x:Name="dataGridView1" HorizontalAlignment="Center" Height="221" Margin="0,2,0,0" VerticalAlignment="Top" Width="360" Grid.Row="1"/>
     </Grid>
 </Window>
