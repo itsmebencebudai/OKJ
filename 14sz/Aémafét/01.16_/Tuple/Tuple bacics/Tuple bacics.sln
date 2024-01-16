@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuple bacics", "Tuple bacics\Tuple bacics.csproj", "{21954233-E26F-4092-8942-FD623AB2F1AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21954233-E26F-4092-8942-FD623AB2F1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21954233-E26F-4092-8942-FD623AB2F1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21954233-E26F-4092-8942-FD623AB2F1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21954233-E26F-4092-8942-FD623AB2F1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B60BA9D1-AD93-4220-B8A8-CED41456BA98}
+	EndGlobalSection
+EndGlobal

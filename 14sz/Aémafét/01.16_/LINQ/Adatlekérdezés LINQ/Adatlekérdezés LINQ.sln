@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adatlekérdezés LINQ", "Adatlekérdezés LINQ\Adatlekérdezés LINQ.csproj", "{0F2B0783-6612-4384-9E2E-3C6F3C3C0C2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F2B0783-6612-4384-9E2E-3C6F3C3C0C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2B0783-6612-4384-9E2E-3C6F3C3C0C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2B0783-6612-4384-9E2E-3C6F3C3C0C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2B0783-6612-4384-9E2E-3C6F3C3C0C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D69184F-7888-4015-A702-F16BCE18DE4E}
+	EndGlobalSection
+EndGlobal
