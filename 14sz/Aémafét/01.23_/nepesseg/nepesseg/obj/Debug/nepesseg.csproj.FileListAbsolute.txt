@@ -1,0 +1,7 @@
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\bin\Debug\nepesseg.exe.config
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\bin\Debug\nepesseg.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\bin\Debug\nepesseg.pdb
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\obj\Debug\nepesseg.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\obj\Debug\nepesseg.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\obj\Debug\nepesseg.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\nepesseg\nepesseg\obj\Debug\nepesseg.pdb

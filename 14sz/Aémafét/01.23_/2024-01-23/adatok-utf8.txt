@@ -1,0 +1,50 @@
+Ország;Terület;Népesség;Főváros;Főváros népessége
+Görögország;132000;1064g;Athén;3154
+Románia;238400;1912g;Bukarest;1812
+Ausztria;83900;8960000;Bécs;1915
+Lengyelország;312700;3775g;Varsó;1776
+Belgium;30500;11590000;Brüsszel;2065
+Bulgária;110400;6880000;Szófia;1277
+Ciprus;9300;900000;Nicosia;270
+Csehország;78900;10510000;Prága;1299
+Dánia;42900;5860000;Koppenhága;1334
+Észtország;45400;1330000;Tallinn;441
+Finnország;336900;5540000;Helsinki;1292
+Franciaország;551500;67750000;Párizs;10958
+Hollandia;41500;17530000;Amszterdam;1140
+Horvátország;56600;3960000;Zágráb;685
+Írország;69800;5030000;Dublin;1215
+Lettország;64600;1880000;Riga;634
+Litvánia;65300;2800000;Vilnius;538
+Luxemburg;2600;640000;Luxembourg;120
+Magyarország;93000;9710000;Budapest;1764
+Málta;300;520000;Valletta;213
+Németország;357600;83200000;Berlin;3557
+Olaszország;302100;59110000;Róma;4234
+Portugália;92200;10330000;Lisszabon;2942
+Spanyolország;506000;47420000;Madrid;6559
+Svédország;438600;10420000;Stockholm;1608
+Szlovákia;49000;5450000;Pozsony;433
+Szlovénia;20300;2110000;Ljubljana;287
+Egyesült Királyság;244400;67330000;London;9177
+Izland;103000;370000;Reykjavík;216
+Észak-Macedónia;25700;1950000;Szkopje;590
+Montenegró;13900;620000;Podgorica;177
+Norvégia;323800;5410000;Osló;1027
+Oroszország;17098200;143450000;Moszkva;12476
+Svájc;41300;8700000;Bern;426
+Szerbia;88400;6830000;Belgrád;1394
+Törökország;783600;84150000;Ankara;5018
+India;3287300;1393410000;Új-Delhi;29399
+Izrael;22100;9360000;Jeruzsálem;919
+Japán;377900;125680000;Tokió;37435
+Kína;9600000;1412360000;Peking;20036
+Koreai Köztársaság;100400;51740000;Szöul;9962
+Dél-afrikai Köztársaság;1221000;60040000;Pretoriap;2473
+Egyiptom;1002000;104260000;Kairó;20485
+Brazília;8510300;213990000;Brasilia;4559
+Egyesült Államok;9833500;331890000;Washington, D.C.;5265
+Kanada;9984700;38250000;Ottawa;1378
+Mexikó;1964400;130260000;Mexikóváros;21672
+Ausztrália;7692000;25740000;Canberra;453
+Új-Zéland;268100;5120000;Wellington;413

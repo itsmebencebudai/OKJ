@@ -1,0 +1,10 @@
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\bin\Debug\adatbovites.exe.config
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\bin\Debug\adatbovites.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\bin\Debug\adatbovites.pdb
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.csproj.AssemblyReference.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.Form1.resources
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.Properties.Resources.resources
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.csproj.GenerateResource.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.csproj.CoreCompileInputs.cache
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.exe
+C:\Users\budai.bence\Desktop\OKJ\14sz\Aémafét\01.23_\adatbovites\adatbovites\obj\Debug\adatbovites.pdb
