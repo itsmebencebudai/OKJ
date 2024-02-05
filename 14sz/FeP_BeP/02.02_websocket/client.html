@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WebSocket Client</title>
+</head>
+
+<body>
+    <h1>WebSocket Client</h1>
+    <div id="receivedMessages"></div>
+
+    <form id="loginForm">
+        <label for="username">Enter username</label>
+        <input type="text" name="username" id="logusername" required>
+        <label for="password">Enter password</label>
+        <input type="password" name="password" id="logpassword" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="registerForm">
+        <label for="username">Choose a username</label>
+        <input type="text" name="username" id="regusername" required>
+        <label for="password">Choose a password</label>
+        <input type="password" name="password" id="regpassword" required>
+        <button type="submit">Register</button>
+    </form>
+
+    
+    <form id="messageForm" style="display: none;">
+        <label for="message">Enter Message:</label>
+        <input type="text" id="message" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>
