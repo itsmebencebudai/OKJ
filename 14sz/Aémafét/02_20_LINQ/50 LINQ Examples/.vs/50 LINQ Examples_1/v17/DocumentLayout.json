@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02_20_LINQ\\50 LINQ Examples\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0129F692-85C4-42D1-B3B4-91CD591F44CC}|50 LINQ Examples\\50 LINQ Examples_1.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\02_20_linq\\50 linq examples\\50 linq examples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0129F692-85C4-42D1-B3B4-91CD591F44CC}|50 LINQ Examples\\50 LINQ Examples_1.csproj|solutionrelative:50 linq examples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02_20_LINQ\\50 LINQ Examples\\50 LINQ Examples\\Program.cs",
+              "RelativeDocumentMoniker": "50 LINQ Examples\\Program.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02_20_LINQ\\50 LINQ Examples\\50 LINQ Examples\\Program.cs",
+              "RelativeToolTip": "50 LINQ Examples\\Program.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T10:33:48.827Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

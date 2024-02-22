@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\bin\Debug\101 LINQ Samples.exe.config
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\bin\Debug\101 LINQ Samples.exe
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\bin\Debug\101 LINQ Samples.pdb
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\obj\Debug\101 LINQ Samples.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\obj\Debug\101 LINQ Samples.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\obj\Debug\101 LINQ Samples.exe
+D:\OKJ\14sz\Aémafét\02_20_LINQ\101 LINQ Samples\101 LINQ Samples\obj\Debug\101 LINQ Samples.pdb
