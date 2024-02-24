@@ -1,7 +1,7 @@
 
 class Config {
     user = "root";
-    password = "my-secret-pw";
+    password = "";
     database = "chat";
     host = "localhost";
     constructor() {
