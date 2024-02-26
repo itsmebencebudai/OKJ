@@ -1,0 +1,67 @@
+# TypeScript és Express beállítása Node.js projektben
+
+## 1. Node.js és npm telepítése
+
+Telepítsd a Node.js-t és a Node Package Manager-t (npm) a [hivatalos webhelyről](https://nodejs.org/).
+
+## 2. Új Node.js projekt inicializálása
+
+Nyiss egy parancssort, és hozz létre egy új mappát a projektnek. Majd a következő parancsokkal inicializáld a Node.js projektet:
+
+```bash
+npm init -y
+```
+## 
+Biztosítok egy egyszerű Markdown fájlt, amely bemutatja, hogyan állítsd be egy Node.js projektet TypeScript és Express modul használatával.
+
+markdown
+Copy code
+# TypeScript és Express beállítása Node.js projektben
+
+## 1. Node.js és npm telepítése
+
+Telepítsd a Node.js-t és a Node Package Manager-t (npm) a [hivatalos webhelyről](https://nodejs.org/).
+
+## 2. Új Node.js projekt inicializálása
+
+Nyiss egy parancssort, és hozz létre egy új mappát a projektnek. Majd a következő parancsokkal inicializáld a Node.js projektet:
+
+```bash
+npm init -y
+```
+## 3. TypeScript telepítése
+Telepítsd a TypeScript csomagot a következő paranccsal:
+
+```bash
+npm install --save-dev typescript
+```
+Incializáld a TypeScript konfigurációt a következő paranccsal:
+
+```bash
+npx tsc --init
+```
+Módosítsd a tsconfig.json fájlt a következőképpen:
+```
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+## 4. Express telepítése és TypeScript támogatás hozzáadása
+Telepítsd az Express-t és a TypeScript-hez szükséges típusokat a következő paranccsal:
+
+```bash
+npm install express @types/node @types/express
+```
+
+##5. Express alkalmazás létrehozása TypeScript-ben
+Hozz létre egy src mappát, majd benne egy app.ts fájlt és másold bele a tartalmakat
+

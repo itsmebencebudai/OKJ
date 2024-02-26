@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\bin\Debug\Feladat1.exe.config
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\bin\Debug\Feladat1.exe
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\bin\Debug\Feladat1.pdb
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\obj\Debug\Feladat1.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\obj\Debug\Feladat1.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\obj\Debug\Feladat1.exe
+D:\OKJ\14sz\Aémafét\02.27\Feladat1\Feladat1\obj\Debug\Feladat1.pdb

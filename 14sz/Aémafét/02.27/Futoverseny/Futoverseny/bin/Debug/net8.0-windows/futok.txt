@@ -1,0 +1,8 @@
+001;Kiss Miklós;1989.04.03;Magyarorszaág;40:05.18
+002;Bálint Balázs;1989.05.03;Magyarország;41:04.28
+003;Aranyos Tibor;1991.03.20;Németország;42:12.11
+004;Kocsis Tibor;1990.12.11;Anglia;44:11.10
+005;Zombori József;1993.06.23;Magyarország;42:22.11
+006;Takács Tibor;1994.06.22;Magyarország;41:23.12
+007;Nagy Ferenc;1992.07.21;Anglia;41:22.11
+008;Tóth József;1992.08.20;Magyarország;41:22.10
