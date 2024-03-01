@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chat"></div>
+    <label for="sender">Küldő:</label>
+    <input type="text" name="sender" id="sender">
+    <label for="message">Üzenet:</label>
+    <input type="text" name="message" id="message">
+    <input type="button" value="küld" onclick="sendMessage()">   
+    <script>
+
+
+const socket = new WebSocket("ws://localhost:8081");
+
+
+socket.addEventListener("message", (event) => {
+        const chat = document.getElementById('chat');
+        const message = document.createElement('p');
+        const blobAdat = event.data
+
+        blobAdat.text().then((textData) => {
+            message.textContent = textData
+        }
+        )
+        chat.appendChild(message);    
+        
+
+})
+
+
+function sendMessage() {
+
+const messageInput = document.getElementById("message")
+const message = messageInput.value
+    socket.send(document.getElementById("sender").value+": " + message);
+    messageInput.value = '';
+}
+
+
+    </script>
+</body>
+</html>
