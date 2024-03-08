@@ -5,10 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Futóverseny"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="300">
+        Title="Futóverseny" Height="600" Width="500">
     <Grid>
-        <Label Margin="0,0,269,411">Fájl</Label>
-        <Label Margin="0,0,220,411">Eredménylista</Label>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62"/>
+            <ColumnDefinition Width="148"/>
+            <ColumnDefinition Width="290"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47.03"/>
+            <RowDefinition Height="64.04"/>
+            <RowDefinition Height="52.033"/>
+            <RowDefinition Height="69.044"/>
+            <RowDefinition Height="65.041"/>
+            <RowDefinition Height="68.043"/>
+            <RowDefinition Height="74.047"/>
+            <RowDefinition Height="146.092"/>
+        </Grid.RowDefinitions>
+        <Button Cursor="Arrow" BorderThickness="0,0,0,0" Background="White" Click="LoadDataFromFile" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" Width="36">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Fájl</Label>
+        </Button>
+        <Button Click="Button_Click" Cursor="Arrow" BorderThickness="0,0,0,0" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="33" Width="140" Grid.Column="1">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Eredménylista</Label>
+        </Button>
+        <Label Margin="10,10,10,8" FontSize="22" Foreground="Red" BorderBrush="black" BorderThickness="1" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">Maratoni futóverseny</Label>
+        <Label Margin="26,14,59,3" FontSize="16" Grid.Row="2" Grid.ColumnSpan="2">RÉSZTVEVŐK</Label>
+
+        <ListBox x:Name="listbox1" Margin="0,7,0,0" BorderBrush="Black" Height="335" SelectionChanged="ListBox1_SelectedIndexChanged" VerticalAlignment="Top" HorizontalAlignment="Center" Width="134" Grid.Row="3" Grid.RowSpan="5" Grid.ColumnSpan="2"/>
+
+        <Label Margin="5,0,0,0" HorizontalAlignment="Left" Width="70" FontSize="14" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center">Rajtszám:</Label>
+        <TextBox x:Name="textBox2" Margin="80,0,0,0" HorizontalAlignment="Left" Width="181" Height="28" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" TextAlignment="Center" FontSize="14"></TextBox>   
+        <Label Margin="5,0,0,0" HorizontalAlignment="Left" Width="70" Height="28" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" FontSize="14">Ország:</Label>
+        <TextBox x:Name="textBox3" Margin="80,0,0,0" RenderTransformOrigin="0.575,0.981" HorizontalAlignment="Left" Width="181" Height="28" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" TextAlignment="Center" FontSize="14"></TextBox>
+        <Label Margin="10,0,0,0" HorizontalAlignment="Left" Grid.Row="5" FontSize="14" Grid.Column="2" Width="95" VerticalAlignment="Center">Időeredmeny:</Label>
+        <TextBox x:Name="textBox4" Margin="140,0,0,0" HorizontalAlignment="Left" Width="121" Height="28" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2" TextAlignment="Center" FontSize="14"></TextBox>
+        <Label Margin="10,0,0,0" HorizontalAlignment="Left" Grid.Row="6" FontSize="14" Width="56" Grid.Column="2" VerticalAlignment="Center">Életkor:</Label>
+        <TextBox x:Name="textBox5" Margin="80,0,0,0" HorizontalAlignment="Left" Width="181" Height="28" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" TextAlignment="Center" FontSize="14"></TextBox>
+        <Button Margin="0,70,0,0" Click="Button_Click_1" HorizontalAlignment="Center" Width="128" Height="32" VerticalAlignment="Top" Grid.Row="7" Grid.Column="2">Bezár</Button>
+        <Button Margin="0,70,0,0" HorizontalAlignment="Center" Width="134" Height="32" VerticalAlignment="Top" Grid.Row="7" Grid.ColumnSpan="2">AdatBe</Button>
+
 
     </Grid>
 </Window>

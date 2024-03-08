@@ -25,7 +25,7 @@ namespace Futoverseny
                     string[] data = line.Split(';');
                     string name = data[1];
                     listBox1.Items.Add(name);
-                }l
+                }
             }
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace Futoverseny
         private void eredménylistaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             From2 from2 = new From2(lines);
-            from2.ShowDialog();
+            from2.Show();
         }
     }
 }

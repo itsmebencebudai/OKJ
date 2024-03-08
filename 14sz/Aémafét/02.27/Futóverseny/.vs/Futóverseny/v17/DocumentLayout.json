@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|solutionrelative:fut\u00F3verseny\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\02.27\\fut\u00F3verseny\\fut\u00F3verseny\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\fut\u00F3verseny\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|solutionrelative:fut\u00F3verseny\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\fut\u00F3verseny\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|solutionrelative:fut\u00F3verseny\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\fut\u00F3verseny\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC13B11B-4EA1-426C-923A-579EEA9838CC}|Fut\u00F3verseny\\Fut\u00F3verseny.csproj|solutionrelative:fut\u00F3verseny\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -29,20 +37,45 @@
               "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\MainWindow.xaml",
               "RelativeToolTip": "Fut\u00F3verseny\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-27T11:18:01.17Z",
+              "WhenOpened": "2024-03-05T10:01:20.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Fut\u00F3verseny\\MainWindow.xaml.cs",
               "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\MainWindow.xaml.cs",
               "RelativeToolTip": "Fut\u00F3verseny\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAjwEYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T11:17:58.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Fut\u00F3verseny\\Window1.xaml.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\Window1.xaml.cs",
+              "RelativeToolTip": "Fut\u00F3verseny\\Window1.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAiwCgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T10:10:56.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\Window1.xaml",
+              "RelativeDocumentMoniker": "Fut\u00F3verseny\\Window1.xaml",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\02.27\\Fut\u00F3verseny\\Fut\u00F3verseny\\Window1.xaml",
+              "RelativeToolTip": "Fut\u00F3verseny\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-05T09:50:57.319Z",
               "EditorCaption": ""
             }
           ]
