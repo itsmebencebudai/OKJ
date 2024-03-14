@@ -1,0 +1,18 @@
+{
+	"vuejs": {
+		 "prefix": "vuejs",
+		 "scope":"typescript",
+		 "body": [
+			 "<script setup lang=\"ts\">",
+			 "",
+			 "</script>",
+			 "<template>",
+			 "",
+			 "</template>",
+			 "<style scoped>",
+			 "",
+			 "</style>",
+		 ],
+		 "description" : "Create vue section"
+	} 
+ }

@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #302b27;
+  color: #fff
+}
+
+#app {
+  .dispflex {
+    display: flex;
+    gap: 1rem;
+  }
+}
+input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
