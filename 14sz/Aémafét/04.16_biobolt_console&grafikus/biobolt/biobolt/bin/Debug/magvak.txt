@@ -1,0 +1,7 @@
+10;tökmag;800
+6;mandula;1800
+1;törökmogyoró;3400
+18;dió;4200
+8;pisztácia;5400
+7;aszalt áfonya;4800
+9;arany mazsola;4100

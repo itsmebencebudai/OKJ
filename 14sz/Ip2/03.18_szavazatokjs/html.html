@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="./szavazatok.js"></script> -->
+    <title>Document</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Választási eredmények</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">1. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#1feladat">2. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#2feladat">3. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#3feladat">4. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#4feladat">5. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#5feladat">6. feladat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#6feladat">7. feladat</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5" style="padding-top: 50px;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="1feladat">1. feladat</label>
+                <div id="1feladat_result"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="2feladat">2. feladat</label>
+                <br>
+                <select id="partySelect" onchange="PartKepviselok()" class="form-control">
+                    <option value="">-- Válasszon pártot vagy függetlent --</option>
+                    <option value="GYEP">GYEP</option>
+                    <option value="HEP">HEP</option>
+                    <option value="ZEP">ZEP</option>
+                    <option value="TISZ">TISZ</option>
+                    <option value="-">Független</option>
+                </select>
+                <div id="2feladat_result" class="mt-2"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="3feladat">3. feladat</label>
+                <br>
+                <form onsubmit="event.preventDefault(); KepviseloInfo();">
+                    <div class="form-group">
+                        <label for="vezeteknev">Vezetéknév:</label>
+                        <input type="text" id="vezeteknev" name="vezeteknev" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="utonev">Utónév:</label>
+                        <input type="text" id="utonev" name="utonev" required class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Keresés</button>
+                </form>
+                <div id="3feladat_result" class="text-center mt-2"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="4feladat">4. feladat</label>
+                <br>
+                <div id="4feladat_result"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="5feladat">5. feladat</label>
+                <br>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Párt</th>
+                                <th>Szavazatok Mennyisége</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feladat_tbody_5">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <label class="font-weight-bold" id="6feladat">6. feladat</label>
+                <br>
+                <div>A legtöbb szavazatot kapott jelöltek:</div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Párt</th>
+                                <th>Jelölt</th>
+                                <th>Szavazatok száma</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feladat_tbody_6">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="6feladat_result"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center" id="7feladat">
+            <div class="col-md-6">
+                <label class="font-weight-bold">7. feladat</label>
+                <br>
+                <div>A nyertesek:</div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Kerület</th>
+                                <th>Vezetéknév</th>
+                                <th>Utónév</th>
+                                <th>Párt</th>
+                                <th>Szavazatok</th>
+                            </tr>
+                        </thead>
+                        <tbody id="nyertesek_table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pageBottom"></div>
+    <script>
+
+        const szavazatok = [
+            { korzet: 5, szavazat: 19, nev: "Ablak Antal", part: "-" },
+            { korzet: 1, szavazat: 120, nev: " Alma Dalma", part: "GYEP" },
+            { korzet: 7, szavazat: 162, nev: " Bab Zsuzsanna", part: "ZEP" },
+            { korzet: 2, szavazat: 59, nev: "Barack Barna", part: "GYEP" },
+            { korzet: 6, szavazat: 73, nev: "Birs Helga", part: "GYEP" },
+            { korzet: 1, szavazat: 154, nev: " Bors Botond", part: "HEP" },
+            { korzet: 5, szavazat: 188, nev: " Brokkoli Gyula", part: "ZEP" },
+            { korzet: 6, szavazat: 29, nev: "Ceruza Zsombor", part: "-" },
+            { korzet: 4, szavazat: 143, nev: " Fasirt Ferenc", part: "HEP" },
+            { korzet: 8, szavazat: 157, nev: " Gomba Gitta", part: "TISZ" },
+            { korzet: 3, szavazat: 13, nev: "Halmi Helga", part: "-" },
+            { korzet: 2, szavazat: 66, nev: "Hold Ferenc", part: "-" },
+            { korzet: 7, szavazat: 34, nev: "Hurka Herold", part: "HEP" },
+            { korzet: 5, szavazat: 288, nev: " Joghurt Jakab", part: "TISZ" },
+            { korzet: 4, szavazat: 77, nev: "Kajszi Kolos", part: "GYEP" },
+            { korzet: 2, szavazat: 187, nev: " Kapor Karola", part: "ZEP" },
+            { korzet: 6, szavazat: 13, nev: "Karfiol Ede", part: "ZEP" },
+            { korzet: 6, szavazat: 187, nev: " Kefir Ilona", part: "TISZ" },
+            { korzet: 7, szavazat: 130, nev: " Kupa Huba", part: "-" },
+            { korzet: 8, szavazat: 98, nev: "Languszta Auguszta", part: "-" },
+            { korzet: 1, szavazat: 34, nev: "Lila Lilla", part: "-" },
+            { korzet: 1, szavazat: 56, nev: "Medve Rudolf", part: "-" },
+            { korzet: 5, szavazat: 67, nev: "Meggy Csilla", part: "GYEP" },
+            { korzet: 3, szavazat: 45, nev: "Moly Piroska", part: "-" },
+            { korzet: 4, szavazat: 221, nev: " Monitor Tibor", part: "-" },
+            { korzet: 8, szavazat: 288, nev: " Narancs Edmond", part: "GYEP" },
+            { korzet: 2, szavazat: 220, nev: " Oldalas Olga", part: "HEP" },
+            { korzet: 3, szavazat: 185, nev: " Pacal Kata", part: "HEP" },
+            { korzet: 1, szavazat: 199, nev: " Petrezselyem Petra", part: "ZEP" },
+            { korzet: 8, szavazat: 77, nev: "Pokol Vidor", part: "-" },
+            { korzet: 8, szavazat: 67, nev: "Ragu Ida", part: "HEP" },
+            { korzet: 3, szavazat: 156, nev: " Retek Etelka", part: "ZEP" },
+            { korzet: 7, szavazat: 129, nev: " Sajt Hajnalka", part: "TISZ" },
+            { korzet: 4, szavazat: 38, nev: "Simon Simon", part: "-" },
+            { korzet: 3, szavazat: 87, nev: "Szilva Szilvia", part: "GYEP" },
+            { korzet: 3, szavazat: 187, nev: " Tejes Attila", part: "TISZ" },
+            { korzet: 2, szavazat: 65, nev: "Tejfel Edit", part: "TISZ" },
+            { korzet: 4, szavazat: 39, nev: "Uborka Ubul", part: "ZEP" },
+            { korzet: 6, szavazat: 288, nev: " Vadas Marcell", part: "HEP" },
+            { korzet: 5, szavazat: 68, nev: "Vagdalt Edit", part: "HEP" },
+        ];
+
+        // Feladat 1: Megszámolja a képviselőket
+        function KepviselokSzama() {
+            let szavazatokSzama = szavazatok.length; // Megszámolja a szavazatok számát
+            document.getElementById("1feladat_result").innerHTML = (`A helyhatósági választáson ${szavazatokSzama} képviselőjelölt indult. <br/>`); // Kiírja a képviselők számát
+        }
+        KepviselokSzama();
+
+        // Feladat 2: A pártok képviselőinek számának lekérdezése
+        function PartKepviselok() {
+            const kiválasztottpart = document.getElementById("partySelect").value; // Kiválasztott párt lekérése a lenyíló menüből
+            const kepviselok = szavazatok.filter(item => item.part === kiválasztottpart); // Szűri a szavazatokat a kiválasztott párt szerint
+            document.getElementById("2feladat_result").innerHTML = `"${kiválasztottpart}" párt/függetlenként ${kepviselok.length} képviselőt indított a választáson.`; // Kiírja a kiválasztott párt képviselőinek számát
+        }
+
+        // Feladat 3: Képviselő információk lekérdezése név alapján
+        function KepviseloInfo() {
+            const vezeteknev = document.getElementById("vezeteknev").value.trim(); // Vezetéknév beolvasása és levágása a szélső space karakterekről
+            const utonev = document.getElementById("utonev").value.trim(); // Utónév beolvasása és levágása a szélső space karakterekről
+            const nev = vezeteknev + " " + utonev; // Teljes név összeállítása
+            let megtalált = false; // Flag változó az eredmény megtalálásának nyomon követésére
+            let szavazatokSzama = 0; // Szavazatok száma az adott képviselőnek
+            for (let i = 0; i < szavazatok.length; i++) { // Végigmegy az összes szavazaton
+                if (szavazatok[i].nev === nev) { // Ellenőrzi, hogy a név egyezik-e az adott szavazat nevével
+                    megtalált = true; // Megtalálás jelzése
+                    szavazatokSzama = szavazatok[i].szavazat; // Szavazatok számának mentése
+                    break; // Kilépés a ciklusból, ha megtalálta a nevet
+                }
+            }
+            if (megtalált) { // Ha megtalálta a nevet
+                document.getElementById("3feladat_result").classList.remove("text-danger"); // Törli a szöveg stílusát
+                document.getElementById("3feladat_result").innerText = `Az ${nev} nevű képviselőjelölt ${szavazatokSzama} szavazatot kapott.`; // Kiírja a képviselő szavazatainak számát
+            } else { // Ha nem találta meg a nevet
+                document.getElementById("3feladat_result").innerText = "Ilyen nevű képviselőjelölt nem szerepel a nyilvántartásban!"; // Hibás üzenet kiírása
+                document.getElementById("3feladat_result").classList.add("text-danger"); // Hiba stílus hozzáadása
+            }
+        }
+
+        // Feladat 4: A részvételi arány kiszámítása
+        const leadottSzavazatokSzama = 12345; // A leadott szavazatok száma
+        var osszszavazat = 0; // Összesített szavazatok száma
+        szavazatok.forEach(item => { // Végigmegy az összes szavazaton
+            osszszavazat += item.szavazat; // Összegzi a szavazatokat
+        });
+        let reszveteliArany = (osszszavazat / leadottSzavazatokSzama) * 100; // Részvételi arány kiszámítása
+        document.getElementById('4feladat_result').innerHTML = (`A választáson ${leadottSzavazatokSzama} szavazatot adtak le, a részvételi arány ${reszveteliArany.toFixed(2)}%.`); // Kiírja a részvételi arányt
+
+        // Feladat 5: Szavazatok számának összegzése párt szerint
+        const szavazatokPerPart = {}; // Objektum létrehozása a szavazatok számának tárolására
+        szavazatok.forEach(szavazat => { // Végigmegy az összes szavazaton
+            const part = szavazat.part || 'Független'; // Párt nevének lekérése vagy "Független" beállítása
+            if (!szavazatokPerPart[part]) { // Ha még nem létezik ilyen párt kulcs az objektumban
+                szavazatokPerPart[part] = 0; // Kezdeti érték beállítása
+            }
+            szavazatokPerPart[part] += szavazat.szavazat; // Hozzáadja a szavazatokat a megfelelő párthoz
+        });
+        const tableBody_5 = document.querySelector('#feladat_tbody_5'); // A táblázat test elemének lekérése
+        for (const part in szavazatokPerPart) { // Végigmegy az összes párton
+            const szavazatokSzama = szavazatokPerPart[part]; // Az adott párt szavazatainak száma
+            const row = `<tr><td>${part}</td><td>${szavazatokSzama}</td></tr>`; // Sor összeállítása
+            tableBody_5.insertAdjacentHTML('beforeend', row); // Hozzáadja a sort a táblázathoz
+        }
+
+        // Feladat 6: A legtöbb szavazatot kapott jelöltek kiválasztása
+        const maxSzavazat = Math.max(...szavazatok.map(item => item.szavazat)); // A legnagyobb szavazatszám kiválasztása
+        const legtobbSzavazatJeloltek = szavazatok.filter(item => item.szavazat === maxSzavazat); // A legtöbb szavazatot kapott jelöltek szűrése
+
+        if (legtobbSzavazatJeloltek.length === 0) { // Ha nincs olyan jelölt, aki a legtöbb szavazatot kapta
+            document.getElementById('6feladat_result').innerHTML = "Nincs olyan jelölt, aki a legtöbb szavazatot kapta."; // Üzenet kiírása
+        } else { // Ha van olyan jelölt, aki a legtöbb szavazatot kapta
+            const tableBody_6 = document.querySelector('#feladat_tbody_6'); // A táblázat test elemének lekérése
+            legtobbSzavazatJeloltek.forEach(item => { // Végigmegy az összes legtöbb szavazatot kapott jelöltön
+                let partRovidites = item.part !== "-" ? item.part : "független"; // A párt rövidítésének meghatározása
+                const row = `<tr><td>${partRovidites}</td><td>${item.nev}</td><td>${item.szavazat}</td></tr>`; // Sor összeállítása
+                tableBody_6.insertAdjacentHTML('beforeend', row); // Hozzáadja a sort a táblázathoz
+            });
+        }
+
+        // Feladat 7: A győztesek kiválasztása körzet szerint
+        szavazatok.sort((a, b) => (a.korzet - b.korzet) || (b.szavazat - a.szavazat)); // Szavazatok rendezése körzet és szavazatszám szerint
+        const gyoztesek = {}; // Objektum létrehozása a győztesek tárolására
+        szavazatok.forEach(item => { // Végigmegy az összes szavazaton
+            const trimmedNev = item.nev.trim(); // Üres helyek eltávolítása az elejéről és a végéről
+            if (!gyoztesek[item.korzet] || gyoztesek[item.korzet].szavazat < item.szavazat) { // Ha nincs még győztes a körzetben, vagy az adott jelölt több szavazatot kapott
+                gyoztesek[item.korzet] = { // Győztes adatainak mentése
+                    vezeteknev: trimmedNev.split(' ')[0], // Vezetéknév kivágása
+                    utonev: trimmedNev.split(' ')[1], // Utónév kivágása
+                    part: item.part !== "-" ? item.part : "független", // Párt nevének ellenőrzése
+                    szavazat: item.szavazat // Szavazatszám mentése
+                };
+            }
+        });
+        const tableBody_nyertesek = document.getElementById('nyertesek_table_body'); // A táblázat test elemének lekérése
+        for (const korzet in gyoztesek) { // Végigmegy az összes körzeten
+            const gyoztes = gyoztesek[korzet]; // Az adott körzet győztese
+            const row = `<tr>
+            <td>${korzet}</td>
+            <td>${gyoztes.vezeteknev}</td>
+            <td>${gyoztes.utonev}</td>
+            <td>${gyoztes.part}</td>
+            <td>${gyoztes.szavazat}</td>
+        </tr>`; // Sor összeállítása
+            tableBody_nyertesek.insertAdjacentHTML('beforeend', row); // Hozzáadja a sort a táblázathoz
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

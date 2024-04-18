@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\bin\Debug\RealEstate.exe.config
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\bin\Debug\RealEstate.exe
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\bin\Debug\RealEstate.pdb
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\obj\Debug\RealEstate.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\obj\Debug\RealEstate.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\obj\Debug\RealEstate.exe
+D:\OKJ\14sz\Viszgagyakorlat\04.12_elsodolgozat\1. programozás\RealEstate\RealEstate\obj\Debug\RealEstate.pdb

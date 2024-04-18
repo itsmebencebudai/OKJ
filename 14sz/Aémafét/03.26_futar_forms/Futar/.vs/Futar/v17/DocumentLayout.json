@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\frmkuld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\frmkuld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\frmkuld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\frmkuld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\03.26_futar_forms\\futar\\futar\\frmkuldlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA562770-C5F9-40CB-963D-DCB225191DAF}|Futar\\Futar.csproj|solutionrelative:futar\\frmkuldlista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmMain.cs",
+              "RelativeDocumentMoniker": "Futar\\frmMain.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmMain.cs [Design]",
+              "RelativeToolTip": "Futar\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:29:34.166Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmKuldLista.cs [Design]",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuldLista.cs",
+              "RelativeDocumentMoniker": "Futar\\frmKuldLista.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuldLista.cs [Design]",
+              "RelativeToolTip": "Futar\\frmKuldLista.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:30:29.584Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmKuld.cs [Design]",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuld.cs",
+              "RelativeDocumentMoniker": "Futar\\frmKuld.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuld.cs [Design]",
+              "RelativeToolTip": "Futar\\frmKuld.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:30:12.617Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmMain.cs",
+              "RelativeDocumentMoniker": "Futar\\frmMain.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmMain.cs",
+              "RelativeToolTip": "Futar\\frmMain.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAADwv0kAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:38:55.05Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmKuld.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuld.cs",
+              "RelativeDocumentMoniker": "Futar\\frmKuld.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\frmKuld.cs",
+              "RelativeToolTip": "Futar\\frmKuld.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAIwLAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T12:16:23.822Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\Program.cs",
+              "RelativeDocumentMoniker": "Futar\\Program.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\03.26_futar_forms\\Futar\\Futar\\Program.cs",
+              "RelativeToolTip": "Futar\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T12:20:25.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

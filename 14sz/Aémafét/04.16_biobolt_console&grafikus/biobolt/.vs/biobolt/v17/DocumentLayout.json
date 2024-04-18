@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.16_biobolt_console\u0026grafikus\\biobolt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F523AF9C-775F-41D5-9A25-83C0EE808A6C}|biobolt\\biobolt.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\04.16_biobolt_console\u0026grafikus\\biobolt\\biobolt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F523AF9C-775F-41D5-9A25-83C0EE808A6C}|biobolt\\biobolt.csproj|solutionrelative:biobolt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.16_biobolt_console\u0026grafikus\\biobolt\\biobolt\\Program.cs",
+              "RelativeDocumentMoniker": "biobolt\\Program.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.16_biobolt_console\u0026grafikus\\biobolt\\biobolt\\Program.cs",
+              "RelativeToolTip": "biobolt\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T08:34:10.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

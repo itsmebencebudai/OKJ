@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\bin\Debug\biobolt.exe.config
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\bin\Debug\biobolt.exe
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\bin\Debug\biobolt.pdb
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\obj\Debug\biobolt.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\obj\Debug\biobolt.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\obj\Debug\biobolt.exe
+D:\OKJ\14sz\Aémafét\04.16_biobolt_console&grafikus\biobolt\biobolt\obj\Debug\biobolt.pdb
