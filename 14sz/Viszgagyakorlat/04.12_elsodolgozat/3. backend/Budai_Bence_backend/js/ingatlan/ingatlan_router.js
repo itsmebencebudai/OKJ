@@ -1,4 +1,4 @@
-var ingatlan_model = require('./ingatlan-module');
+var ingatlan_model = require('./ingatlan_module');
 var router = require('express').Router();
 
 router.get('/ingatlan', ingatlan_model.GetAllIngatlanok);

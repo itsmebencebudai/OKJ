@@ -11,4 +11,4 @@ class Config {
 } 
 
 config.database = new Config(); 
-config.port = 8000;
+config.port = 8080;
