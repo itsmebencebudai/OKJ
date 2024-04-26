@@ -1,0 +1,17 @@
+Példa LAN (200 IP-cím igény)
+	hálózat azonosító: 172.16.0.0/24
+	alhálózati maszk: 255.255.255.0
+	használható címtartomány: 172.16.0.1 - 172.16.0.254
+	szórási cím: 172.16.0.255
+
+
+1. PC (58 IP-cím igény)
+	hálózat azonosító:
+	alhálózati maszk:
+	használható címtartomány:
+	szórási cím:
+2. PRINTER (11 IP-cím igény)
+	hálózat azonosító:
+	alhálózati maszk:
+	használható címtartomány:
+	szórási cím:

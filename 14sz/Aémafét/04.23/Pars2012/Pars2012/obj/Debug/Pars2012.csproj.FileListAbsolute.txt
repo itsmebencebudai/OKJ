@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\bin\Debug\Pars2012.exe.config
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\bin\Debug\Pars2012.exe
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\bin\Debug\Pars2012.pdb
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\obj\Debug\Pars2012.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\obj\Debug\Pars2012.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\obj\Debug\Pars2012.exe
+D:\OKJ\14sz\Aémafét\04.23\Pars2012\Pars2012\obj\Debug\Pars2012.pdb

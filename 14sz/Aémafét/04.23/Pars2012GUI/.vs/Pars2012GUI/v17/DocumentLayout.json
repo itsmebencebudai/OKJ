@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.23\\Pars2012GUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03C0D709-89A9-4100-972E-492D40298D6B}|Pars2012GUI\\Pars2012GUI.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\04.23\\pars2012gui\\pars2012gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03C0D709-89A9-4100-972E-492D40298D6B}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03C0D709-89A9-4100-972E-492D40298D6B}|Pars2012GUI\\Pars2012GUI.csproj|d:\\okj\\14sz\\a\u00E9maf\u00E9t\\04.23\\pars2012gui\\pars2012gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03C0D709-89A9-4100-972E-492D40298D6B}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.23\\Pars2012GUI\\Pars2012GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "Pars2012GUI\\Form1.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.23\\Pars2012GUI\\Pars2012GUI\\Form1.cs",
+              "RelativeToolTip": "Pars2012GUI\\Form1.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAqwGUAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:19:33.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.23\\Pars2012GUI\\Pars2012GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "Pars2012GUI\\Form1.cs",
+              "ToolTip": "D:\\OKJ\\14sz\\A\u00E9maf\u00E9t\\04.23\\Pars2012GUI\\Pars2012GUI\\Form1.cs [Design]",
+              "RelativeToolTip": "Pars2012GUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:15:47.668Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

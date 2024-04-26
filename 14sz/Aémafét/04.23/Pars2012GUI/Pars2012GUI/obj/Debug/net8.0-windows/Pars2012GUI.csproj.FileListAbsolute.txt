@@ -1,0 +1,17 @@
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\bin\Debug\net8.0-windows\Pars2012GUI.exe
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\bin\Debug\net8.0-windows\Pars2012GUI.deps.json
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\bin\Debug\net8.0-windows\Pars2012GUI.runtimeconfig.json
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\bin\Debug\net8.0-windows\Pars2012GUI.dll
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\bin\Debug\net8.0-windows\Pars2012GUI.pdb
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.Form1.resources
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.csproj.GenerateResource.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.AssemblyInfoInputs.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.AssemblyInfo.cs
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.sourcelink.json
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.dll
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\refint\Pars2012GUI.dll
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.pdb
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\Pars2012GUI.genruntimeconfig.cache
+D:\OKJ\14sz\Aémafét\04.23\Pars2012GUI\Pars2012GUI\obj\Debug\net8.0-windows\ref\Pars2012GUI.dll

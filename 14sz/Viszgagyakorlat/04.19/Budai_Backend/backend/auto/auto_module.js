@@ -33,6 +33,7 @@ function getAllAuto(req, res) {
     const sql = 'SELECT * FROM `autok`';
     con.query(sql, function (err, result) {
         if (err) throw err;
+        console.log(result);
         res.status(201).send(result);
     });
 
