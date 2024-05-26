@@ -1,0 +1,12 @@
+Január,10000,5000
+Február,12000,6000
+Március,9000,4000
+Április,11000,7000
+Május,15000,8000
+Június,13000,5000
+Július,14000,6000
+Augusztus,12000,7000
+Szeptember,16000,9000
+Október,17000,8000
+November,18000,10000
+December,200,12000

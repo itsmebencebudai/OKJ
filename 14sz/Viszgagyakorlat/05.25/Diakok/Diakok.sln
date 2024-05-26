@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diakok", "Diakok\Diakok.csproj", "{2A1367C7-B8AD-429C-B715-D378B63DE04E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A1367C7-B8AD-429C-B715-D378B63DE04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1367C7-B8AD-429C-B715-D378B63DE04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1367C7-B8AD-429C-B715-D378B63DE04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1367C7-B8AD-429C-B715-D378B63DE04E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A5AFF41-F7DF-48D4-BCD6-A222687698FD}
+	EndGlobalSection
+EndGlobal

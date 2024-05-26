@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\bin\Debug\Kiadasok.exe.config
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\bin\Debug\Kiadasok.exe
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\bin\Debug\Kiadasok.pdb
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\obj\Debug\Kiadasok.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\obj\Debug\Kiadasok.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\obj\Debug\Kiadasok.exe
+D:\OKJ\14sz\Viszgagyakorlat\05.26\konzol\Kiadasok\Kiadasok\obj\Debug\Kiadasok.pdb

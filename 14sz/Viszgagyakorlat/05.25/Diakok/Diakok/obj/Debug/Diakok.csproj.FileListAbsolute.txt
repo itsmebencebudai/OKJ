@@ -1,0 +1,7 @@
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\bin\Debug\Diakok.exe.config
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\bin\Debug\Diakok.exe
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\bin\Debug\Diakok.pdb
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\obj\Debug\Diakok.csproj.AssemblyReference.cache
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\obj\Debug\Diakok.csproj.CoreCompileInputs.cache
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\obj\Debug\Diakok.exe
+D:\OKJ\14sz\Viszgagyakorlat\05.25\Diakok\Diakok\obj\Debug\Diakok.pdb

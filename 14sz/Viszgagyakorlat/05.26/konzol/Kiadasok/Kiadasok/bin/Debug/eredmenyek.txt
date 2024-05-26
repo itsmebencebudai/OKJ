@@ -1,0 +1,5 @@
+A max profit: 9000
+A legnagyobb veszteseg: -11800
+Az osszes bevetel: 147200
+Az osszes kiadas: 87000
+Az osszes profit: 60200
